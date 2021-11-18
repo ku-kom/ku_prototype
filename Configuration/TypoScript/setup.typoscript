@@ -1,0 +1,42 @@
+######################
+#### DEPENDENCIES ####
+######################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/setup.typoscript">
+
+
+##############
+#### PAGE ####
+##############
+page {
+    includeCSS {
+        theme = EXT:ku_prototype/Resources/Public/Scss/Theme/theme.scss
+        
+    }
+
+    includeJSLibs {
+
+    }
+
+    includeJS {
+
+    }
+
+    includeJSFooterlibs {
+
+    }
+
+    includeJSFooter {
+        
+    }
+    10 {
+        settings {
+            ku {
+                # Used for global elements
+                special_id = {$page.ku.settings.special_id}
+            }
+        }
+        templateRootPaths.3 = EXT:ku_prototype/Resources/Private/Templates/Page/
+        partialRootPaths.3 = EXT:ku_prototype/Resources/Private/Partials/Page/
+        layoutRootPaths.3 = EXT:ku_prototype/Resources/Private/Layouts/Page/
+    }
+}
