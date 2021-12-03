@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="da" datatype="plaintext" original="messages" date="2021-11-17UTC14:41:230">
+        <header>
+            <authorName>Nanna Ellegaard</authorName>
+            <authorEmail>nel@adm.ku.dk</authorEmail>
+        </header>
+        <body>
+        <trans-unit id="frontend.ku">
+                <source>Københavns Universitet</source>
+            </trans-unit>
+            <trans-unit id="right-column-aria">
+                <source>Relateret indhold</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

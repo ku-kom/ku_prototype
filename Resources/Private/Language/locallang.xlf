@@ -6,6 +6,12 @@
             <authorEmail>nel@adm.ku.dk</authorEmail>
         </header>
         <body>
+        <trans-unit id="frontend.ku">
+            <source>University of Copenhagen</source>
+        </trans-unit>
+        <trans-unit id="right-column-aria">
+            <source>Related content</source>
+        </trans-unit>
         </body>
     </file>
 </xliff>

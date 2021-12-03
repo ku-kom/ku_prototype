@@ -14,29 +14,49 @@ page {
     }
 
     includeJSLibs {
-
+        modernizr >
     }
 
     includeJS {
-
+        
     }
 
     includeJSFooterlibs {
-
+        
     }
 
+
     includeJSFooter {
-        
+        ku_custom = EXT:ku_prototype/Resources/Public/JavaScript/Src/ku-custom.js
+        ku_global_footer = EXT:ku_prototype/Resources/Public/JavaScript/Src/ku-global-footer.js
     }
     10 {
         settings {
             ku {
                 # Used for global elements
-                special_id = {$page.ku.settings.special_id}
+                global_elements_id = {$page.settings.ku.global_elements_id}
+                # Enable/disable utility menu
+                utilityMenu {
+                    enable = {$page.settings.ku.utilityMenu.enable}
+                }
+                # Enable/disable global menu
+                globalMenu {
+                    enable = {$page.settings.ku.globalMenu.enable}
+                }
+                # Enable/disable local footer
+                localFooter {    
+                    enable = {$page.settings.ku.localFooter.enable}
+                }
+                # Enable/disable global footer
+                globalFooter {    
+                    enable = {$page.settings.ku.globalFooter.enable}
+                }   
             }
+            
         }
         templateRootPaths.3 = EXT:ku_prototype/Resources/Private/Templates/Page/
         partialRootPaths.3 = EXT:ku_prototype/Resources/Private/Partials/Page/
         layoutRootPaths.3 = EXT:ku_prototype/Resources/Private/Layouts/Page/
     }
+
 }

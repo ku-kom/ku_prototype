@@ -1,0 +1,94 @@
+#
+# BACKENDLAYOUT: KU Global elements
+#
+mod {
+    web_layout {
+        BackendLayouts {
+            global {
+                title = LLL:EXT:ku_prototype/Resources/Private/Language/locallang_be.xlf:backend_layout.global
+                config {
+                    backend_layout {
+                        colCount = 12
+                        rowCount = 4
+                        rows {
+                            1 {
+                                columns {
+                                    1 {
+                                        name = Grey topbar
+                                        colPos = 11
+                                        colspan = 6
+                                    }
+                                    2 {
+                                        name = LLL:EXT:ku_prototype/Resources/Private/Language/locallang_be.xlf:backend_layout.column.utility
+                                        colPos = 12
+                                        colspan = 6
+                                    }
+                                }
+                            }
+                            2 {
+                                columns {
+                                    1 {
+                                        name = LLL:EXT:ku_prototype/Resources/Private/Language/locallang_be.xlf:backend_layout.column.menu
+                                        colPos = 13
+                                        colspan = 12
+                                    }
+                                }
+                            }
+                            3 {
+                                columns {
+                                    1 {
+                                        name = LLL:EXT:ku_prototype/Resources/Private/Language/locallang_be.xlf:backend_layout.column.local_footer_address
+                                        colPos = 21
+                                        colspan = 6
+                                    }
+                                    2 {
+                                        name = LLL:EXT:ku_prototype/Resources/Private/Language/locallang_be.xlf:backend_layout.column.local_footer_contact
+                                        colPos = 22
+                                        colspan = 6
+                                    }
+                                }
+                            }
+                            4 {
+                                columns {
+                                    1 {
+                                        name = LLL:EXT:ku_prototype/Resources/Private/Language/locallang_be.xlf:backend_layout.column.footer_col1
+                                        colPos = 140
+                                        colspan = 3
+                                        allowed { 
+                                            CType = bullets
+                                        }
+                                    }
+                                    2 {
+                                        name = LLL:EXT:ku_prototype/Resources/Private/Language/locallang_be.xlf:backend_layout.column.footer_col2
+                                        colPos = 150
+                                        colspan = 3
+                                        allowed { 
+                                            CType = bullets
+                                        }
+                                    }
+                                    3 {
+                                        name = LLL:EXT:ku_prototype/Resources/Private/Language/locallang_be.xlf:backend_layout.column.footer_col3
+                                        colPos = 160
+                                        colspan = 3
+                                        allowed { 
+                                            CType = bullets
+                                        }
+                                    }
+                                    4 {
+                                        name = LLL:EXT:ku_prototype/Resources/Private/Language/locallang_be.xlf:backend_layout.column.footer_col4
+                                        colPos = 170
+                                        colspan = 3
+                                        allowed { 
+                                            CType = bullets
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                icon = EXT:ku_prototype/Resources/Public/Icons/BackendLayouts/ku.svg
+            }
+        }
+    }
+}
