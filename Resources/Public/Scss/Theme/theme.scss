@@ -11,9 +11,15 @@
 @import "../../../../../bootstrap_package/Resources/Public/Scss/bootstrap5/theme";
 
 // KU overrides
+
 @import "../../Icons/Bootstrap-icons/bootstrap-icons.scss";
 @import "Custom/global";
 @import "Custom/topmenu";
+@import "Custom/offcanvas";
 @import "Custom/footer";
+@import "Custom/breadcrumbs";
 @import "Custom/frame";
+@import "Custom/images";
+@import "Custom/colorFamily";
+@import "Custom/news";
 

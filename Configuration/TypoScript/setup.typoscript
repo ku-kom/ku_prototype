@@ -2,16 +2,25 @@
 #### DEPENDENCIES ####
 ######################
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/setup.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:ku_prototype/Configuration/TypoScript/ContentElement/setup.typoscript">
 
 
 ##############
 #### PAGE ####
 ##############
+config {
+  concatenateJs = 0
+  concatenateCss = 0
+  compressJs = 0
+  compressCss = 0
+}
 page {
     includeCSS {
-        theme = EXT:ku_prototype/Resources/Public/Scss/Theme/theme.scss
-        
+        //theme = EXT:ku_prototype/Resources/Public/Scss/Theme/theme.scss
+        // We compile sass ourselves:
+        theme = EXT:ku_prototype/Resources/Public/Css/Dist/theme.min.css
     }
+    
     includeCSSLibs {
         # bootstrappackageicon >
     }
@@ -28,25 +37,35 @@ page {
         
     }
 
-
     includeJSFooter {
-        ku_custom = EXT:ku_prototype/Resources/Public/JavaScript/Src/ku-custom.js
-        ku_global_footer = EXT:ku_prototype/Resources/Public/JavaScript/Src/ku-global-footer.js
+        ku_custom = EXT:ku_prototype/Resources/Public/JavaScript/Dist/ku-scripts.min.js
     }
     10 {
         settings {
             ku {
                 # Used for global elements
-                global_elements_id = {$page.settings.ku.global_elements_id}
+                global_elements {
+                    id = {$page.settings.ku.global_elements.id}
+                }
+                # Enable/disable company logo
+                companyName {
+                    enable = {$page.settings.ku.companyName.enable}
+                }
                 # Enable/disable utility menu
                 utilityMenu {
                     enable = {$page.settings.ku.utilityMenu.enable}
+                    id = {$page.settings.ku.utilityMenu.id}
                 }
                 # Enable/disable global menu
                 globalMenu {
                     enable = {$page.settings.ku.globalMenu.enable}
+                    id = {$page.settings.ku.globalMenu.id}
+                    relation = {$page.settings.ku.globalMenu.relation}
                 }
-                # Enable/disable local footer
+                # Enable/disable local menu
+                localMenu {    
+                    enable = {$page.settings.ku.localMenu.enable}
+                }
                 localFooter {    
                     enable = {$page.settings.ku.localFooter.enable}
                 }
@@ -61,5 +80,110 @@ page {
         partialRootPaths.3 = EXT:ku_prototype/Resources/Private/Partials/Page/
         layoutRootPaths.3 = EXT:ku_prototype/Resources/Private/Layouts/Page/
     }
+}
 
+####################
+#### VARIABLES #####
+####################
+
+page {
+    10 = FLUIDTEMPLATE
+    10 {
+        variables {
+            # Get current language uid:
+            pageLanguage = TEXT
+            pageLanguage.data = sitelanguage:languageId
+        }
+    }
+}
+
+####################
+#### NAVIGATION ####
+####################
+
+# Utility menu based on pages in a folder
+page {
+    10 = FLUIDTEMPLATE
+    10 {
+        dataProcessing {
+            80 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+            80 {
+                special = directory
+                special.value = {$page.settings.ku.utilityMenu.id}
+                levels = 1
+                includeSpacer = 0
+                titleField = nav_title // title
+                as = utilitymenu
+            }
+        }
+    }
+}
+
+# Global menu based on pages in a folder
+page {
+    10 = FLUIDTEMPLATE
+    10 {
+        dataProcessing {
+            70 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+            70 {
+                special = directory
+                special.value = {$page.settings.ku.globalMenu.id}
+                levels = 1
+                includeSpacer = 0
+                titleField = nav_title // title
+                as = globalnavigation
+            }
+        }
+    }
+}
+
+# Disable default global Bootstrap menu - if needed:
+# page.10.dataProcessing.10 >
+
+# Top menu (overriding bootstrap_package settings)
+page.10.dataProcessing.10.levels = 5
+
+# Left menu (overriding bootstrap_package settings)
+page.10.dataProcessing.20.entryLevel = 0
+page.10.dataProcessing.20.levels = 5
+
+# Bread crumb start level and depth:
+# Start level: 1 = The page one level below the root page.
+# End level: -1 = The current page.
+page.10.dataProcessing.30.special.range = 0|-1
+
+# Separate menu for 3. level
+page {
+    10 = FLUIDTEMPLATE
+    10 {
+        dataProcessing {
+            60 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+            60 {
+                levels = 2
+                entryLevel = 3
+                expandAll = 1
+                includeSpacer = 0
+                titleField = nav_title // title
+                as = thirdlevelmenu
+            }
+        }
+    }
+}
+
+###############################
+#### NEWS SYSTEM EXTENSION ####
+###############################
+plugin.tx_news {
+    _LOCAL_LANG {
+		default {
+			more-link = Læs mere
+            author = Af %s
+            paginate_previous = Forrige
+            paginate_next = Næste
+		}
+    }
+    settings {
+        displayDummyIfNoMedia = 1
+        list.media.dummyImage = EXT:ku_prototype/Resources/Public/Images/News/fallback_image.png
+    }
 }

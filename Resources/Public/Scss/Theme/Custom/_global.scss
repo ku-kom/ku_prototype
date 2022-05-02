@@ -3,10 +3,14 @@
 //
 
 // Include custom font:
-@include font-face("Open Sans", typo3conf/ext/ku_prototype/Resources/Public/Fonts/open-sans-v27-latin-ext_latin-300, 300, normal, woff2 woff);
-@include font-face("Open Sans", typo3conf/ext/ku_prototype/Resources/Public/Fonts/open-sans-v27-latin-ext_latin-400, 400, normal, woff2 woff);
-@include font-face("Open Sans", typo3conf/ext/ku_prototype/Resources/Public/Fonts/open-sans-v27-latin-ext_latin-600, 600, normal, woff2 woff);
-@include font-face("Open Sans", typo3conf/ext/ku_prototype/Resources/Public/Fonts/open-sans-v27-latin-ext_latin-700, 700, normal, woff2 woff);
+@include font-face("Open Sans", '../../Fonts/open-sans-v27-latin-ext_latin-300', 300, normal, woff2 woff);
+@include font-face("Open Sans", '../../Fonts/open-sans-v27-latin-ext_latin-400', 400, normal, woff2 woff);
+@include font-face("Open Sans", '../../Fonts/open-sans-v27-latin-ext_latin-600', 600, normal, woff2 woff);
+@include font-face("Open Sans", '../../Fonts/open-sans-v27-latin-ext_latin-700', 700, normal, woff2 woff);
+
+.extbase-debugger-floating {
+    top: 50%;
+}
 
 html,
 body {
@@ -25,4 +29,15 @@ body {
 
 #page-content {
     flex: 1 0 auto;
+}
+
+.lead {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+@include media-breakpoint-up('sm') {
+    .body-bg-top {
+        padding-top: 160px;
+    }
 }

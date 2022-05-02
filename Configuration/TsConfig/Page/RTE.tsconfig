@@ -6,3 +6,6 @@ RTE {
         preset = ku_prototype
     }
 }
+
+// Special rich text editor for news extension
+RTE.config.tx_news_domain_model_news.bodytext.preset = ku_news

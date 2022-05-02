@@ -1,0 +1,71 @@
+/* Plugin to display Bootstrap Icons: https://icons.getbootstrap.com/
+* Written by Nanna Ellegaard, 2021.
+*/
+* {
+    box-sizing: border-box;
+}
+
+.bootstrap-icons {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    height: 500px;
+}
+
+.bootstrap-icons .bi::before,
+.bootstrap-icons [class^="bi-"]::before,
+.bootstrap-icons [class*=" bi-"]::before {
+    font-size: 3rem;
+}
+
+.bootstrap-icons .iconlist {
+    cursor: pointer !important;
+    display: inline-block;
+    padding: 10px 5px !important;
+    margin: 10px 5px !important;
+    border: 1px solid #eee;
+    flex: 0 0 20%;
+}
+
+.iconlist>* {
+    cursor: pointer;
+}
+
+.iconlist:hover,
+.iconlist:focus {
+    background-color: #eee;
+    border: 1px solid #ddd;
+}
+
+.iconlist.active {
+    background-color: #eee;
+}
+
+.iconlist.active {
+    border: 1px solid #0d6efd;
+}
+
+.bootstrap-icons [class^="bi-"] {
+    display: block;
+    text-align: center;
+}
+
+.iconlist .icon-label {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.selected-icon {
+    background-color: #e9ecef;
+    display: block;
+    width: 97%;
+    padding: 0.4rem;
+    line-height: 1.5;
+    cursor: not-allowed!important;
+}

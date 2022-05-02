@@ -1,0 +1,57 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:bk2k="http://typo3.org/ns/BK2K/BootstrapPackage/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:variable name="headerClass">bp-page-header navbar navbar-mainnavigation navbar-{theme.navigation.style}</f:variable>
+<f:variable name="headerClass">{headerClass}{f:if(condition: logo.normal, then:' navbar-has-image')}</f:variable>
+<f:variable name="headerClass">{headerClass}{f:if(condition: theme.navigation.type, else:' navbar-top', then:'
+    navbar-{theme.navigation.type} navbar-fixed-{theme.navigation.type}')}</f:variable>
+<f:comment>
+    <f:debug title="" inline="">{_all}</f:debug>
+</f:comment>
+<header id="page-header" class="{headerClass}">
+    <f:render partial="Navigation/Toplogo" arguments="{_all}" />
+    <div class="container">
+        <f:if condition="{mainnavigation}">
+                <f:if condition="{logo.normal}">
+                    <f:then>
+                        <f:link.page pageUid="{rootPage}"
+                class="navbar-brand navbar-brand-{f:if(condition: logo.normal, then: 'image', else: 'text')}"
+                title="{settings.logo.linktitle}">
+                        <img class="navbar-brand-logo-normal" src="{f:uri.image(image: logo.normal)}" alt="{logoAlt}"
+                            height="{settings.logo.height}" width="{settings.logo.width}">
+                        <f:if condition="{logo.inverted}">
+                            <img class="navbar-brand-logo-inverted" src="{f:uri.image(image: logo.inverted)}"
+                                alt="{logoAlt}" height="{settings.logo.height}" width="{settings.logo.width}">
+                        </f:if>
+                    </f:link.page>
+                    </f:then>
+                </f:if>
+            
+            <button class="navbar-toggler collapsed" type="button" id="navbarSideCollapse" aria-expanded="false"
+                aria-label="{f:translate(key: 'togglenavigation', extensionName: 'bootstrap_package')}">
+                <span></span>
+            </button>
+            <nav id="mainnavigation" class="navbar-collapse offcanvas-collapse">
+                <f:render partial="Navigation/Utilitymenu" arguments="{_all}" />
+                <f:render partial="DropIn/Navigation/MainBefore" arguments="{_all}" />
+                <f:render partial="Navigation/Globalnavigation" arguments="{_all}" />
+                <f:render partial="Navigation/MainNavigation" arguments="{_all}" />
+                <f:render partial="DropIn/Navigation/MainAfter" arguments="{_all}" />
+                <f:comment>
+                    <f:render partial="Navigation/Thirdlevelmenu" arguments="{_all}" />
+                </f:comment>
+            </nav>
+        </f:if>
+    </div>
+</header>
+<div class="container">
+    <div class="row row-sitename">
+        <div class="col offset-md-3">
+            <div class="sitename">
+                <f:link.page pageUid="{rootPage}" class="branding-name" tabindex="-1">{siteTitle}</f:link.page>
+            </div>
+        </div>
+    </div>
+</div>
+
+</html>
