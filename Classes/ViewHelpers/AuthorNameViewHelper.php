@@ -6,8 +6,6 @@ declare(strict_types=1);
  * This file is part of the package ku_protopype.
  * Usage: <ku:AuthorName authorUid="{data.cruser_id}" />
  *
- * For the full copyright and license information, please read the
- * LICENSE file that was distributed with this source code.
  */
 namespace UniversityOfCopenhagen\KuPrototype\ViewHelpers;
 
