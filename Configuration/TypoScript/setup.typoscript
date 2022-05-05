@@ -9,10 +9,10 @@
 #### PAGE ####
 ##############
 config {
-  concatenateJs = 0
-  concatenateCss = 0
-  compressJs = 0
-  compressCss = 0
+    concatenateJs = 0
+    concatenateCss = 0
+    compressJs = 0
+    compressCss = 0
 }
 page {
     includeCSS {

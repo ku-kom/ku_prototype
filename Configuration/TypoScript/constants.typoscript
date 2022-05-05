@@ -32,7 +32,7 @@ page {
         googleFont {
             enable = 0
         }
-        
+
         breadcrumb {
             enableLevel = 1
         }

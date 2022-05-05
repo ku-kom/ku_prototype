@@ -3,7 +3,7 @@
 <f:if condition="{settings.ku.companyName.enable} > 0">
     <div class="companylogo">
         <f:link.page pageUid="{rootPage}" class="companylink" tabindex="-1" title="Start">
-            <f:if condition="{pageLanguage} = 0">
+            <f:if condition="{pageLanguage} == 0">
                 <f:then>
                     <img src="/typo3conf/ext/ku_prototype/Resources/Public/Images/Frontend/ku_top_dk.svg" alt="">
                 </f:then>
