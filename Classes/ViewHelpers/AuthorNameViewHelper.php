@@ -47,11 +47,17 @@ class AuthorNameViewHelper extends AbstractViewHelper
     protected static function getAuthorRealName(int $authorUid): string
     {
         $connection = GeneralUtility::makeInstance(ConnectionPool::class)->getConnectionForTable('be_users');
-        $result = $connection->select(['username', 'realName'], 'be_users', ['uid' => ($authorUid)])->fetch();
-        if ($result['realName']) {
-            return $result['realName'];
-        } else {
-            return $result['username'];
-        }
+        // $result = $connection->select(['username', 'realName'], 'be_users', ['uid' => ($authorUid)])->fetch();
+        $result = $connection->select(['realName'], 'be_users', ['uid' => ($authorUid)])->fetch();
+        $name = $result['realName'];
+        
+        // if ($result['realName']) {
+        //     return $result['realName'];
+        // } else {
+        //     return $result['username'];
+        // }
+        
+        return $name ? $name : '';
     }
+    
 }
