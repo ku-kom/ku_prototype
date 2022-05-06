@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 declare(strict_types=1);
 
@@ -15,8 +15,7 @@ use TYPO3Fluid\Fluid\Core\Rendering\RenderingContextInterface;
 use TYPO3Fluid\Fluid\Core\ViewHelper\AbstractViewHelper;
 use TYPO3Fluid\Fluid\Core\ViewHelper\Traits\CompileWithRenderStatic;
 
-class AuthorNameViewHelper extends AbstractViewHelper
-{
+class AuthorNameViewHelper extends AbstractViewHelper {
     use CompileWithRenderStatic;
 
     /**
@@ -24,8 +23,7 @@ class AuthorNameViewHelper extends AbstractViewHelper
      *
      * @return void
      */
-    public function initializeArguments()
-    {
+    public function initializeArguments() {
         $this->registerArgument('authorUid', 'integer', 'uid of the author', true);
     }
 
@@ -38,26 +36,21 @@ class AuthorNameViewHelper extends AbstractViewHelper
     }
 
     /**
-     * Returns the realName of selected author by uid if set,
-     * otherwise returns the username
+     * Returns the real name and e-mail of selected author by uid if set,
      *
      * @param int $authorUid
      * @return string
      */
-    protected static function getAuthorRealName(int $authorUid): string
-    {
+    protected static function getAuthorRealName(int $authorUid): string {
         $connection = GeneralUtility::makeInstance(ConnectionPool::class)->getConnectionForTable('be_users');
-        // $result = $connection->select(['username', 'realName'], 'be_users', ['uid' => ($authorUid)])->fetch();
-        $result = $connection->select(['realName'], 'be_users', ['uid' => ($authorUid)])->fetch();
+        $result = $connection->select(['realName', 'email'], 'be_users', ['uid' => ($authorUid)])->fetch();
         $name = $result['realName'];
-        
-        // if ($result['realName']) {
-        //     return $result['realName'];
-        // } else {
-        //     return $result['username'];
-        // }
-        
-        return $name ? $name : '';
+        $email = $result['email'];
+
+        if ($name && $email) {
+            return '<a href="mailto:' . $email . '">' . $name . '</a>';
+        } else {
+            return $name;
+        }
     }
-    
 }
