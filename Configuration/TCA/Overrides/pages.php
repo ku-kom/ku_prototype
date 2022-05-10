@@ -2,35 +2,32 @@
 
 defined('TYPO3_MODE') || die();
 
-// Add some fields to pages table to show TCA fields definitions
+// Add faculty fields to pages table to show TCA fields definitions
 $GLOBALS['TCA']['pages']['columns'] = array_replace_recursive(
     $GLOBALS['TCA']['pages']['columns'],
     [
-        'ku_faculties' => [
-            'exclude' => 0,
-            'label' => 'Vælg fakultet',
-            'description' => '',
+        'ku_faculty' => [
+            'exclude' => 1,
+            'label' => 'LLL:EXT:ku_prototype/Resources/Private/Language/locallang_tca.xlf:select_faculty',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'items' => [
-                    ['Vælg fakultet', '--div--'],
-                    ['KU', 1],
-                    ['Det Humanistiske Fakultet', 2],
-                    ['Det Sundhendvidenskabelige Fakultet', 3],
-                    ['Det Juridiske Fakultet', 4],
-                    ['Det Teologiske Fakultet', 5],
-                    ['Det Natur- og Biovidenkabelige Fakultet', 6],
-                    ['Det Samfundsvidenskabelige Fakultet', 7],
+                    ['LLL:EXT:ku_prototype/Resources/Private/Language/locallang_tca.xlf:select_faculty', '--div--'],
+                    ['LLL:EXT:ku_prototype/Resources/Private/Language/locallang_tca.xlf:select_faculty_ku', 'ku'],
+                    ['LLL:EXT:ku_prototype/Resources/Private/Language/locallang_tca.xlf:select_faculty_hum', 'hum'],
+                    ['LLL:EXT:ku_prototype/Resources/Private/Language/locallang_tca.xlf:select_faculty_sund', 'sund'],
+                    ['LLL:EXT:ku_prototype/Resources/Private/Language/locallang_tca.xlf:select_faculty_jura', 'jura'],
+                    ['LLL:EXT:ku_prototype/Resources/Private/Language/locallang_tca.xlf:select_faculty_teo', 'teo'],
+                    ['LLL:EXT:ku_prototype/Resources/Private/Language/locallang_tca.xlf:select_faculty_science', 'science'],
+                    ['LLL:EXT:ku_prototype/Resources/Private/Language/locallang_tca.xlf:select_faculty_samf', 'samf'],
                 ],
-                'size' => 1,
-                'maxitems' => 1,
             ],
         ],
     ]
 );
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('pages', 'ku_faculties', '1,3,4', 'before:doktype');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('pages', 'ku_faculty', '1,3,4', 'before:doktype');
 
 call_user_func(function () {
     /**

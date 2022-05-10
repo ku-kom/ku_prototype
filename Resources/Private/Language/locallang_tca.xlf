@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2022-05-10UTC08:09:160">
+        <header>
+            <authorName>Nanna Ellegaard</authorName>
+            <authorEmail>nel@adm.ku.dk</authorEmail>
+        </header>
+        <body>
+            <trans-unit id="select_faculty">
+                <source>Select faculty</source>
+            </trans-unit>
+            <trans-unit id="select_faculty_ku">
+                <source>KU Administration</source>
+            </trans-unit>
+            <trans-unit id="select_faculty_sund">
+                <source>Faculty of Health and Medical Sciences</source>
+            </trans-unit>
+            <trans-unit id="select_faculty_samf">
+                <source>Faculty of Social Sciences</source>
+            </trans-unit>
+            <trans-unit id="select_faculty_science">
+                <source>Faculty of Science</source>
+            </trans-unit>
+            <trans-unit id="select_faculty_jura">
+                <source>Faculty of Law</source>
+            </trans-unit>
+            <trans-unit id="select_faculty_teo">
+                <source>Faculty of Theology</source>
+            </trans-unit>
+            <trans-unit id="select_faculty_hum">
+                <source>Faculty of Humanities</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
