@@ -2,9 +2,9 @@
 
 defined('TYPO3_MODE') || die();
 
-// Add some fields to fe_users table to show TCA fields definitions
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns(
-    'pages',
+// Add some fields to pages table to show TCA fields definitions
+$GLOBALS['TCA']['pages']['columns'] = array_replace_recursive(
+    $GLOBALS['TCA']['pages']['columns'],
     [
         'ku_faculties' => [
             'exclude' => 0,
@@ -30,12 +30,7 @@ defined('TYPO3_MODE') || die();
     ]
 );
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette(
-    'pages',
-    'ku_faculties',
-    'access',
-    'before:editlock'
-);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('pages', 'ku_faculties', '1,3,4', 'before:doktype');
 
 call_user_func(function () {
     /**
