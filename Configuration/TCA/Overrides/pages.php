@@ -6,7 +6,7 @@ defined('TYPO3_MODE') || die();
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns(
     'pages',
     [
-        'ku_faculty' => [
+        'ku_faculties' => [
             'exclude' => 0,
             'label' => 'Vælg fakultet',
             'description' => '',
@@ -30,11 +30,11 @@ defined('TYPO3_MODE') || die();
     ]
 );
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette(
     'pages',
-    'ku_faculty',
-    '1,3,4',
-    'before:abstract'
+    'ku_faculties',
+    'access',
+    'before:editlock'
 );
 
 call_user_func(function () {

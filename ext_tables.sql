@@ -3,5 +3,5 @@
 #
 # Table for faculty definition:
 CREATE TABLE pages (
-    ku_faculty varchar(100) DEFAULT '' NOT NULL,
+    ku_faculties varchar(255) DEFAULT '' NOT NULL,
 );
