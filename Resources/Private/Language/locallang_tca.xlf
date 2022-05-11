@@ -9,6 +9,9 @@
             <trans-unit id="select_faculty">
                 <source>Select faculty</source>
             </trans-unit>
+            <trans-unit id="select_faculty_inherit">
+                <source>Inherit from parent</source>
+            </trans-unit>
             <trans-unit id="select_faculty_ku">
                 <source>KU Administration</source>
             </trans-unit>

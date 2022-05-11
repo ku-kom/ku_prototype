@@ -14,6 +14,7 @@ defined('TYPO3') or die();
                 'renderType' => 'selectSingle',
                 'items' => [
                     ['LLL:EXT:ku_prototype/Resources/Private/Language/locallang_tca.xlf:select_faculty', '--div--'],
+                    ['LLL:EXT:ku_prototype/Resources/Private/Language/locallang_tca.xlf:select_faculty',''],
                     ['LLL:EXT:ku_prototype/Resources/Private/Language/locallang_tca.xlf:select_faculty_ku', 'ku'],
                     ['LLL:EXT:ku_prototype/Resources/Private/Language/locallang_tca.xlf:select_faculty_hum', 'hum'],
                     ['LLL:EXT:ku_prototype/Resources/Private/Language/locallang_tca.xlf:select_faculty_sund', 'sund'],
