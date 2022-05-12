@@ -9,4 +9,4 @@
 defined('TYPO3') or die('Access denied.');
 
 // Make teaser field required
-$GLOBALS['TCA']['tx_news_domain_model_news']['columns']['teaser']['config']['eval']  = 'required';
+//$GLOBALS['TCA']['tx_news_domain_model_news']['columns']['teaser']['config']['eval']  = 'required';

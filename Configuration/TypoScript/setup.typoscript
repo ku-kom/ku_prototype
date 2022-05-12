@@ -170,6 +170,31 @@ page {
     }
 }
 
+# Consider using this for looping over sys categories
+# page {
+#     10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+#     10 {
+#             if.isTrue.field = categories
+#             table = sys_category
+#             selectFields = sys_category.*
+#             pidInList = 55
+#             recursive = 999
+#             where = parent = 0
+#             as = categories
+#             dataProcessing {
+#                 80 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+#                 80 {
+#                         table = sys_category
+#                         selectFields = sys_category.*
+#                         pidInList = 55
+#                         recursive = 999
+#                         where.dataWrap = parent = {field:uid}
+#                         as = subcategories
+#                 }
+#             }
+#     }
+# }
+
 ###############################
 #### NEWS SYSTEM EXTENSION ####
 ###############################
