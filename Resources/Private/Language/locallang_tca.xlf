@@ -7,13 +7,13 @@
         </header>
         <body>
             <trans-unit id="select_faculty">
-                <source>Select faculty</source>
+                <source>Unit</source>
             </trans-unit>
             <trans-unit id="select_faculty_inherit">
-                <source>Inherit from parent</source>
+                <source>Inherit</source>
             </trans-unit>
             <trans-unit id="select_faculty_ku">
-                <source>KU Administration</source>
+                <source>KU</source>
             </trans-unit>
             <trans-unit id="select_faculty_sund">
                 <source>Faculty of Health and Medical Sciences</source>
