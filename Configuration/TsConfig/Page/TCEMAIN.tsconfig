@@ -37,15 +37,6 @@ mod.web_layout.BackendLayouts.subnavigation_right >
 mod.web_layout.BackendLayouts.subnavigation_right_2_columns >
 mod.web_layout.BackendLayouts.example >
 
-// KU custom
-mod.web_layout.BackendLayouts.ku-multi-column >
-// page.options.backendLayout.exclude = pagets__ku-multi-column
-
-// Hide old KU layout:
-mod.web_layout.BackendLayouts.ku1col >
-mod.web_layout.BackendLayouts.ku2col >
-mod.web_layout.BackendLayouts.kunoleftmenu >
-
 # To exclude backend page layouts by user gropu, user, site or page, use this syntax in TSConfig:
 # page.options.backendLayout.exclude = pagets__global
 # where "global" is the page backend layout's key/identifier.

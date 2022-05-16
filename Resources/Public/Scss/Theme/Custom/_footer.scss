@@ -32,9 +32,11 @@
     ul {
 
         @include list-unstyled();
+        gap: 1rem;
 
         li {
             color: var(--frame-color);
+            width: auto;
 
             a {
                 color: inherit;
@@ -78,7 +80,7 @@
             padding: ($spacer * 1) ($spacer * 1.25);
         }
 
-        ul {
+        & > ul {
             margin: 0;
             transition: height .4s cubic-bezier(.02, .01, .47, 1);
             overflow: hidden;
@@ -89,7 +91,7 @@
             }
 
             li {
-                padding: 10px ($spacer * 1.25);
+                padding: 10px 1rem;
 
                 &+li {
                     border-top: 1px solid $gray-500;
