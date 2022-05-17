@@ -170,6 +170,22 @@ page {
     }
 }
 
+########################################################################
+#### INHERITS VALUE FROM PARENT PAGE IF UNSET ON PAGE               ####
+#### Use in fluid as:                                               ####
+#### {f:cObject(typoscriptObjectPath: 'lib.pageconfig.ku_faculty')} ####
+########################################################################
+lib.pageconfig {
+    ku_unit = TEXT
+    ku_unit {
+        value = default
+        override {
+           required = 1
+           data = levelfield : -1 , ku_faculty, slide  
+        }
+    }
+}
+
 ###############################
 #### NEWS SYSTEM EXTENSION ####
 ###############################

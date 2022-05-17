@@ -44,6 +44,11 @@ call_user_func(function () {
     );
 
 
-    // Make fields visible in the TCEforms:
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('pages', 'ku_faculty', '1,3,4', 'before:doktype');
+    // Make fields visible in the TCEforms in a new tab:
+    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
+        'pages', 
+        '--div--;KU,ku_faculty', 
+        '1',
+        ''
+    );
 });
