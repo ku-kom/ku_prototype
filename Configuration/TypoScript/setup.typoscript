@@ -170,11 +170,11 @@ page {
     }
 }
 
-########################################################################
-#### INHERITS VALUE FROM PARENT PAGE IF UNSET ON PAGE               ####
-#### Use in fluid as:                                               ####
-#### {f:cObject(typoscriptObjectPath: 'lib.pageconfig.ku_faculty')} ####
-########################################################################
+#####################################################################
+#### INHERITS VALUE FROM PARENT PAGE IF UNSET ON PAGE            ####
+#### Use in ts: lib.pageconfig.ku_unit or in fluid as:           ####
+#### {f:cObject(typoscriptObjectPath: 'lib.pageconfig.ku_unit')} ####
+#####################################################################
 lib.pageconfig {
     ku_unit = TEXT
     ku_unit {
@@ -183,6 +183,20 @@ lib.pageconfig {
            required = 1
            data = levelfield : -1 , ku_faculty, slide  
         }
+    }
+}
+
+###################################
+#### ADD KU UNIT CLASS TO BODY ####
+###################################
+lib.page.class = COA
+lib.page.class {
+    // KU unit as body class
+    60 = TEXT
+    60 =< lib.pageconfig.ku_unit
+    60 {
+        noTrimWrap = | unit-||
+        ifEmpty = default
     }
 }
 
