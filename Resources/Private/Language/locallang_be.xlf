@@ -9,6 +9,9 @@
             <trans-unit id="ku-page-settings">
                 <source>KU Page settings</source>
             </trans-unit>
+            <trans-unit id="backend_layout.empty">
+                <source>Empty</source>
+            </trans-unit>
             <trans-unit id="backend_layout.right">
                 <source>Right column</source>
             </trans-unit>

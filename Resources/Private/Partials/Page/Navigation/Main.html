@@ -44,14 +44,16 @@
         </f:if>
     </div>
 </header>
-<div class="container">
-    <div class="row row-sitename">
-        <div class="col offset-md-3">
-            <div class="sitename">
-                <f:link.page pageUid="{rootPage}" class="branding-name" tabindex="-1">{siteTitle}</f:link.page>
+<f:if condition="{settings.ku.siteName.enable} > 0">
+    <div class="container">
+        <div class="row row-sitename">
+            <div class="col offset-md-3">
+                <div class="sitename">
+                    <f:link.page pageUid="{rootPage}" class="branding-name" tabindex="-1">{siteTitle}</f:link.page>
+                </div>
             </div>
         </div>
     </div>
-</div>
+</f:if>
 
 </html>

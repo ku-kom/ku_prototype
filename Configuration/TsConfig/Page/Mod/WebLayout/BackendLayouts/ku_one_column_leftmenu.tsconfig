@@ -5,6 +5,7 @@ mod {
     web_layout {
         BackendLayouts {
             ku-one-column-leftmenu {
+                icon = EXT:ku_prototype/Resources/Public/Icons/BackendLayouts/ku-one-column-leftmenu.svg
                 title = LLL:EXT:ku_prototype/Resources/Private/Language/locallang_be.xlf:backend_layout.2col
                 config {
                     backend_layout {
@@ -37,7 +38,6 @@ mod {
                         }
                     }
                 }
-                icon = EXT:ku_prototype/Resources/Public/Icons/BackendLayouts/ku-one-column-leftmenu.svg
             }
         }
     }
