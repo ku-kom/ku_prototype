@@ -114,12 +114,16 @@ page {
     settings {
         ku {
             # customcategory=ku-page-settings=LLL:EXT:ku_prototype/Resources/Private/Language/locallang_be.xlf:ku-page-settings
-            #cat=ku-page-settings; type=string; label=Page id for global elements (footer, etc.).
-            global_elements {
+            #cat=ku-page-settings; type=string; label=Page id for footer.
+            footer {
                 id =
             }
             #cat=ku-page-settings; type=boolean; label=Display company logo. Set to '0' to remove.
             companyName {
+                enable = 1
+            }
+            #cat=ku-page-settings; type=boolean; label=Display site name (navnetræk). Set to '0' to remove.
+            siteName {
                 enable = 1
             }
             #cat=ku-page-settings; type=boolean; label=Display utility menu. Set to '0' to disable.
@@ -142,11 +146,11 @@ page {
             globalMenu {
                 relation =
             }
-            #cat=ku-page-settings; type=boolean; label=Display local menu. Set to '0' to disable.
+            #cat=ku-page-settings; type=boolean; label=Display local pagetree menu. Set to '0' to disable.
             localMenu {
                 enable = 1
             }
-            #cat=ku-page-settings; type=string; label=Folder id for local menu.
+            #cat=ku-page-settings; type=string; label=Folder id for local pagetree menu.
             localMenu {
                 id =
             }

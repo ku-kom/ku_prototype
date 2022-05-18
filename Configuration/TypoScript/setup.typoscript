@@ -43,13 +43,17 @@ page {
     10 {
         settings {
             ku {
-                # Used for global elements
-                global_elements {
-                    id = {$page.settings.ku.global_elements.id}
+                # Used for global footer elements
+                footer {
+                    id = {$page.settings.ku.footer.id}
                 }
                 # Enable/disable company logo
                 companyName {
                     enable = {$page.settings.ku.companyName.enable}
+                }
+                # Enable/disable site name (navnetræk)
+                siteName {
+                    enable = {$page.settings.ku.siteName.enable}
                 }
                 # Enable/disable utility menu
                 utilityMenu {
