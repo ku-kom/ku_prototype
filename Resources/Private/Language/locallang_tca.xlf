@@ -7,7 +7,7 @@
         </header>
         <body>
             <trans-unit id="select_faculty">
-                <source>Unit</source>
+                <source>KU unit</source>
             </trans-unit>
             <trans-unit id="select_faculty_inherit">
                 <source>Inherit</source>

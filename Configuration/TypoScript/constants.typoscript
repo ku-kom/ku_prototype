@@ -146,11 +146,11 @@ page {
             globalMenu {
                 relation =
             }
-            #cat=ku-page-settings; type=boolean; label=Display local pagetree menu. Set to '0' to disable.
+            #cat=ku-page-settings; type=boolean; label=Display local subsite pagetree menu. Set to '0' to disable.
             localMenu {
                 enable = 1
             }
-            #cat=ku-page-settings; type=string; label=Folder id for local pagetree menu.
+            #cat=ku-page-settings; type=string; label=Folder id for local subsite pagetree menu.
             localMenu {
                 id =
             }

@@ -10,7 +10,7 @@
                 <source>KU Page settings</source>
             </trans-unit>
             <trans-unit id="backend_layout.empty">
-                <source>Empty</source>
+                <source>KU empty</source>
             </trans-unit>
             <trans-unit id="backend_layout.right">
                 <source>Right column</source>
