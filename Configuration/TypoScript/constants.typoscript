@@ -18,11 +18,13 @@ page {
         linktitle = Københavns Universitet
     }
     theme {
+        copyright {
+            enable = 0
+        }
         navigation {
             # Global menu style settings
             style = default-transition
             type = top
-            meta.enable = 0
         }
 
         cookieconsent {
