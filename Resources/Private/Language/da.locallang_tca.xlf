@@ -15,7 +15,7 @@
                 <target>Nedarv</target>
             </trans-unit>
             <trans-unit id="select_faculty_unset" resname="select_faculty_unset">
-                <source>None</source>
+                <source>N/A</source>
                 <target>N/A</target>
             </trans-unit>
             <trans-unit id="select_faculty_ku" resname="select_faculty_ku">

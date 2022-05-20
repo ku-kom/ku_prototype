@@ -200,7 +200,7 @@ lib.page.class {
     60 =< lib.pageconfig.ku_unit
     60 {
         noTrimWrap = | unit-||
-        ifEmpty = default
+        ifEmpty = unset
     }
 }
 
