@@ -15,8 +15,8 @@
                 <target>Nedarv</target>
             </trans-unit>
             <trans-unit id="select_faculty_unset" resname="select_faculty_unset">
-                <source>N/A</source>
-                <target>N/A</target>
+                <source>Not set</source>
+                <target>Ikke angivet</target>
             </trans-unit>
             <trans-unit id="select_faculty_ku" resname="select_faculty_ku">
                 <source>Central Administration</source>
