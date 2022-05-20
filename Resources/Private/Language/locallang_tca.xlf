@@ -1,39 +1,39 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<xliff version="1.0">
-    <file source-language="en" datatype="plaintext" original="messages" date="2022-05-10UTC08:09:160">
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" date="2022-05-10UTC08:09:160" original="EXT:ku_prototype/Resources/Private/Language/locallang_tca.xlf" product-name="ku_prototype">
         <header>
             <authorName>Nanna Ellegaard</authorName>
             <authorEmail>nel@adm.ku.dk</authorEmail>
         </header>
         <body>
-            <trans-unit id="select_faculty">
+            <trans-unit id="select_faculty" resname="select_faculty">
                 <source>KU unit</source>
             </trans-unit>
-            <trans-unit id="select_faculty_inherit">
+            <trans-unit id="select_faculty_inherit" resname="select_faculty_inherit">
                 <source>Inherit</source>
             </trans-unit>
-            <trans-unit id="select_faculty_unset">
+            <trans-unit id="select_faculty_unset" resname="select_faculty_unset">
                 <source>None</source>
             </trans-unit>
-            <trans-unit id="select_faculty_ku">
+            <trans-unit id="select_faculty_ku" resname="select_faculty_ku">
                 <source>Central Administration</source>
             </trans-unit>
-            <trans-unit id="select_faculty_sund">
+            <trans-unit id="select_faculty_sund" resname="select_faculty_sund">
                 <source>Faculty of Health and Medical Sciences</source>
             </trans-unit>
-            <trans-unit id="select_faculty_samf">
+            <trans-unit id="select_faculty_samf" resname="select_faculty_samf">
                 <source>Faculty of Social Sciences</source>
             </trans-unit>
-            <trans-unit id="select_faculty_science">
+            <trans-unit id="select_faculty_science" resname="select_faculty_science">
                 <source>Faculty of Science</source>
             </trans-unit>
-            <trans-unit id="select_faculty_jura">
+            <trans-unit id="select_faculty_jura" resname="select_faculty_jura">
                 <source>Faculty of Law</source>
             </trans-unit>
-            <trans-unit id="select_faculty_teo">
+            <trans-unit id="select_faculty_teo" resname="select_faculty_teo">
                 <source>Faculty of Theology</source>
             </trans-unit>
-            <trans-unit id="select_faculty_hum">
+            <trans-unit id="select_faculty_hum" resname="select_faculty_hum">
                 <source>Faculty of Humanities</source>
             </trans-unit>
         </body>

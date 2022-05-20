@@ -1,66 +1,66 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<xliff version="1.0">
-    <file source-language="en" datatype="plaintext" original="messages" date="2021-10-29UTC08:09:160">
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="EXT:ku_prototype/Resources/Private/Language/locallang_be.xlf" date="2021-10-29UTC08:09:160" product-name="ku_prototype">
         <header>
             <authorName>Nanna Ellegaard</authorName>
             <authorEmail>nel@adm.ku.dk</authorEmail>
         </header>
         <body>
-            <trans-unit id="ku-page-settings">
+            <trans-unit id="ku-page-settings" resname="ku-page-settings">
                 <source>KU Page settings</source>
             </trans-unit>
-            <trans-unit id="backend_layout.empty">
+            <trans-unit id="backend_layout.empty" resname="backend_layout.empty">
                 <source>KU empty</source>
             </trans-unit>
-            <trans-unit id="backend_layout.right">
+            <trans-unit id="backend_layout.right" resname="backend_layout.right">
                 <source>Right column</source>
             </trans-unit>
-            <trans-unit id="backend_layout.center">
+            <trans-unit id="backend_layout.center" resname="backend_layout.center">
                 <source>Center column</source>
             </trans-unit>
-            <trans-unit id="backend_layout.left">
+            <trans-unit id="backend_layout.left" resname="backend_layout.left">
                 <source>Left column</source>
             </trans-unit>
-            <trans-unit id="backend_layout.2colmenu">
+            <trans-unit id="backend_layout.2colmenu" resname="backend_layout.2colmenu">
                 <source>KU left menu, content and right column</source>
             </trans-unit>
-            <trans-unit id="backend_layout.2colrightcol">
+            <trans-unit id="backend_layout.2colrightcol" resname="backend_layout.2colrightcol">
                 <source>KU ontent and right column</source>
             </trans-unit>
-            <trans-unit id="backend_layout.2col">
+            <trans-unit id="backend_layout.2col" resname="backend_layout.2col">
                 <source>KU left menu and center column</source>
             </trans-unit>
-            <trans-unit id="backend_layout.noleftmenu">
+            <trans-unit id="backend_layout.noleftmenu" resname="backend_layout.noleftmenu">
                 <source>KU full width, no left menu</source>
             </trans-unit>
-            <trans-unit id="backend_layout.multicolumn">
+            <trans-unit id="backend_layout.multicolumn" resname="backend_layout.multicolumn">
                 <source>KU full width with multiple columns, no left menu</source>
             </trans-unit>
-            <trans-unit id="backend_layout.column.menu">
+            <trans-unit id="backend_layout.column.menu" resname="backend_layout.column.menu">
                 <source>Global menu</source>
             </trans-unit>
-            <trans-unit id="backend_layout.column.utility">
+            <trans-unit id="backend_layout.column.utility" resname="backend_layout.column.utility">
                 <source>Global utility menu</source>
             </trans-unit>
-            <trans-unit id="backend_layout.column.local_footer_address">
+            <trans-unit id="backend_layout.column.local_footer_address" resname="backend_layout.column.local_footer_address">
                 <source>Local footer address</source>
             </trans-unit>
-            <trans-unit id="backend_layout.column.local_footer_contact">
+            <trans-unit id="backend_layout.column.local_footer_contact" d="backend_layout.column.local_footer_contact">
                 <source>Local footer contact</source>
             </trans-unit>
-            <trans-unit id="backend_layout.column.footer_col1">
+            <trans-unit id="backend_layout.column.footer_col1" resname="backend_layout.column.footer_col1">
                 <source>Global footer - column 1</source>
             </trans-unit>
-            <trans-unit id="backend_layout.column.footer_col2">
+            <trans-unit id="backend_layout.column.footer_col2" resname="backend_layout.column.footer_col2">
                 <source>Global footer - column 2</source>
             </trans-unit>
-            <trans-unit id="backend_layout.column.footer_col3">
+            <trans-unit id="backend_layout.column.footer_col3" resname="backend_layout.column.footer_col3">
                 <source>Global footer - column 3</source>
             </trans-unit>
-            <trans-unit id="backend_layout.column.footer_col4">
+            <trans-unit id="backend_layout.column.footer_col4" resname="backend_layout.column.footer_col4">
                 <source>Global footer - column 4</source>
             </trans-unit>
-            <trans-unit id="backend_layout.global">
+            <trans-unit id="backend_layout.global" resname="backend_layout.global">
                 <source>KU Global layout elements</source>
             </trans-unit>
         </body>

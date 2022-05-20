@@ -1,15 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<xliff version="1.0">
-    <file source-language="en" datatype="plaintext" original="messages" date="2021-11-17UTC14:41:230">
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="messages" date="2021-11-17UTC14:41:230" product-name="ku_prototype">
         <header>
             <authorName>Nanna Ellegaard</authorName>
             <authorEmail>nel@adm.ku.dk</authorEmail>
         </header>
         <body>
-        <trans-unit id="frontend.ku">
+        <trans-unit id="frontend.ku" resname="frontend.ku">
             <source>University of Copenhagen</source>
         </trans-unit>
-        <trans-unit id="right-column-aria">
+        <trans-unit id="right-column-aria" resname="right-column-aria">
             <source>Related content</source>
         </trans-unit>
         </body>

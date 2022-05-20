@@ -37,6 +37,7 @@ call_user_func(function () {
                         ['LLL:EXT:ku_prototype/Resources/Private/Language/locallang_tca.xlf:select_faculty_teo', 'teo'],
                         ['LLL:EXT:ku_prototype/Resources/Private/Language/locallang_tca.xlf:select_faculty_science', 'science'],
                         ['LLL:EXT:ku_prototype/Resources/Private/Language/locallang_tca.xlf:select_faculty_samf', 'samf'],
+                        ['LLL:EXT:ku_prototype/Resources/Private/Language/locallang_tca.xlf:select_faculty_unset', 'unset'],
                     ],
                 ],
             ],

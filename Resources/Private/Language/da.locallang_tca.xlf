@@ -1,40 +1,50 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<xliff version="1.0">
-    <file source-language="da" datatype="plaintext" original="messages" date="2022-05-18UTC08:09:160">
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" target-language="da" datatype="plaintext" original="EXT:ku_prototype/Resources/Private/Language/locallang_tca.xlf" date="2022-05-18UTC08:09:160" product-name="ku_prototype">
         <header>
             <authorName>Nanna Ellegaard</authorName>
             <authorEmail>nel@adm.ku.dk</authorEmail>
         </header>
         <body>
-            <trans-unit id="select_faculty">
-                <source>KU-enhed</source>
+            <trans-unit id="select_faculty" resname="select_faculty">
+                <source>KU unit</source>
+                <target>KU-enhed</target>
             </trans-unit>
-            <trans-unit id="select_faculty_inherit">
-                <source>Nedarv</source>
+            <trans-unit id="select_faculty_inherit" resname="select_faculty_inherit">
+                <source>Inherit</source>
+                <target>Nedarv</target>
             </trans-unit>
-            <trans-unit id="select_faculty_unset">
-                <source>N/A</source>
+            <trans-unit id="select_faculty_unset" resname="select_faculty_unset">
+                <source>None</source>
+                <target>N/A</target>
             </trans-unit>
-            <trans-unit id="select_faculty_ku">
-                <source>Fællesadministrationen</source>
+            <trans-unit id="select_faculty_ku" resname="select_faculty_ku">
+                <source>Central Administration</source>
+                <target>Fællesadministrationen</target>
             </trans-unit>
-            <trans-unit id="select_faculty_sund">
-                <source>Det Sundhedsvidenskabelige Fakultet</source>
+            <trans-unit id="select_faculty_sund" resname="select_faculty_sund">
+                <source>Faculty of Health and Medical Sciences</source>
+                <target>Det Sundhedsvidenskabelige Fakultet</target>
             </trans-unit>
-            <trans-unit id="select_faculty_samf">
-                <source>Det Samfundsvidenskabelige Fakultet</source>
+            <trans-unit id="select_faculty_samf" resname="select_faculty_samf">
+                <source>Faculty of Social Sciences</source>
+                <target>Det Samfundsvidenskabelige Fakultet</target>
             </trans-unit>
-            <trans-unit id="select_faculty_science">
-                <source>Det Natur- og Biovidenkabelige Fakultet</source>
+            <trans-unit id="select_faculty_science" resname="select_faculty_science">
+                <source>Faculty of Science</source>
+                <target>Det Natur- og Biovidenkabelige Fakultet</target>
             </trans-unit>
-            <trans-unit id="select_faculty_jura">
-                <source>Det Juridiske Fakultet</source>
+            <trans-unit id="select_faculty_jura" resname="select_faculty_jura">
+                <source>Faculty of Law</source>
+                <target>Det Juridiske Fakultet</target>
             </trans-unit>
-            <trans-unit id="select_faculty_teo">
-                <source>Det Teologiske Fakultet</source>
+            <trans-unit id="select_faculty_teo" resname="select_faculty_teo">
+                <source>Faculty of Theology</source>
+                <target>Det Teologiske Fakultet</target>
             </trans-unit>
-            <trans-unit id="select_faculty_hum">
-                <source>Det Humanistiske Fakultet</source>
+            <trans-unit id="select_faculty_hum" resname="select_faculty_hum">
+                <source>Faculty of Humanities</source>
+                <target>Det Humanistiske Fakultet</target>
             </trans-unit>
         </body>
     </file>
