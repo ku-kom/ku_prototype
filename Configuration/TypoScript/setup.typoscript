@@ -123,14 +123,14 @@ page {
     }
 }
 
-# Global menu based on pages in a folder
+# Global menu based on pages comma separated by id
 page {
     10 = FLUIDTEMPLATE
     10 {
         dataProcessing {
             70 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
             70 {
-                special = directory
+                special = list
                 special.value = {$page.settings.ku.globalMenu.id}
                 levels = 1
                 includeSpacer = 0
