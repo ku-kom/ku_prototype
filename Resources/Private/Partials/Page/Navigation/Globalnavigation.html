@@ -21,6 +21,15 @@
                         <span class="nav-link-text">{item.title}<f:if condition="{item.current}"> 
                             <span class="visually-hidden">(current)</span></f:if></span>
                     </a>
+                    <f:if condition="{item.children}">
+                            <f:then>
+                                <button type="button" class="menu_arrow" aria-controls="item-{item.data.uid}" {f:if(condition: item.children, then:' aria-haspopup="true"')} 	
+                                {f:if(condition: item.active, then:' aria-expanded="true"', else:' aria-expanded="false"')}>
+                                    <span class="visually-hidden">{f:translate(key: 'togglenavigation', extensionName:
+                                        'bootstrap_package')}</span>
+                                </button>
+                            </f:then>
+                        </f:if>
                 </li>
             </f:for>
         </ul>

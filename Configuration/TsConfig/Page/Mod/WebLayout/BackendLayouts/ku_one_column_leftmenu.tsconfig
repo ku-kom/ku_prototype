@@ -1,12 +1,12 @@
 #
-# BACKENDLAYOUT: KU Global elements - content and right column.
+# BACKENDLAYOUT: KU Global elements - left menu and one column.
 #
 mod {
     web_layout {
         BackendLayouts {
-            a_003_ku-two-column-rightcolumn {
-                icon = EXT:ku_prototype/Resources/Public/Icons/BackendLayouts/ku-two-column-rightcolumn.svg
-                title = LLL:EXT:ku_prototype/Resources/Private/Language/locallang_be.xlf:backend_layout.2colrightcol
+            ku-one-column-leftmenu {
+                icon = EXT:ku_prototype/Resources/Public/Icons/BackendLayouts/ku-one-column-leftmenu.svg
+                title = LLL:EXT:ku_prototype/Resources/Private/Language/locallang_be.xlf:backend_layout.2col
                 config {
                     backend_layout {
                         colCount = 12
@@ -17,12 +17,7 @@ mod {
                                     1 {
                                         name = LLL:EXT:ku_prototype/Resources/Private/Language/locallang_be.xlf:backend_layout.center
                                         colPos = 77
-                                        colspan = 8
-                                    }
-                                    2 {
-                                        name = LLL:EXT:ku_prototype/Resources/Private/Language/locallang_be.xlf:backend_layout.right
-                                        colPos = 78
-                                        colspan = 4
+                                        colspan = 12
                                     }
                                 }
                             }

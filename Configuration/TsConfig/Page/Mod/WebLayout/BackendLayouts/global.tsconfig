@@ -4,7 +4,7 @@
 mod {
     web_layout {
         BackendLayouts {
-            x_001_global {
+            global {
                 icon = EXT:ku_prototype/Resources/Public/Icons/BackendLayouts/ku.svg
                 title = LLL:EXT:ku_prototype/Resources/Private/Language/locallang_be.xlf:backend_layout.global
                 config {
