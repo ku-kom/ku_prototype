@@ -4,7 +4,7 @@
 mod {
     web_layout {
         BackendLayouts {
-            ku-two-column {
+            a_002_ku-two-column {
                 icon = EXT:ku_prototype/Resources/Public/Icons/BackendLayouts/ku-two-column.svg
                 title = LLL:EXT:ku_prototype/Resources/Private/Language/locallang_be.xlf:backend_layout.2colmenu
                 config {

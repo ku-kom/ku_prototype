@@ -4,7 +4,7 @@
 mod {
     web_layout {
         BackendLayouts {
-            empty {
+            a_012_empty {
                 icon = EXT:ku_prototype/Resources/Public/Icons/BackendLayouts/empty.svg
                 title = LLL:EXT:ku_prototype/Resources/Private/Language/locallang_be.xlf:backend_layout.empty
                 config {
@@ -18,6 +18,9 @@ mod {
                                         name = LLL:EXT:ku_prototype/Resources/Private/Language/locallang_be.xlf:backend_layout.center
                                         colPos = 1001
                                         colspan = 12
+                                        cType {
+                                            allowed = html
+                                        }
                                     }
                                 }
                             }
