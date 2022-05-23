@@ -117,6 +117,7 @@ page {
                 special = directory
                 special.value = {$page.settings.ku.utilityMenu.id}
                 levels = 1
+                expandAll = 1
                 includeSpacer = 0
                 titleField = nav_title // title
                 as = utilitymenu
@@ -135,6 +136,7 @@ page {
                 special = list
                 special.value = {$page.settings.ku.globalMenu.id}
                 levels = 2
+                expandAll = 1
                 includeSpacer = 0
                 titleField = nav_title // title
                 as = globalnavigation

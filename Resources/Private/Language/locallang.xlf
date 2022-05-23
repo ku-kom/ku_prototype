@@ -12,6 +12,9 @@
         <trans-unit id="right-column-aria" resname="right-column-aria">
             <source>Related content</source>
         </trans-unit>
+        <trans-unit id="mobile-menu-toggle" resname="mobile-menu-toggle">
+            <source>Open sub menu item</source>
+        </trans-unit>
         </body>
     </file>
 </xliff>

@@ -14,6 +14,10 @@
             <source>Related content</source>
             <target>Relateret indhold</target>
         </trans-unit>
+        <trans-unit id="mobile-menu-toggle" resname="mobile-menu-toggle">
+            <source>Open sub menu item</source>
+            <target>Åbn undermenu</target>
+        </trans-unit>
         </body>
     </file>
 </xliff>
