@@ -18,6 +18,9 @@
             <trans-unit id="select_faculty_ku" resname="select_faculty_ku">
                 <source>Central Administration</source>
             </trans-unit>
+            <trans-unit id="select_ku" resname="select_ku">
+                <source>KU</source>
+            </trans-unit>
             <trans-unit id="select_faculty_sund" resname="select_faculty_sund">
                 <source>Faculty of Health and Medical Sciences</source>
             </trans-unit>

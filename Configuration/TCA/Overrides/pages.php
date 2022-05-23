@@ -30,7 +30,7 @@ call_user_func(function () {
                     'items' => [
                         ['LLL:EXT:ku_prototype/Resources/Private/Language/locallang_tca.xlf:select_faculty', '--div--'],
                         ['LLL:EXT:ku_prototype/Resources/Private/Language/locallang_tca.xlf:select_faculty_inherit', ''],
-                        ['LLL:EXT:ku_prototype/Resources/Private/Language/locallang_tca.xlf:select_faculty_ku', 'ku'],
+                        ['LLL:EXT:ku_prototype/Resources/Private/Language/locallang_tca.xlf:select_ku', 'ku'],
                         ['LLL:EXT:ku_prototype/Resources/Private/Language/locallang_tca.xlf:select_faculty_hum', 'hum'],
                         ['LLL:EXT:ku_prototype/Resources/Private/Language/locallang_tca.xlf:select_faculty_sund', 'sund'],
                         ['LLL:EXT:ku_prototype/Resources/Private/Language/locallang_tca.xlf:select_faculty_jura', 'jura'],

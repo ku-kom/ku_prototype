@@ -22,6 +22,10 @@
                 <source>Central Administration</source>
                 <target>Fællesadministrationen</target>
             </trans-unit>
+            <trans-unit id="select_ku" resname="select_ku">
+                <source>KU</source>
+                <target>KU</target>
+            </trans-unit>
             <trans-unit id="select_faculty_sund" resname="select_faculty_sund">
                 <source>Faculty of Health and Medical Sciences</source>
                 <target>Det Sundhedsvidenskabelige Fakultet</target>
