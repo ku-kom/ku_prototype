@@ -91,7 +91,6 @@ page {
 ####################
 #### VARIABLES #####
 ####################
-
 page {
     10 = FLUIDTEMPLATE
     10 {
@@ -207,6 +206,12 @@ lib.page.class {
         ifEmpty = unset
     }
 }
+
+# page {
+#     10 = TEXT
+#     10.data = siteLanguage:footerColOne
+# }
+
 
 ###############################
 #### NEWS SYSTEM EXTENSION ####

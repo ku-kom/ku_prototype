@@ -18,8 +18,8 @@ mod {
                                         name = LLL:EXT:ku_prototype/Resources/Private/Language/locallang_be.xlf:backend_layout.center
                                         colPos = 1001
                                         colspan = 12
-                                        cType {
-                                            allowed = html
+                                        allowed {
+                                            CType = html
                                         }
                                     }
                                 }
