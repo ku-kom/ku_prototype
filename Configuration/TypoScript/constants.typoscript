@@ -116,10 +116,6 @@ page {
     settings {
         ku {
             # customcategory=ku-page-settings=LLL:EXT:ku_prototype/Resources/Private/Language/locallang_be.xlf:ku-page-settings
-            #cat=ku-page-settings; type=string; label=Page id for footer.
-            footer {
-                id =
-            }
             #cat=ku-page-settings; type=boolean; label=Display company logo. Set to '0' to remove.
             companyName {
                 enable = 1

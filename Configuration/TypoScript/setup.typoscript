@@ -46,10 +46,6 @@ page {
     10 {
         settings {
             ku {
-                # Used for global footer elements
-                footer {
-                    id = {$page.settings.ku.footer.id}
-                }
                 # Enable/disable company logo
                 companyName {
                     enable = {$page.settings.ku.companyName.enable}
