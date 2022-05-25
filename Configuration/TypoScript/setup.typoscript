@@ -14,6 +14,7 @@ config {
     compressJs = 0
     compressCss = 0
 }
+page = PAGE
 page {
     # Remove warning - see: https://github.com/FluidTYPO3/flux/issues/1733
     5 >
@@ -113,7 +114,6 @@ page {
 
 # Utility menu based on pages in a folder
 page {
-    10 = FLUIDTEMPLATE
     10 {
         dataProcessing {
             80 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
@@ -132,7 +132,6 @@ page {
 
 # Global menu based on pages comma separated by id
 page {
-    10 = FLUIDTEMPLATE
     10 {
         dataProcessing {
             70 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
