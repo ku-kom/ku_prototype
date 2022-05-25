@@ -8,6 +8,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const footerHeading = document.querySelectorAll('.footer-section-content .frame-header');
 
+  if (!footerHeading) {
+    /**
+   * Break if element is not found
+   */
+    return;
+  }
+
   const isMobile = () => {
     return window.matchMedia('(max-width: 767px)').matches;
   };

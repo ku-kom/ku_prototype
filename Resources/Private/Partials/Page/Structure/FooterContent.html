@@ -1,35 +1,27 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
-<f:variable name="footer-col-1"><f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{settings.ku.footer.id}', colPos: '140', slide: '-1'}" /></f:variable>
-<f:variable name="footer-col-2"><f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{settings.ku.footer.id}', colPos: '150', slide: '-1'}" /></f:variable>
-<f:variable name="footer-col-3"><f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{settings.ku.footer.id}', colPos: '160', slide: '-1'}" /></f:variable>
-<f:variable name="footer-col-4"><f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{settings.ku.footer.id}', colPos: '170', slide: '-1'}" /></f:variable>
 
 <f:if condition="{settings.ku.globalFooter.enable} > 0">
     <section class="section footer-section footer-section-content">
         <div class="container-md">
             <div class="section-row">
                 <div class="section-column footer-section-content-column">
-                    <f:if condition="{footer-col-1}">
-                        <f:format.raw>{footer-col-1}</f:format.raw>
+                    <f:if condition="{SiteFooterCol1}">
                         <f:format.raw>{SiteFooterCol1}</f:format.raw>
                     </f:if>
                 </div>
                 <div class="section-column footer-section-content-column">
-                    <f:if condition="{footer-col-2}">
-                        <f:format.raw>{footer-col-2}</f:format.raw>
+                    <f:if condition="{SiteFooterCol2}">
+                        <f:format.raw>{SiteFooterCol2}</f:format.raw>
                     </f:if>
                 </div>
                 <div class="section-column footer-section-content-column">
-                    <f:if condition="{footer-col-3}">
-                        <f:format.raw>{footer-col-3}</f:format.raw>
+                    <f:if condition="{SiteFooterCol3}">
+                        <f:format.raw>{SiteFooterCol3}</f:format.raw>
                     </f:if>
                 </div>
                 <div class="section-column footer-section-content-column">
-                    <f:if condition="{footer-col-4}">
-                        <f:format.raw>{footer-col-4}</f:format.raw>
-                    </f:if>
-                    <f:if condition="{theme.socialmedia.enable}">
-                        <f:render partial="Structure/SocialLinks" arguments="{_all}" />
+                    <f:if condition="{SiteFooterCol4}">
+                        <f:format.raw>{SiteFooterCol4}</f:format.raw>
                     </f:if>
                 </div>
             </div>

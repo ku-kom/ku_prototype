@@ -99,10 +99,33 @@ page {
             # Get current language uid:
             pageLanguage = TEXT
             pageLanguage.data = siteLanguage:languageId
-            # Site footer column:
+
+            # Site footer columns:
             SiteFooterCol1 = TEXT
             SiteFooterCol1 {
                 data = siteLanguage:footerColOne
+            }
+            SiteFooterCol2 = TEXT
+            SiteFooterCol2 {
+                data = siteLanguage:footerColTwo
+            }
+            SiteFooterCol3 = TEXT
+            SiteFooterCol3 {
+                data = siteLanguage:footerColThree
+            }
+            SiteFooterCol4 = TEXT
+            SiteFooterCol4 {
+                data = siteLanguage:footerColFour
+            }
+
+            # Local footer address and contact
+            SiteLocalFooterAddress = TEXT
+            SiteLocalFooterAddress {
+                data = siteLanguage:local_footer_address
+            }
+            SiteLocalFooterContact = TEXT
+            SiteLocalFooterContact {
+                data = siteLanguage:local_footer_contact
             }
         }
     }
