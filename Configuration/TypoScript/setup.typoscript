@@ -98,6 +98,11 @@ page {
             # Get current language uid:
             pageLanguage = TEXT
             pageLanguage.data = siteLanguage:languageId
+            # Site footer column:
+            SiteFooterCol1 = TEXT
+            SiteFooterCol1 {
+                data = siteLanguage:footerColOne
+            }
         }
     }
 }
@@ -188,7 +193,7 @@ lib.pageconfig {
         value = default
         override {
            required = 1
-           data = levelfield : -1 , ku_faculty, slide  
+           data = levelfield : -1, ku_faculty, slide  
         }
     }
 }
@@ -206,6 +211,15 @@ lib.page.class {
         ifEmpty = unset
     }
 }
+
+# page {
+#    10 = FLUIDTEMPLATE
+#    10 {
+#       settings {
+#          footerCol1 = siteLanguage:footerColOne
+#       }
+#    }
+# }
 
 # page {
 #     10 = TEXT

@@ -10,6 +10,7 @@ $GLOBALS['SiteConfiguration']['site_language']['columns']['footerColOne'] = [
     //'displayCond' => 'FIELD:languageId:>:0',
     'config' => [
         'type' => 'text',
+        'placeholder' => 'Html',
         'cols' => 50,
         'rows' => 15,
     ],
@@ -19,6 +20,7 @@ $GLOBALS['SiteConfiguration']['site_language']['columns']['footerColTwo'] = [
     'description' => '',
     'config' => [
         'type' => 'text',
+        'placeholder' => 'Html',
         'cols' => 50,
         'rows' => 15,
     ],
@@ -28,6 +30,7 @@ $GLOBALS['SiteConfiguration']['site_language']['columns']['footerColThree'] = [
     'description' => '',
     'config' => [
         'type' => 'text',
+        'placeholder' => 'Html',
         'cols' => 50,
         'rows' => 15,
     ],
@@ -37,6 +40,7 @@ $GLOBALS['SiteConfiguration']['site_language']['columns']['footerColFour'] = [
     'description' => '',
     'config' => [
         'type' => 'text',
+        'placeholder' => 'Html',
         'cols' => 50,
         'rows' => 15,
     ],
@@ -44,9 +48,9 @@ $GLOBALS['SiteConfiguration']['site_language']['columns']['footerColFour'] = [
 
 $GLOBALS['SiteConfiguration']['site_language']['types']['1']['showitem'] = str_replace(
     '--palette--;;default,',
-    '--palette--;default, footerColOne,
-    --palette--;default, footerColTwo,
-    --palette--;default, footerColThree,
-    --palette--;default, footerColFour,',
+    '--linebreak--, footerColOne,
+    --linebreak--, footerColTwo,
+    --linebreak--, footerColThree,
+    --linebreak--, footerColFour',
     $GLOBALS['SiteConfiguration']['site_language']['types']['1']['showitem']
 );
