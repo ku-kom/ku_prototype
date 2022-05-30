@@ -211,7 +211,7 @@ lib.pageconfig {
         value = default
         override {
            required = 1
-           data = levelfield : -1, ku_faculty, slide  
+           data = levelfield: -1, ku_faculty, slide  
         }
     }
 }

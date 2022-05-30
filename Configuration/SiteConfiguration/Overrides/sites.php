@@ -2,6 +2,8 @@
 
 defined('TYPO3_MODE') || die();
 
+// Docs: https://t3terminal.com/blog/typo3-site-configuration/
+
 // call_user_func(function () {
 // // Adding new field to the site configuration
 

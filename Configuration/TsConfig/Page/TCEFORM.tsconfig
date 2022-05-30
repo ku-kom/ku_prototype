@@ -16,12 +16,12 @@ TCEFORM {
          // Reactivate image positions deactivated by Bootstrap_package
          removeItems >
       }
-      frame_layout {
-         addItems {
-            well = Well
-            factbox = Faktabox
-         }
-      }
+      // frame_layout {
+      //    addItems {
+      //       well = Well
+      //       factbox = Faktabox
+      //    }
+      // }
       frame_class {
          addItems {
             hide-mobile = Hide in mobile
