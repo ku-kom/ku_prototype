@@ -1,12 +1,13 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
-
 <f:if condition="{languagenavigation}">
     <f:for each="{languagenavigation}" as="item">
         <f:if condition="{item.active} == 0">
             <f:then>
                 <li class="lang">
                     <a href="{item.link}" hreflang="{item.hreflang}" class="nav-link" {f:if(condition: item.data.subtitle, then: ' aria-label="{item.data.subtitle}"' )}>
-                        <span aria-hidden="true"><core:icon identifier="{item.flag}" size="small" /></span>
+                        <span aria-hidden="true">
+                            <core:icon identifier="{item.flag}" size="small" />
+                        </span>
                         <span>{item.navigationTitle}</span>
                     </a>
                 </li>

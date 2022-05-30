@@ -1,6 +1,0 @@
-# Settings for all users
-#[usergroup(100) == false && backend.user.isAdmin == false]
-
-#[backend.user.isAdmin]
-#page.options.backendLayout.exclude := addToList(...)
-#[GLOBAL]

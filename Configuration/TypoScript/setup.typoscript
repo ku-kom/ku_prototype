@@ -8,12 +8,7 @@
 ##############
 #### PAGE ####
 ##############
-config {
-    concatenateJs = 0
-    concatenateCss = 0
-    compressJs = 0
-    compressCss = 0
-}
+
 page = PAGE
 page {
     # Remove warning - see: https://github.com/FluidTYPO3/flux/issues/1733
@@ -25,10 +20,13 @@ page {
     }
     
     includeCSSLibs {
+        # Diasble libraries
+        googlewebfont >
         # bootstrappackageicon >
     }
 
     includeJSLibs {
+        # Disable libraries
         modernizr >
     }
 
@@ -100,28 +98,34 @@ page {
             SiteFooterCol1 = TEXT
             SiteFooterCol1 {
                 data = siteLanguage:footerColOne
+                slide = -1
             }
             SiteFooterCol2 = TEXT
             SiteFooterCol2 {
                 data = siteLanguage:footerColTwo
+                slide = -1
             }
             SiteFooterCol3 = TEXT
             SiteFooterCol3 {
                 data = siteLanguage:footerColThree
+                slide = -1
             }
             SiteFooterCol4 = TEXT
             SiteFooterCol4 {
                 data = siteLanguage:footerColFour
+                slide = -1
             }
 
             # Local footer address and contact
             SiteLocalFooterAddress = TEXT
             SiteLocalFooterAddress {
                 data = siteLanguage:local_footer_address
+                slide = -1
             }
             SiteLocalFooterContact = TEXT
             SiteLocalFooterContact {
                 data = siteLanguage:local_footer_contact
+                slide = -1
             }
         }
     }
