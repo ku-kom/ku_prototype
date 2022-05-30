@@ -94,7 +94,7 @@ page {
         variables {
             # Get current language uid:
             pageLanguage = TEXT
-            pageLanguage.data = siteLanguage:languageId
+            pageLanguage.data = siteLanguage:iso-639-1
 
             # Site footer columns:
             SiteFooterCol1 = TEXT
@@ -229,21 +229,6 @@ lib.page.class {
         ifEmpty = unset
     }
 }
-
-# page {
-#    10 = FLUIDTEMPLATE
-#    10 {
-#       settings {
-#          footerCol1 = siteLanguage:footerColOne
-#       }
-#    }
-# }
-
-# page {
-#     10 = TEXT
-#     10.data = siteLanguage:footerColOne
-# }
-
 
 ###############################
 #### NEWS SYSTEM EXTENSION ####

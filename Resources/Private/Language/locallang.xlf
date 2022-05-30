@@ -9,6 +9,9 @@
         <trans-unit id="frontend.ku" resname="frontend.ku">
             <source>University of Copenhagen</source>
         </trans-unit>
+        <trans-unit id="frontend.ku-short" resname="frontend.ku-short">
+            <source>KU</source>
+        </trans-unit>
         <trans-unit id="right-column-aria" resname="right-column-aria">
             <source>Related content</source>
         </trans-unit>

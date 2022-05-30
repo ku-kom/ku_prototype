@@ -42,6 +42,11 @@ mod.web_layout.BackendLayouts.example >
 # page.options.backendLayout.exclude = pagets__global
 # where "global" is the page backend layout's key/identifier.
 
+# [backend.user.isAdmin]
+# page.options.backendLayout.exclude := addToList(...)
+# [GLOBAL]
+
+
 # [usergroup(100) == false && backend.user.isAdmin == false]
 
   # mod.web_layout.BackendLayouts.default.config.backend_layout.rowCount = 1

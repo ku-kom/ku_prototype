@@ -10,6 +10,10 @@
             <source>University of Copenhagen</source>
             <target>Københavns Universitet</target>
         </trans-unit>
+        <trans-unit id="frontend.ku-short" resname="frontend.ku-short">
+            <source>KU</source>
+            <target>KU</target>
+        </trans-unit>
         <trans-unit id="right-column-aria" resname="right-column-aria">
             <source>Related content</source>
             <target>Relateret indhold</target>

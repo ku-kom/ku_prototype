@@ -22,6 +22,7 @@ call_user_func(function () {
         $GLOBALS['TCA']['pages']['columns'],
         [
             'ku_faculty' => [
+                'displayCond' => 'FIELD:is_siteroot:REQ:true', // Site root only
                 'exclude' => 1,
                 'label' => 'LLL:EXT:ku_prototype/Resources/Private/Language/locallang_tca.xlf:select_faculty',
                 'config' => [
@@ -48,8 +49,8 @@ call_user_func(function () {
     // Make fields visible in the TCEforms in a new tab:
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
         'pages', 
-        '--div--;KU,ku_faculty', 
-        '1',
+        '--div--;LLL:EXT:ku_prototype/Resources/Private/Language/locallang.xlf:frontend.ku-short,ku_faculty', 
+        '',
         ''
     );
 });

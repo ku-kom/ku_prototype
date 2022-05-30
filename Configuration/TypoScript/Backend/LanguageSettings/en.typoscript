@@ -1,0 +1,15 @@
+# Set English as default language.
+
+
+
+# [globalVar = GP:L = 0]
+# config {  
+#   sys_language_uid = 0
+#   language = en
+#   sys_language_isocode = en
+#   locale_all = en_GB.UTF-8
+#   htmlTag_langKey = en
+#   sys_language_mode = content_fallback
+#   htmlTag_setParams = lang="en" dir="ltr" class="no-js"
+# }
+# [global]
