@@ -35,6 +35,12 @@ page {
             enable = 0
         }
 
+        subnavigation {
+            icon {
+                enable = 0
+            }
+        }
+
         breadcrumb {
             enableLevel = 1
         }
