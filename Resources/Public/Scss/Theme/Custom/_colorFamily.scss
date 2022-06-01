@@ -2,7 +2,7 @@
 // KU color families
 //
 
-.box {
+.frame-background-box {
     &-red1 {
         @include color-family($gridbox-text-light, $red1, darken($red1, 5%));
     }

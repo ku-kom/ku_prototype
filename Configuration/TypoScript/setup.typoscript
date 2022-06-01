@@ -139,7 +139,6 @@ page {
 #         cObject.override {
 #         required = 1
 #             data = levelmedia: -1, slide
-#             listNum = 0
 #         }
 #     }
 # }

@@ -24,9 +24,8 @@ TCEFORM {
       // }
       frame_class {
          addItems {
-            hide-mobile = Hide in mobile
-            hide-desktop = Hide in desktop
-            sticky-bottom-right = Sticky bottom right
+            ku-default-padding = KU: Add default padding
+            sticky-bottom-right = KU: Sticky bottom right
          }
       }
       background_color_class {
