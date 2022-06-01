@@ -10,7 +10,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3 ku-leftmenu">
-                    <f:render partial="Navigation/Subnavigation" arguments="{_all}" />
+                    <f:comment><f:render partial="Navigation/Subnavigation" arguments="{_all}" /></f:comment>
+                    <f:cObject typoscriptObjectPath="menu.leftmenu" />
                 </div>
                 <main class="col-md-9 main-content">
                     <f:render partial="Navigation/Breadcrumb" arguments="{_all}" />
