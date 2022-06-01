@@ -131,6 +131,19 @@ page {
     }
 }
 
+# lib.footerContent = COA
+# lib.footerContent {
+#     10 {
+#         cObject = TEXT
+#         cObject.value = dummy.gif
+#         cObject.override {
+#         required = 1
+#             data = levelmedia: -1, slide
+#             listNum = 0
+#         }
+#     }
+# }
+
 ####################
 #### NAVIGATION ####
 ####################
@@ -195,7 +208,6 @@ page {
         dataProcessing {
             90 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
             90 {
-                entryLevel = 0
                 levels = 4
                 expandAll = 0
                 includeSpacer = 0
@@ -205,6 +217,10 @@ page {
         }
     }
 }
+
+
+ # value.data = site.rootPageId
+
 
 # Disable default global Bootstrap menu - if needed:
 # page.10.dataProcessing.10 >

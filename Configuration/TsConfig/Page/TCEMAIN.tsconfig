@@ -3,10 +3,10 @@
 #
 TCEMAIN {
     preview {
-    // Add View button to news record
+    // Add View button to news extension record
         tx_news_domain_model_news {
             // previewPageId is a custom view page
-            previewPageId = 468
+            previewPageId = 468, 334, 366
             useDefaultLanguageRecord = 0
             fieldToParameterMap {
                 uid = tx_news_pi1[news_preview]
