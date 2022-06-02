@@ -72,8 +72,9 @@
         </f:if>
     </f:if>
 </f:section>
+
 <f:section name="headline">
-    <h1 class="pb-3 border-bottom" itemprop="headline">{newsItem.title}</h1>
+    <h1 class="pb-3 border-bottom" itemprop="headline" data-record="{newsItem.uid}">{newsItem.title}</h1>
     <f:render partial="General/AdditionalInformation" arguments="{settings:settings,newsItem:newsItem}" />
 </f:section>
 <f:section name="inner-content">
@@ -84,7 +85,6 @@
                 <f:format.html>{newsItem.teaser}</f:format.html>
             </div>
         </f:if>
-        
         <!-- Tags (KU) -->
         <f:if condition="{newsItem.tags}">
             <h3>KU tags</h3>
