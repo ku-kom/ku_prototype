@@ -220,19 +220,17 @@ menu.leftmenu {
     CUR < .NO
     CUR = 1
     CUR {
-    # disable link to current page
-      #doNotLinkIt = 1
-      #allWrap = <span class="subnav-link-text current">|</span>
+      wrapItemAndSub = <li class="subnav-item active">|</li>
+      ATagParams = class="subnav-link current" id="subnav-item-{field:uid}" aria-current="page"
       ATagParams.insertData = 1
-      ATagParams = class="subnav-link" id="subnav-item-{field:uid}" aria-current="page"
     }
     # if current page has sub-pages
     CURIFSUB = 1
     CURIFSUB {
-      wrapItemAndSub = <li class="subnav-item current-withsub">|</li>
+      wrapItemAndSub = <li class="subnav-item active has-child">|</li>
       wrapItemAndSub.insertData = 1
-      doNotLinkIt = 1
-      allWrap = <span class="subnav-link-text current">|</span>
+      ATagParams = class="subnav-link active" id="subnav-item-{field:uid}" aria-current="page"
+      ATagParams.insertData = 1
     }
     ACT = 1
     ACT {
@@ -264,10 +262,6 @@ menu.leftmenu {
 
 # Top menu (overriding bootstrap_package settings)
 page.10.dataProcessing.10.levels = 5
-
-# Left menu (overriding bootstrap_package settings)
-# page.10.dataProcessing.20.entryLevel = 0
-# page.10.dataProcessing.20.levels = 5
 
 # Bread crumb start level and depth:
 # Start level: 1 = The page one level below the root page.

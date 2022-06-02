@@ -53,14 +53,9 @@ TCEFORM {
    }
 }
 
-# Added template to News System extension (10.4):
+# Added template to News System extension
 TCEFORM.tx_news.templateLayouts {
     1 = KU tiles layout
-}
-# Added template to News System extension (11.5):
-TCEFORM.tt_content.pi_flexform.news_pi1.template.settings\.templateLayout {
-    addItems = 1
-    addItems.1 = KU tiles layout
 }
 
 # Add characters counter below any input field
