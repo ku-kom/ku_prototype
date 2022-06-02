@@ -6,7 +6,7 @@
 		Partials/List/Item.html
 -->
 <n:excludeDisplayedNews newsItem="{newsItem}" />
-<li class="list-group-item">
+<li class="list-group-item" data-record="{newsItem.uid}">
 	<div class="row news-list-item mb-3">
 	<div class="{f:if(condition:'{settings.templateLayout} == 1',then:'col-md-12',else:'col-md-3')}">
 		<n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}">

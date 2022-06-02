@@ -131,18 +131,6 @@ page {
     }
 }
 
-# lib.footerContent = COA
-# lib.footerContent {
-#     10 {
-#         cObject = TEXT
-#         cObject.value = dummy.gif
-#         cObject.override {
-#         required = 1
-#             data = levelmedia: -1, slide
-#         }
-#     }
-# }
-
 ####################
 #### NAVIGATION ####
 ####################
@@ -298,6 +286,19 @@ lib.page.class {
         ifEmpty = unset
     }
 }
+
+# Display hardcoded html, if no override html from site root:
+# Fluid: <f:cObject typoscriptObjectPath="lib.footerContent.colOne" />
+lib.footerContent = COA
+lib.footerContent {
+    colOne {
+        value = <div>Footer html</div>
+        override {
+            required = 1
+            data = siteLanguage:footerColOne
+        }
+    }
+  }
 
 ###############################
 #### NEWS SYSTEM EXTENSION ####

@@ -31,7 +31,7 @@ $GLOBALS['SiteConfiguration']['site_language']['columns']['footerColOne'] = [
     'description' => '',
     'config' => [
         'type' => 'text',
-        'placeholder' => 'Html',
+        'placeholder' => 'Add html',
         'cols' => 60,
         'rows' => 15,
     ],
@@ -41,7 +41,7 @@ $GLOBALS['SiteConfiguration']['site_language']['columns']['footerColTwo'] = [
     'description' => '',
     'config' => [
         'type' => 'text',
-        'placeholder' => 'Html',
+        'placeholder' => 'Add html',
         'cols' => 60,
         'rows' => 15,
     ],
@@ -51,7 +51,7 @@ $GLOBALS['SiteConfiguration']['site_language']['columns']['footerColThree'] = [
     'description' => '',
     'config' => [
         'type' => 'text',
-        'placeholder' => 'Html',
+        'placeholder' => 'Add html',
         'cols' => 60,
         'rows' => 15,
     ],
@@ -61,7 +61,7 @@ $GLOBALS['SiteConfiguration']['site_language']['columns']['footerColFour'] = [
     'description' => '',
     'config' => [
         'type' => 'text',
-        'placeholder' => 'Html',
+        'placeholder' => 'Add html',
         'cols' => 60,
         'rows' => 15,
     ],
