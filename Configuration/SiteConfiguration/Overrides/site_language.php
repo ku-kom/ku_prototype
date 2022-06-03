@@ -67,8 +67,8 @@ $GLOBALS['SiteConfiguration']['site_language']['columns']['footerColFour'] = [
     ],
 ];
 
-$GLOBALS['SiteConfiguration']['site_language']['types']['0']['showitem'] = str_replace(
-    '--palette--;;default,',
-    '--palette--;;default,local_footer_address,local_footer_contact,footerColOne,footerColTwo,footerColThree,footerColFour,',
+$GLOBALS['SiteConfiguration']['site_language']['types']['1']['showitem'] = str_replace(
+    'default,',
+    'default, local_footer_address, local_footer_contact, footerColOne, footerColTwo, footerColThree, footerColFour,',
     $GLOBALS['SiteConfiguration']['site_language']['types']['1']['showitem']
 );

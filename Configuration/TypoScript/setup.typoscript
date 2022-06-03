@@ -134,9 +134,6 @@ page {
     }
 }
 
-
-
-
 #####################################################################
 #### INHERITS VALUE FROM PARENT PAGE IF UNSET ON PAGE            ####
 #### Use in ts: lib.pageconfig.ku_unit or in fluid as:           ####

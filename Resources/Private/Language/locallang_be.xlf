@@ -63,6 +63,9 @@
             <trans-unit id="backend_layout.global" resname="backend_layout.global">
                 <source>KU Global layout elements</source>
             </trans-unit>
+            <trans-unit id="container-grid" resname="container-grid">
+                <source>Grid</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>

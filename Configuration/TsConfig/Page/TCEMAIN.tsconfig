@@ -53,3 +53,15 @@ mod.web_layout.BackendLayouts.example >
   # mod.web_layout.BackendLayouts.global >
 
 # [end]
+
+# Override label of "Container" tab inside content element wizard
+# Also check tt_content.php
+mod.wizards {
+    newContentElement {
+        wizardItems {
+            container {
+                header = LLL:EXT:ku_prototype/Resources/Private/Language/locallang_be.xlf:container-grid
+            }
+        }
+    }
+}

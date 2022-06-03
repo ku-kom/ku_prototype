@@ -56,7 +56,7 @@ lib.footerContent {
         )
         override {
             required = 1
-            data = siteLanguage:footerColcolTwo
+            data = siteLanguage:footerColTwo
         }
     }
     # English global footer column three
@@ -86,7 +86,7 @@ lib.footerContent {
         )
         override {
             required = 1
-            data = siteLanguage:footerColcolThree
+            data = siteLanguage:footerColThree
         }
     }
     # English global footer column Four
@@ -115,7 +115,7 @@ lib.footerContent {
         )
         override {
             required = 1
-            data = siteLanguage:footerColcolThree
+            data = siteLanguage:footerColFour
         }
     }
 }
