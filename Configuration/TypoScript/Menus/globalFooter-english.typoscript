@@ -1,0 +1,118 @@
+#############################################################
+#### GLOBAL MENU RENDERING -- ENGLISH                    ####
+#### Manual inclusion to keep control over loading order ####
+#############################################################
+
+# Display hardcoded html, if no override html from site root:
+# Fluid: <f:cObject typoscriptObjectPath="lib.footerContent.colOne" />
+lib.footerContent {
+    # English global footer column one
+    EN_colOne = TEXT
+    EN_colOne {
+        value (
+            <header class="frame-header">
+                <h2 class="element-header">University of Copenhagen</h2>
+            </header>
+            <ul class="footerlinks">
+                <li><a aria-label="UCPH Management" href="https://about.ku.dk/management/">Management</a></li>
+                <li><a aria-label="UCPH Administration" href="https://about.ku.dk/organisation/administration/">Administration</a></li>
+                <li><a aria-label="UCPH Faculties" href="https://about.ku.dk/organisation/faculties/">Faculties</a></li>
+                <li><a aria-label="UCPH Departments" href="https://about.ku.dk/organisation/departments/">Departments</a></li>
+                <li><a aria-label="UCPH Research Centres" href="https://research.ku.dk/areas/centres/">Research centres</a></li>
+                <li><a aria-label="UCPH animal hospitals" href="https://vetschool.ku.dk/english/about/animal-hospitals/">Animal hospitals</a></li>
+                <li><a aria-label="UCPH School of Dentistry" href="https://odontology.ku.dk/patient-info/">School of Dentistry</a></li>
+                <li><a aria-label="UCPH' libraries" href="https://kub.ku.dk/english/">Libraries</a></li>
+                <li><a aria-label="UCPH museums" href="https://about.ku.dk/visit/museums/">Museums</a></li>
+            </ul>
+        )
+        override {
+            required = 1
+            data = siteLanguage:footerColOne
+        }
+    }
+    # English global footer column two
+    EN_colTwo = TEXT
+    EN_colTwo {
+        value (
+            <header class="frame-header">
+                <h2 class="element-header">Contact</h2>
+            </header>
+            <ul class="footerlinks">
+                <li><a aria-label="University map" href="https://findvej.ku.dk/english/">Map</a></li>
+                <li><a aria-label="Find an employee at UCPH" href="https://about.ku.dk/contact/phone-book/">Find an employee</a></li>
+                <li><a aria-label="Contact UCPH" href="https://about.ku.dk/contact/">Contact UCPH</a></li>
+            </ul>
+            <header class="frame-header">
+                <h2 class="element-header">Services</h2>
+            </header>
+            <ul class="footerlinks">
+                <li><a aria-label="UCPH press and media service" href="https://news.ku.dk/press-service/">Press and media service</a></li>
+                <li><a aria-label="UCPH merchandise" href="http://www.ku-shop.dk/en/">Merchandise</a></li>
+                <li><a href="https://about.ku.dk/apps/">UCPH apps</a></li>
+                <li><a aria-label="UCPH IT-support" href="https://about.ku.dk/organisation/administration/it/">IT-support</a></li>
+                <li><a href="https://about.ku.dk/contact/for-suppliers/">For suppliers</a></li>
+            </ul>
+        )
+        override {
+            required = 1
+            data = siteLanguage:footerColcolTwo
+        }
+    }
+    # English global footer column three
+    EN_colThree = TEXT
+    EN_colThree {
+        value (
+            <header class="frame-header">
+                <h2 class="element-header">For students and employees</h2>
+            </header>
+            <ul class="footerlinks">
+                <li><a aria-label="KUnet - intranet for students and employees" class="padlock" href="https://kunet.ku.dk/en">KUnet</a><span aria-hidden="true" class="icon icon-padlock"></span></li>
+            </ul>
+            <header class="frame-header">
+                <h2 class="element-header">Job and career</h2>
+            </header>
+            <ul class="footerlinks">
+                <li><a aria-label="UCPH job portal" href="https://employment.ku.dk">Job portal</a></li>
+                <li><a aria-label="UCPH alumni" href="https://alumni.ku.dk/english/">Alumni</a></li>
+            </ul>
+            <header class="frame-header">
+                <h2 class="element-header">Emergencies</h2>
+            </header>
+            <ul class="footerlinks">
+                <li><a aria-label="UCPH Emergency response" href="https://akut.ku.dk/english/" >Emergency response</a></li>
+            </ul>
+        )
+        override {
+            required = 1
+            data = siteLanguage:footerColcolThree
+        }
+    }
+    # English global footer column Four
+    EN_colFour = TEXT
+    EN_colFour {
+        value (
+            <header class="frame-header">
+                <h2 class="element-header">Web</h2>
+            </header>
+            <ul class="footerlinks">
+                <li><a aria-label="UCPH Cookies and privacy policy" href="https://about.ku.dk/cookies-and-privacy-policy/">Cookies and privacy policy</a></li>
+                <li><a aria-label="UCPH Accessibility statement" href="https://www.ku.dk/was">Accessibility statement</a></li>
+                <li><a aria-label="UCPH information security" href="https://informationssikkerhed.ku.dk/english/">Information security</a></li>
+            </ul>
+            <header class="frame-header">
+                <h2 class="element-header">Connect with UCPH</h2>
+            </header>
+            <ul class="sociallinks-list">
+                <li class="sociallinks-item"><a class="sociallinks-link sociallinks-link-facebook" href="https://www.facebook.com/universitet" rel="noopener" target="_blank"><span aria-hidden="true" class="sociallinks-link-icon bi-facebook"></span><span class="visually-hidden">Facebook</span></a></li>
+                <li class="sociallinks-item"><a class="sociallinks-link sociallinks-link-twitter" href="https://twitter.com/uni_copenhagen" rel="noopener" target="_blank"><span aria-hidden="true" class="sociallinks-link-icon bi-twitter"></span><span class="visually-hidden">Twitter</span></a></li>
+                <li class="sociallinks-item"><a class="sociallinks-link sociallinks-link-instagram" href="https://www.instagram.com/university_of_copenhagen/" rel="noopener" target="_blank"><span aria-hidden="true" class="sociallinks-link-icon bi-instagram"></span><span class="visually-hidden">Instagram</span></a></li>
+                <li class="sociallinks-item"><a class="sociallinks-link sociallinks-link-linkedin" href="https://www.linkedin.com/school/university-of-copenhagen/" rel="noopener" target="_blank"><span aria-hidden="true" class="sociallinks-link-icon bi-linkedin"></span><span class="visually-hidden">LinkedIn</span></a></li>
+                <li class="sociallinks-item"><a class="sociallinks-link sociallinks-link-youtube" href="https://www.youtube.com/user/CopenhagenUniversity/" rel="noopener" target="_blank"><span aria-hidden="true" class="sociallinks-link-icon bi-youtube"></span><span class="visually-hidden">Youtube</span></a></li>
+            </ul>
+        )
+        override {
+            required = 1
+            data = siteLanguage:footerColcolThree
+        }
+    }
+}

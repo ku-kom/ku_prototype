@@ -1,31 +1,50 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
+<f:variable name="footerLang">{footerLang}{f:if(condition: '{pageLanguage} == da', else:'EN_', then:'DA_')}</f:variable>
+
 <f:if condition="{settings.ku.globalFooter.enable} > 0">
     <section class="section footer-section footer-section-content">
         <div class="container-md">
             <div class="section-row">
                 <div class="section-column footer-section-content-column">
-                    <f:if condition="{SiteFooterCol1}">
-                        <f:format.raw>{SiteFooterCol1}</f:format.raw>
-                    </f:if>
+                    <f:cObject typoscriptObjectPath="lib.footerContent.{footerLang}colOne" />
+                    
+                    <f:comment>
+                        <f:if condition="{SiteFooterCol1}">
+                            <f:format.raw>{SiteFooterCol1}</f:format.raw>
+                        </f:if>
+                    </f:comment>
                 </div>
                 <div class="section-column footer-section-content-column">
-                    <f:if condition="{SiteFooterCol2}">
-                        <f:format.raw>{SiteFooterCol2}</f:format.raw>
-                    </f:if>
+                    <f:cObject typoscriptObjectPath="lib.footerContent.{footerLang}colTwo" />
+
+                    <f:comment>
+                        <f:if condition="{SiteFooterCol2}">
+                            <f:format.raw>{SiteFooterCol2}</f:format.raw>
+                        </f:if>
+                    </f:comment>
                 </div>
                 <div class="section-column footer-section-content-column">
-                    <f:if condition="{SiteFooterCol3}">
-                        <f:format.raw>{SiteFooterCol3}</f:format.raw>
-                    </f:if>
+                    <f:cObject typoscriptObjectPath="lib.footerContent.{footerLang}colThree" />
+
+                    <f:comment>
+                        <f:if condition="{SiteFooterCol3}">
+                            <f:format.raw>{SiteFooterCol3}</f:format.raw>
+                        </f:if>
+                    </f:comment>
                 </div>
                 <div class="section-column footer-section-content-column">
-                    <f:if condition="{SiteFooterCol4}">
-                        <f:format.raw>{SiteFooterCol4}</f:format.raw>
-                    </f:if>
+                    <f:cObject typoscriptObjectPath="lib.footerContent.{footerLang}colFour" />
+                    
+                    <f:comment>
+                        <f:if condition="{SiteFooterCol4}">
+                            <f:format.raw>{SiteFooterCol4}</f:format.raw>
+                        </f:if>
+                    </f:comment>
                 </div>
             </div>
         </div>
     </section>
 </f:if>
+
 </html>

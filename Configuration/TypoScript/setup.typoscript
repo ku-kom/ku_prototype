@@ -1,8 +1,11 @@
 ######################
 #### DEPENDENCIES ####
 ######################
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/setup.typoscript">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:ku_prototype/Configuration/TypoScript/ContentElement/setup.typoscript">
+@import 'EXT:bootstrap_package/Configuration/TypoScript/setup.typoscript'
+@import 'EXT:ku_prototype/Configuration/TypoScript/ContentElement/setup.typoscript'
+@import 'EXT:ku_prototype/Configuration/TypoScript/Menus/globalFooter-danish.typoscript'
+@import 'EXT:ku_prototype/Configuration/TypoScript/Menus/globalFooter-english.typoscript'
+@import 'EXT:ku_prototype/Configuration/TypoScript/Extensions/news.typoscript'
 
 
 ##############
@@ -73,7 +76,7 @@ page {
                 # Enable/disable global footer
                 globalFooter {    
                     enable = {$page.settings.ku.globalFooter.enable}
-                }   
+                }
             }
             
         }
@@ -131,6 +134,39 @@ page {
     }
 }
 
+
+
+
+#####################################################################
+#### INHERITS VALUE FROM PARENT PAGE IF UNSET ON PAGE            ####
+#### Use in ts: lib.pageconfig.ku_unit or in fluid as:           ####
+#### {f:cObject(typoscriptObjectPath: 'lib.pageconfig.ku_unit')} ####
+#####################################################################
+lib.pageconfig {
+    ku_unit = TEXT
+    ku_unit {
+        value = default
+        override {
+           required = 1
+           data = levelfield: -1, ku_faculty, slide  
+        }
+    }
+}
+
+###################################
+#### ADD KU UNIT CLASS TO BODY ####
+###################################
+lib.page.class = COA
+lib.page.class {
+    // KU unit as body class
+    60 = TEXT
+    60 =< lib.pageconfig.ku_unit
+    60 {
+        noTrimWrap = | unit-||
+        ifEmpty = unset
+    }
+}
+
 ####################
 #### NAVIGATION ####
 ####################
@@ -166,6 +202,22 @@ page {
                 includeSpacer = 0
                 titleField = nav_title // title
                 as = globalnavigation
+            }
+        }
+    }
+}
+
+# Left menu
+page {
+    10 {
+        dataProcessing {
+            90 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+            90 {
+                levels = 4
+                expandAll = 0
+                includeSpacer = 0
+                titleField = nav_title // title
+                as = subnavigation
             }
         }
     }
@@ -255,65 +307,3 @@ page.10.dataProcessing.10.levels = 5
 # Start level: 1 = The page one level below the root page.
 # End level: -1 = The current page.
 page.10.dataProcessing.30.special.range = 1|-1
-
-
-#####################################################################
-#### INHERITS VALUE FROM PARENT PAGE IF UNSET ON PAGE            ####
-#### Use in ts: lib.pageconfig.ku_unit or in fluid as:           ####
-#### {f:cObject(typoscriptObjectPath: 'lib.pageconfig.ku_unit')} ####
-#####################################################################
-lib.pageconfig {
-    ku_unit = TEXT
-    ku_unit {
-        value = default
-        override {
-           required = 1
-           data = levelfield: -1, ku_faculty, slide  
-        }
-    }
-}
-
-###################################
-#### ADD KU UNIT CLASS TO BODY ####
-###################################
-lib.page.class = COA
-lib.page.class {
-    // KU unit as body class
-    60 = TEXT
-    60 =< lib.pageconfig.ku_unit
-    60 {
-        noTrimWrap = | unit-||
-        ifEmpty = unset
-    }
-}
-
-# Display hardcoded html, if no override html from site root:
-# Fluid: <f:cObject typoscriptObjectPath="lib.footerContent.colOne" />
-lib.footerContent = COA
-lib.footerContent {
-    colOne {
-        value = <div>Footer html</div>
-        override {
-            required = 1
-            data = siteLanguage:footerColOne
-        }
-    }
-  }
-
-###############################
-#### NEWS SYSTEM EXTENSION ####
-###############################
-plugin.tx_news {
-    _LOCAL_LANG {
-		default {
-			more-link = Læs mere
-            author = Af %s
-            paginate_previous = Forrige
-            paginate_next = Næste
-		}
-    }
-    settings {
-        displayDummyIfNoMedia = 1
-        list.media.dummyImage = EXT:ku_prototype/Resources/Public/Images/News/fallback_image.png
-    }
-}
