@@ -9,7 +9,7 @@ $GLOBALS['SiteConfiguration']['site_language']['columns']['local_footer_address'
     //'displayCond' => 'FIELD:languageId:>:0',
     'config' => [
         'type' => 'text',
-        'placeholder' => 'Site address (html allowed)',
+        'placeholder' => 'Site address information (html allowed)',
         'cols' => 25,
         'rows' => 8,
     ],
@@ -20,7 +20,7 @@ $GLOBALS['SiteConfiguration']['site_language']['columns']['local_footer_contact'
     'description' => '',
     'config' => [
         'type' => 'text',
-        'placeholder' => 'Site contact (html allowed)',
+        'placeholder' => 'Site contact information (html allowed)',
         'cols' => 25,
         'rows' => 8,
     ],
