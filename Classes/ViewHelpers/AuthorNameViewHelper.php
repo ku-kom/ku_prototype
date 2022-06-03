@@ -48,7 +48,7 @@ class AuthorNameViewHelper extends AbstractViewHelper {
         $email = $result['email'];
 
         if ($name && $email) {
-            return '<a href="mailto:' . $email . '">' . $name . '</a>';
+            return $name  . '<br><a href="mailto:' . $email . '">' . $email . '</a>';
         } else {
             return $name;
         }

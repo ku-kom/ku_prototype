@@ -1,0 +1,36 @@
+#############################################################
+#### GLOBAL MENU RENDERING -- DANISH                     ####
+#### Manual inclusion to keep control over loading order ####
+#############################################################
+
+# Display hardcoded html, if no override html from site root:
+
+lib.footerContent {
+    # Danish local footer address information
+    DA_localFooterAddress = TEXT
+    DA_localFooterAddress {
+        value (
+            <address>
+                <a aria-label="Københavns Universitet hovedside" href="https://www.ku.dk/">Københavns Universitet</a><br>
+                Nørregade 10 <br>1165 København K
+                <br>
+            </address>
+        )
+        override {
+            required = 1
+            data = siteLanguage:local_footer_address
+        }
+    }
+    
+    # Danish local footer contact information
+    DA_localFooterContact = TEXT
+    DA_localFooterContact {
+        value (
+            
+        )
+        override {
+            required = 1
+            data = siteLanguage:local_footer_address
+        }
+    }
+}

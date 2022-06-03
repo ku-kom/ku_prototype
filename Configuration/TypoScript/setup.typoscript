@@ -5,6 +5,8 @@
 @import 'EXT:ku_prototype/Configuration/TypoScript/ContentElement/setup.typoscript'
 @import 'EXT:ku_prototype/Configuration/TypoScript/Menus/globalFooter-danish.typoscript'
 @import 'EXT:ku_prototype/Configuration/TypoScript/Menus/globalFooter-english.typoscript'
+@import 'EXT:ku_prototype/Configuration/TypoScript/Menus/localFooter-danish.typoscript'
+@import 'EXT:ku_prototype/Configuration/TypoScript/Menus/localFooter-english.typoscript'
 @import 'EXT:ku_prototype/Configuration/TypoScript/Extensions/news.typoscript'
 
 
@@ -96,28 +98,6 @@ page {
             # Get current language uid:
             pageLanguage = TEXT
             pageLanguage.data = siteLanguage:iso-639-1
-
-            # Site footer columns:
-            SiteFooterCol1 = TEXT
-            SiteFooterCol1 {
-                data = siteLanguage:footerColOne
-                slide = -1
-            }
-            SiteFooterCol2 = TEXT
-            SiteFooterCol2 {
-                data = siteLanguage:footerColTwo
-                slide = -1
-            }
-            SiteFooterCol3 = TEXT
-            SiteFooterCol3 {
-                data = siteLanguage:footerColThree
-                slide = -1
-            }
-            SiteFooterCol4 = TEXT
-            SiteFooterCol4 {
-                data = siteLanguage:footerColFour
-                slide = -1
-            }
 
             # Local footer address and contact
             SiteLocalFooterAddress = TEXT
