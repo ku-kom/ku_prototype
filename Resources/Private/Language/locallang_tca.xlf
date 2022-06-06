@@ -39,6 +39,21 @@
             <trans-unit id="select_faculty_hum" resname="select_faculty_hum">
                 <source>Faculty of Humanities</source>
             </trans-unit>
+            <trans-unit id="select_assets_js" resname="select_assets_js">
+                <source>Select javacsript asseet for this page</source>
+            </trans-unit>
+            <trans-unit id="select_assets_js.scroll_indicator" resname="select_assets_js.scroll_indicator">
+                <source>Scroll progress indicator</source>
+            </trans-unit>
+            <trans-unit id="select_assets_js.crazyEgg" resname="select_assets_js.crazyEgg">
+                <source>CrazyEgg</source>
+            </trans-unit>
+            <trans-unit id="select_assets_js.advanced" resname="select_assets_js.advanced">
+                <source>Advanced</source>
+            </trans-unit>
+            <trans-unit id="select_assets_js.jQuery" resname="select_assets_js.jQuery">
+                <source>jQuery</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>

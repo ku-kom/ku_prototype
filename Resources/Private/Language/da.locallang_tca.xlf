@@ -50,6 +50,26 @@
                 <source>Faculty of Humanities</source>
                 <target>Det Humanistiske Fakultet</target>
             </trans-unit>
+            <trans-unit id="select_assets_js" resname="select_assets_js">
+                <source>Select javacsript asseet for this page</source>
+                <target>Vælg javascript til denne side</target>
+            </trans-unit>
+            <trans-unit id="select_assets_js.scroll_indicator" resname="select_assets_js.scroll_indicator">
+                <source>Scroll progress indicator</source>
+                <target>Scroll progress indicator</target>
+            </trans-unit>
+            <trans-unit id="select_assets_js.crazyEgg" resname="select_assets_js.crazyEgg">
+                <source>CrazyEgg</source>
+                <target>CrazyEgg</target>
+            </trans-unit>
+            <trans-unit id="select_assets_js.advanced" resname="select_assets_js.advanced">
+                <source>Advanced</source>
+                <target>Advanceret</target>
+            </trans-unit>
+            <trans-unit id="select_assets_js.jQuery" resname="select_assets_js.jQuery">
+                <source>jQuery</source>
+                <target>jQuery</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>
