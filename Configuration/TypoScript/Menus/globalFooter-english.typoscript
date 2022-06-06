@@ -7,8 +7,8 @@
 # Fluid: <f:cObject typoscriptObjectPath="lib.footerContent.colOne" />
 lib.footerContent {
     # English global footer column one
-    EN_colOne = TEXT
-    EN_colOne {
+    en_colOne = TEXT
+    en_colOne {
         value (
             <header class="frame-header">
                 <h2 class="element-header">University of Copenhagen</h2>
@@ -31,8 +31,8 @@ lib.footerContent {
         }
     }
     # English global footer column two
-    EN_colTwo = TEXT
-    EN_colTwo {
+    en_colTwo = TEXT
+    en_colTwo {
         value (
             <header class="frame-header">
                 <h2 class="element-header">Contact</h2>
@@ -59,8 +59,8 @@ lib.footerContent {
         }
     }
     # English global footer column three
-    EN_colThree = TEXT
-    EN_colThree {
+    en_colThree = TEXT
+    en_colThree {
         value (
             <header class="frame-header">
                 <h2 class="element-header">For students and employees</h2>
@@ -88,8 +88,8 @@ lib.footerContent {
         }
     }
     # English global footer column Four
-    EN_colFour = TEXT
-    EN_colFour {
+    en_colFour = TEXT
+    en_colFour {
         value (
             <header class="frame-header">
                 <h2 class="element-header">Web</h2>

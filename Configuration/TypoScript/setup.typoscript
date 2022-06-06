@@ -19,9 +19,9 @@ page {
     # Remove warning - see: https://github.com/FluidTYPO3/flux/issues/1733
     5 >
     includeCSS {
-        //theme = EXT:ku_prototype/Resources/Public/Scss/Theme/theme.scss
-        // We compile sass ourselves:
-        theme = EXT:ku_prototype/Resources/Public/Css/Dist/theme.min.css
+        theme = EXT:ku_prototype/Resources/Public/Scss/Theme/theme.scss
+        // If we compile sass ourselves:
+        //theme = EXT:ku_prototype/Resources/Public/Css/Dist/theme.min.css
     }
     
     includeCSSLibs {

@@ -8,12 +8,12 @@
 //
 // Import needed Bootstrap Package Files
 //
-//@import "../../../../../bootstrap_package/Resources/Public/Scss/bootstrap5/theme";
-@import "C:/KU projekter/ku-typo3/KU-extensions/bootstrap_package/Resources/Public/Scss/bootstrap5/theme";
+@import "../../../../../bootstrap_package/Resources/Public/Scss/bootstrap5/theme";
+//@import "C:/KU projekter/ku-typo3/KU-extensions/bootstrap_package/Resources/Public/Scss/bootstrap5/theme.scss";
 
 // KU overrides
 
-@import "../../Icons/Bootstrap-icons/bootstrap-icons.scss";
+@import "EXT:ku_prototype/Resources/Public/Icons/Bootstrap-icons/bootstrap-icons.scss";
 @import "Custom/global";
 @import "Custom/topmenu";
 @import "Custom/leftmenu";
