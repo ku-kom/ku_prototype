@@ -9,9 +9,11 @@
                     </f:if>
                 </div>
                 <div class="col-md-6 footer-data">
+                    <f:comment>
                     <f:format.raw>
                         <ku:AuthorName authorUid="{data.cruser_id}" />
                     </f:format.raw>
+                </f:comment>
                     <f:if condition="{lib.footerContent.{pageLanguage}_localFooterContact !== ''}">
                         <f:cObject typoscriptObjectPath="lib.footerContent.{pageLanguage}_localFooterContact" />
                     </f:if>
