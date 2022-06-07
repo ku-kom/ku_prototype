@@ -7,11 +7,6 @@ CREATE TABLE pages (
     ku_faculty varchar(255) DEFAULT '' NOT NULL,
 );
 
-# Table for extra javascript assets definition on pages:
-CREATE TABLE pages (
-    assets_js varchar(255) DEFAULT '' NOT NULL,
-);
-
 # Table for faculty definition in backend user settings:
 CREATE TABLE be_users (
     ku_user_faculty varchar(255) DEFAULT '' NOT NULL,

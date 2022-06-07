@@ -42,24 +42,6 @@ call_user_func(function () {
                     ],
                 ],
             ],
-
-            // Javascript assets multiple select box on every page
-            'assets_js' => [
-                'exclude' => 1,
-                'label' => 'LLL:EXT:ku_prototype/Resources/Private/Language/locallang_tca.xlf:select_assets_js',
-                'config' => [
-                    'type' => 'select',
-                    'renderType' => 'selectMultipleSideBySide',
-                    'items' => [
-                        ['LLL:EXT:ku_prototype/Resources/Private/Language/locallang_tca.xlf:select_assets_js.scroll_indicator', 'scroll',],
-                        ['LLL:EXT:ku_prototype/Resources/Private/Language/locallang_tca.xlf:select_assets_js.crazyEgg', 'crazyegg',],
-                        ['LLL:EXT:ku_prototype/Resources/Private/Language/locallang_tca.xlf:select_assets_js.advanced','--div--',],
-                        ['LLL:EXT:ku_prototype/Resources/Private/Language/locallang_tca.xlf:select_assets_js.jQuery', 'jquery',],
-                    ],
-                    'size' => 3,
-                    'autoSizeMax' => 5,
-                ],
-            ],
         ]
     );
 
@@ -71,5 +53,4 @@ call_user_func(function () {
         '',
         ''
     );
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('pages', 'assets_js', '', 'after:ku_faculty');
 });

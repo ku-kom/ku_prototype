@@ -98,18 +98,6 @@ page {
             # Get current language uid:
             pageLanguage = TEXT
             pageLanguage.data = siteLanguage:iso-639-1
-
-            # Local footer address and contact
-            SiteLocalFooterAddress = TEXT
-            SiteLocalFooterAddress {
-                data = siteLanguage:local_footer_address
-                slide = -1
-            }
-            SiteLocalFooterContact = TEXT
-            SiteLocalFooterContact {
-                data = siteLanguage:local_footer_contact
-                slide = -1
-            }
         }
     }
 }
@@ -143,6 +131,7 @@ lib.page.class {
         ifEmpty = unset
     }
 }
+
 
 ####################
 #### NAVIGATION ####
