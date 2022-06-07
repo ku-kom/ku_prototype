@@ -24,7 +24,7 @@ class AuthorNameViewHelper extends AbstractViewHelper {
      * @return void
      */
     public function initializeArguments() {
-        $this->registerArgument('authorUid', 'integer', 'uid of the author', true);
+        $this->registerArgument('authorUid', 'integer', 'uid of the author', true, '1');
     }
 
     public static function renderStatic(
@@ -37,6 +37,7 @@ class AuthorNameViewHelper extends AbstractViewHelper {
 
     /**
      * Returns the real name and e-mail of selected author by uid if set,
+     * otherwise admin.
      *
      * @param int $authorUid
      * @return string

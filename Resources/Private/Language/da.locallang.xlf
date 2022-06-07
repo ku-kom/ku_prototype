@@ -22,6 +22,10 @@
             <source>Open sub menu item</source>
             <target>Åbn undermenu</target>
         </trans-unit>
+        <trans-unit id="frontend.contact" resname="frontend.contact">
+            <source>Contact</source>
+            <target>Kontakt</target>
+        </trans-unit>
         </body>
     </file>
 </xliff>
