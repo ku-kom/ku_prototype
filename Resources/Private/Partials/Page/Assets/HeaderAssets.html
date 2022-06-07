@@ -4,8 +4,10 @@
         <script>console.log('CrazyEgg script here...')</script>
     </f:if>
     <f:if condition="{data.assets_js} == jquery"> 
-        <script defer src="{f:uri.resource(path: 'JavaScript/Dist/jquery.min.js', extensionName: 'ku_prototype')}"></script>
+        <script defer src="{f:uri.resource(path: 'JavaScript/Seperate/jquery.min.js', extensionName: 'ku_prototype')}"></script>
     </f:if>
+
+   
 </f:section>
 
 </html>
