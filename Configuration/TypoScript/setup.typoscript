@@ -174,22 +174,6 @@ page {
     }
 }
 
-# Left menu
-page {
-    10 {
-        dataProcessing {
-            90 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
-            90 {
-                levels = 4
-                expandAll = 0
-                includeSpacer = 0
-                titleField = nav_title // title
-                as = subnavigation
-            }
-        }
-    }
-}
-
 # Separate menu for 3. level
 page {
     10 = FLUIDTEMPLATE
@@ -209,11 +193,29 @@ page {
 }
 
 # Left menu
+page {
+    10 {
+        dataProcessing {
+            90 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+            90 {
+                entryLevel = 0
+                levels = 4
+                # Exclude folders: 
+                excludeDoktypes = 6
+                expandAll = 0
+                includeSpacer = 0
+                titleField = nav_title // title
+                as = subnavigation
+            }
+        }
+    }
+}
 
+# Left menu
 menu.leftmenu = HMENU
 menu.leftmenu {
   entryLevel = site.rootPageId
-  entryLevel.insertData = 1
+  # entryLevel.insertData = 1
   # Level one:
   1 = TMENU
   1 {
