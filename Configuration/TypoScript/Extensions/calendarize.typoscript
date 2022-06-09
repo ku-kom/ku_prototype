@@ -1,0 +1,18 @@
+#############################################################
+#### CALENDARIZE EXTENSION - CONFIG                      ####
+#### Manual inclusion to keep control over loading order ####
+#############################################################
+
+plugin.tx_calendarize {
+  view {
+    templateRootPaths {
+      150 = EXT:ku_prototype/Resources/Private/Extensions/Calendarize/Templates/
+    }
+    partialRootPaths {
+      150 = EXT:ku_prototype/Resources/Private/Extensions/Calendarize/Partials/
+    }
+    layoutRootPaths {
+      150 = EXT:ku_prototype/Resources/Private/Extensions/Calendarize/Layouts/
+    }
+  }
+}
