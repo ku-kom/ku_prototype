@@ -19,3 +19,13 @@ plugin.tx_news {
         list.media.dummyImage = EXT:ku_prototype/Resources/Public/Images/News/fallback_image.png
     }
 }
+# Example of how to include e.g. infinite scroll if a setting is true
+# ["{$plugin.tx_calendarize.settings.useMomentJsDateAndTimeOutput}" == "1"]
+#   page.includeJSFooterlibs.moment = https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment-with-locales.min.js
+#   page.includeJSFooterlibs.moment.external = 1
+#   page.includeJSFooterlibs.moment.disableCompression = 1
+#   page.includeJSFooterlibs.momentTimezone = https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.31/moment-timezone.min.js
+#   page.includeJSFooterlibs.momentTimezone.external = 1
+#   page.includeJSFooterlibs.momentTimezone.disableCompression = 1
+#   page.includeJSFooterlibs.momentReplacement = EXT:calendarize/Resources/Public/JavaScript/MomentReplacement.js
+# [global]

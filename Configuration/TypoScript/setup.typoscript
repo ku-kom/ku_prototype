@@ -273,6 +273,6 @@ menu.leftmenu {
 page.10.dataProcessing.10.levels = 5
 
 # Bread crumb start level and depth:
-# Start level: 1 = The page one level below the root page.
+# Start level: 0 is rootline. 1 is the page one level below the root page.
 # End level: -1 = The current page.
 page.10.dataProcessing.30.special.range = 1|-1
