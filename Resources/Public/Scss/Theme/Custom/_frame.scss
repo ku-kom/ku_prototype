@@ -2,6 +2,10 @@
 // KU frame styling
 //
 
+:root {
+    --frame-link-color: #{inherit};
+}
+
 .frame {
     &-ku-default-padding {
         padding: var(--frame-spacing);

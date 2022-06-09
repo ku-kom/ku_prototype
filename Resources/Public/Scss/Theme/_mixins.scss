@@ -3,13 +3,15 @@
 @mixin color-family($color, $background, $hover) {
     background: $background;
     color: $color;
-
-    &:hover {
-        background: $hover;
-    }
+    position: relative;
 
     a {
-        color: inherit;
+        color: inherit!important;
+        @extend .stretched-link;
+
+        &:hover & {
+            background: $hover;
+        }
     }
 }
 
