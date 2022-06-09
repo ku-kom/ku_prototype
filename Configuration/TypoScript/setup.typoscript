@@ -192,12 +192,12 @@ page {
     }
 }
 
-# Left menu
+# Left menu - inherits from bootstrap_package
 page {
     10 {
         dataProcessing {
-            90 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
-            90 {
+            20 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+            20 {
                 entryLevel = 0
                 levels = 4
                 # Exclude folders: 
@@ -211,7 +211,7 @@ page {
     }
 }
 
-# Left menu
+# Alternative Left menu
 menu.leftmenu = HMENU
 menu.leftmenu {
   entryLevel = site.rootPageId
