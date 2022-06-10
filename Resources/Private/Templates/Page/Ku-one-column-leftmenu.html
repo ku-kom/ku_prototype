@@ -15,6 +15,9 @@
                 </div>
                 <main class="col-md-9 main-content">
                     <f:render partial="Navigation/Breadcrumb" arguments="{_all}" />
+                    <f:if condition="{page_title}">
+                        <h1 class="page-title">{page_title}</h1>
+                    </f:if>
                     <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '77'}" />
                 </main>
             </div>
