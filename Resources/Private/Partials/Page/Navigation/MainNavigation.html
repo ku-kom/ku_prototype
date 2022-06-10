@@ -10,7 +10,7 @@
             </f:then>
             <f:else>
                 <li class="{f:if(condition: item.active, then:' active')}{f:if(condition: item.children, then:' has-children')}">
-                    <a href="{item.link}" class="menu-link{f:if(condition: item.children, then:' has-child')}" {f:if(condition: item.target, then: ' target="{item.target}"' )} {f:if(condition: item.data.subtitle, then: ' aria-label="{item.data.subtitle}"' )}>
+                    <a href="{item.link}" class="menu-link{f:if(condition: item.children, then:' has-child')}" {f:if(condition: item.target, then: ' target="{item.target}"' )} {f:if(condition: item.data.nav_title, then: ' aria-label="{item.data.nav_title}"' )}>
                         <span class="menu-link-text">{item.title}<f:if condition="{item.current}"> <span class="visually-hidden">(current)</span></f:if></span>
                     </a>
                     <f:if condition="{item.children}">
@@ -26,7 +26,7 @@
                                             </f:then>
                                             <f:else>
                                                 <li class="{f:if(condition: child.active, then:' active')}{f:if(condition: child.children, then:' has-children')}">
-                                                    <a href="{child.link}" class="menu-link{f:if(condition: child.children, then:' has-child')}{f:if(condition: child.active, then:' active')}" {f:if(condition: child.target, then: ' target="{child.target}"' )} {f:if(condition: child.current, then: ' aria-current="page"' )} {f:if(condition: child.data.subtitle, then: ' aria-label="{child.data.subtitle}"' )}>
+                                                    <a href="{child.link}" class="menu-link{f:if(condition: child.children, then:' has-child')}{f:if(condition: child.active, then:' active')}" {f:if(condition: child.target, then: ' target="{child.target}"' )} {f:if(condition: child.current, then: ' aria-current="page"' )} {f:if(condition: child.data.nav_title, then: ' aria-label="{child.data.nav_title}"' )}>
                                                         <span class="item-text">{child.title}<f:if condition="{child.current}">
                                                                 <span class="visually-hidden">(current)</span></f:if></span>
                                                     </a>
@@ -46,7 +46,7 @@
                                                                                 </f:then>
                                                                                 <f:else>
                                                                                     <li class="{f:if(condition: child2.active, then:' active')}{f:if(condition: child2.children, then:' has-children')}">
-                                                                                        <a href="{child2.link}" class="menu-link{f:if(condition: child2.children, then:' has-child')}{f:if(condition: child2.active, then:' active')}" {f:if(condition: child2.target, then: ' target="{child2.target}"' )} {f:if(condition: child2.current, then: ' aria-current="page"' )} {f:if(condition: child2.data.subtitle, then: ' aria-label="{child2.data.subtitle}"' )}>
+                                                                                        <a href="{child2.link}" class="menu-link{f:if(condition: child2.children, then:' has-child')}{f:if(condition: child2.active, then:' active')}" {f:if(condition: child2.target, then: ' target="{child2.target}"' )} {f:if(condition: child2.current, then: ' aria-current="page"' )} {f:if(condition: child2.data.nav_title, then: ' aria-label="{child2.data.nav_title}"' )}>
                                                                                             <span class="item-text">{child2.title}<f:if condition="{child2.current}"> <span class="visually-hidden">(current)</span>
                                                                                                 </f:if></span>
                                                                                         </a>
@@ -68,7 +68,7 @@
                                                                                                                     </f:then>
                                                                                                                     <f:else>
                                                                                                                         <li class="{f:if(condition: child3.active, then:' active')}{f:if(condition: child3.children, then:' has-children')}">
-                                                                                                                            <a href="{child3.link}" class="menu-link{f:if(condition: child3.children, then:' has-child')}{f:if(condition: child3.active, then:' active')}" {f:if(condition: child3.target, then: ' target="{child3.target}"' )} {f:if(condition: child3.current, then: ' aria-current="page"' )} {f:if(condition: child3.data.subtitle, then: ' aria-label="{child3.data.subtitle}"' )}>
+                                                                                                                            <a href="{child3.link}" class="menu-link{f:if(condition: child3.children, then:' has-child')}{f:if(condition: child3.active, then:' active')}" {f:if(condition: child3.target, then: ' target="{child3.target}"' )} {f:if(condition: child3.current, then: ' aria-current="page"' )} {f:if(condition: child3.data.nav_title, then: ' aria-label="{child3.data.nav_title}"' )}>
                                                                                                                                 <span class="item-text">{child3.title} <f:if condition="{child3.current}">
                                                                                                                                         <span class="visually-hidden">(current)</span>
                                                                                                                                     </f:if>
@@ -92,7 +92,7 @@
                                                                                                                                                         </f:then>
                                                                                                                                                         <f:else>
                                                                                                                                                             <li class="{f:if(condition: child4.active, then:' active')}{f:if(condition: child4.children, then:' has-children')}">
-                                                                                                                                                                <a href="{child4.link}" class="menu-link{f:if(condition: child4.children, then:' has-child')}{f:if(condition: child4.active, then:' active')}" {f:if(condition: child4.target, then: ' target="{child4.target}"' )} {f:if(condition: child4.current, then: ' aria-current="page"' )} {f:if(condition: child4.data.subtitle, then: ' aria-label="{child4.data.subtitle}"' )}>
+                                                                                                                                                                <a href="{child4.link}" class="menu-link{f:if(condition: child4.children, then:' has-child')}{f:if(condition: child4.active, then:' active')}" {f:if(condition: child4.target, then: ' target="{child4.target}"' )} {f:if(condition: child4.current, then: ' aria-current="page"' )} {f:if(condition: child4.data.nav_title, then: ' aria-label="{child4.data.nav_title}"' )}>
                                                                                                                                                                     <span class="item-text">{child4.title} <f:if condition="{child4.current}">
                                                                                                                                                                             <span class="visually-hidden">(current)</span>
                                                                                                                                                                         </f:if>
