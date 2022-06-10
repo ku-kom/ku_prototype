@@ -3,18 +3,22 @@
     <section class="section section-default local-footer">
         <div class="container local-footer-container">
             <div class="row">
-                <div class="col-md-6 footer-address">
+                <div class="col-md-4 footer-address">
                     <f:if condition="{lib.footerContent.{pageLanguage}_localFooterAddress !== ''}">
                         <f:cObject typoscriptObjectPath="lib.footerContent.{pageLanguage}_localFooterAddress" />
                     </f:if>
                 </div>
-                <div class="col-md-6 footer-data">
-                    <f:translate key="LLL:EXT:ku_prototype/Resources/Private/Language/locallang.xlf:frontend.contact" />:<br> 
+                <div class="col-md-4 offset-md-4 footer-data">
+                    <f:translate key="LLL:EXT:ku_prototype/Resources/Private/Language/locallang.xlf:frontend.contact" />:<br>
                     <f:if condition="{lib.footerContent.{pageLanguage}_localFooterContact !== ''}">
-                        <f:format.raw>
-                            <ku:AuthorName authorUid="{data.cruser_id}" />
-                        </f:format.raw>
-                        <f:cObject typoscriptObjectPath="lib.footerContent.{pageLanguage}_localFooterContact" />
+                        <f:then>
+                            <f:cObject typoscriptObjectPath="lib.footerContent.{pageLanguage}_localFooterContact" />
+                        </f:then>
+                        <f:else>
+                            <f:format.raw>
+                                <ku:AuthorName authorUid="{data.cruser_id}" />
+                            </f:format.raw>
+                        </f:else>
                     </f:if>
                 </div>
             </div>

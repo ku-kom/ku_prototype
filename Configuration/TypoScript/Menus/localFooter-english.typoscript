@@ -25,12 +25,10 @@ lib.footerContent {
     # Danish local footer contact information
     en_localFooterContact = TEXT
     en_localFooterContact {
-        value (
-
-        )
+        value =
         override {
             required = 1
-            data = siteLanguage:local_footer_address
+            data = siteLanguage:local_footer_contact
         }
     }
 }
