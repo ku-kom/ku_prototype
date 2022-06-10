@@ -25,7 +25,14 @@ lib.footerContent {
     # Danish local footer contact information
     en_localFooterContact = TEXT
     en_localFooterContact {
-        value =
+        value (
+            <address>
+                University of Copenhagen<br>    
+                <a aria-label="Contact: ku@ku.dk" href="mailto:ku@ku.dk">ku@ku.dk</a><br>
+                <abbr title="Phone">Tel: </abbr>
+                <a href="tel:+45 35 32 26 26">+45 35 32 26 26</a>
+            </address>
+        )
         override {
             required = 1
             data = siteLanguage:local_footer_contact
