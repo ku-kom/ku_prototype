@@ -5,7 +5,6 @@
     <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '3', slide: '{theme.pagelayout.{pagelayout}.colPos.3.slide}'}" />
 </f:section>
 <f:section name="Main">
-
     <div class="section section-default">
         <div class="container">
             <div class="row">
@@ -15,8 +14,8 @@
                 </div>
                 <main class="col-md-9 main-content">
                     <f:render partial="Navigation/Breadcrumb" arguments="{_all}" />
-                    <f:if condition="{page_title}">
-                        <h1 class="page-title">{page_title}</h1>
+                    <f:if condition="{pageTitle}">
+                        <h1 class="page-title">{pageTitle}</h1>
                     </f:if>
                     <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '77'}" />
                 </main>
