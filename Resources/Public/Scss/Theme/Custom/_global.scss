@@ -21,6 +21,13 @@ body {
     font-family: $ku-font, $font-family-base;
 }
 
+a {
+    text-decoration: underline;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
 .body-bg {
     height: 100%;
     display: flex;

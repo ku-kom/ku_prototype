@@ -67,7 +67,7 @@ lib.footerContent {
                 <h2 class="element-header">For studerende og ansatte</h2>
             </header>
             <ul class="footerlinks">
-                <li><a aria-label="KU Presseservice" class="padlock" href="https://kunet.ku.dk">KUnet</a></li>
+                <li><a aria-label="KUnet - intranet for studerende og medarbejdere" class="padlock" href="https://kunet.ku.dk">KUnet</a></li>
             </ul>
             <header class="frame-header">
                 <h2 class="element-header">Job og karierre</h2>

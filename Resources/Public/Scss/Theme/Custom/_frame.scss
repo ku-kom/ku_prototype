@@ -3,7 +3,7 @@
 //
 
 :root {
-    --frame-link-color: #{inherit};
+    --frame-link-color: #{$link-color};
 }
 
 .frame {

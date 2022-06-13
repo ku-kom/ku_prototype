@@ -4,3 +4,17 @@
 
 // Custom styling
 
+.nav-title {
+    a {
+
+        @include media-breakpoint-up('lg') {
+            font-size: 1.2rem;
+        }
+
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

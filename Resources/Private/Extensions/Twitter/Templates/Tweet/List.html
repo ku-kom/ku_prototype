@@ -1,7 +1,7 @@
 <f:layout name="Default" />
 
 <f:section name="main">
-	<h3 class="title"><f:translate key="recenttweets" /></h3>
+    <f:comment><h3 class="title"><f:translate key="recenttweets" /></h3></f:comment>
 	<div class="error">
 		<f:flashMessages />
 	</div>
@@ -15,9 +15,9 @@
 								<div class="content">
 									<div class="stream-item-header">
 										<f:link.external uri="https://twitter.com/{orig_tweet.user.screen_name}" target="_blank" class="account-group">
-											<img src="{orig_tweet.user.profile_image_url_https}" class="avatar" />
-											<strong class="fullname">{orig_tweet.user.name}</strong>
-											<span class="username" data-aria-label-part=""><s> @</s><b>{orig_tweet.user.screen_name}</b></span>
+											<img src="{orig_tweet.user.profile_image_url_https}" class="avatar" alt="" />
+											<div class="fullname">{orig_tweet.user.name}</div>
+											<span class="username" data-aria-label-part=""><s> @</s><span class="screenname">{orig_tweet.user.screen_name}</span></span>
 										</f:link.external>
 									</div>
 									<div class="js-tweet-text-container">
@@ -28,7 +28,7 @@
 										<f:format.html>{tweet.text}</f:format.html>
 									</div>
 									<small class="time">
-										<a href="https://twitter.com/{orig_tweet.user.screen_name}/status/{orig_tweet.id_str}" target="_blank">
+										<a href="https://twitter.com/{orig_tweet.user.screen_name}/status/{orig_tweet.id_str}" target="_blank" rel="noopener noreferrer">
 										<f:if condition="{settings.dateFormat}=='ago'">
 											<f:then>
 												{tweet.created_at}
@@ -42,7 +42,7 @@
 									<f:if condition="{tweet.retweeted_status}">
 										<div class="cwtw-Retweet">
 											<i class="fa fa-retweet" aria-hidden="true"></i>
-											<f:translate key="retweeted_by" /> <a href="https://twitter.com/{tweet.user.screen_name}" target="_blank">{tweet.user.name}</a>
+											<f:translate key="retweeted_by" /> <a href="https://twitter.com/{tweet.user.screen_name}" target="_blank" rel="noopener noreferrer">{tweet.user.name}</a>
 										</div>
 									</f:if>
 
@@ -50,7 +50,7 @@
 										<ul class="tweetactions">
 											<f:if condition="{settings.reply}">
 												<li class="tweet-action">
-													<a class="tweetaction tweetaction-reply" href="https://twitter.com/intent/tweet?in_reply_to={tweet.id_str}" target="_blank">
+													<a class="tweetaction tweetaction-reply" href="https://twitter.com/intent/tweet?in_reply_to={tweet.id_str}" target="_blank" rel="noopener noreferrer">
 														<div class="icon icon-reply"><i class="fa fa-reply" aria-hidden="true"></i></div>
 														<span class="tweetaction-stat"><f:translate key='tweets.reply' /></span>
 													</a>
@@ -58,7 +58,7 @@
 											</f:if>
 											<f:if condition="{settings.retweet}">
 												<li class="tweetaction">
-													<a class="tweetaction tweetaction-retweet" href="https://twitter.com/intent/retweet?tweet_id={tweet.id_str}" target="_blank">
+													<a class="tweetaction tweetaction-retweet" href="https://twitter.com/intent/retweet?tweet_id={tweet.id_str}" target="_blank" rel="noopener noreferrer">
 														<div class="icon icon-retweet"><i class="fa fa-retweet" aria-hidden="true"></i></div>
 														<span class="tweetaction-stat"><f:translate key='tweets.retweet' /><f:if condition="{tweet.retweet_count} > 0"> ({tweet.retweet_count})</f:if></span>
 													</a>

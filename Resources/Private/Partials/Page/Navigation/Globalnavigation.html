@@ -19,7 +19,7 @@
                         <f:then>
                             <button type="button" class="menu_arrow" aria-controls="item-{item.data.uid}" {f:if(condition: item.children, then:' aria-haspopup="true"')} 	
                                 {f:if(condition: item.active, then:' aria-expanded="true"', else:' aria-expanded="false"')}>
-                                    <span class="visually-hidden">{f:translate(key: ' togglenavigation', extensionName: 'bootstrap_package' )}</span> </button> </f:then> </f:if> <f:if condition="{item.children}">
+                                    <span class="visually-hidden">{f:translate(key: 'mobile-menu-toggle', extensionName: 'ku_prototype' )}</span> </button> </f:then> </f:if> <f:if condition="{item.children}">
                                 <ul class="level-2{f:if(condition: item.children, then:' has-children')}" id="item-{item.data.uid}">
                                     <f:for each="{item.children}" as="child">
                                         <li class="{f:if(condition: child.active, then:' active')}">
