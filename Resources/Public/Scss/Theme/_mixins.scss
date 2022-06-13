@@ -6,7 +6,6 @@
     position: relative;
 
     a {
-        color: inherit!important;
         @extend .stretched-link;
 
         &:hover & {

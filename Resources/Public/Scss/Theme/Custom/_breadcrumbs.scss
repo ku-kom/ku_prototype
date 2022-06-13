@@ -8,3 +8,11 @@
          padding: 0;
      }
 }
+
+.breadcrumb-link {
+    font-size: .9rem;
+    text-decoration: underline;
+    &:hover {
+        text-decoration: none;
+    }
+}
