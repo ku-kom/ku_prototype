@@ -9,6 +9,7 @@
 @import 'EXT:ku_prototype/Configuration/TypoScript/Menus/localFooter-english.typoscript'
 @import 'EXT:ku_prototype/Configuration/TypoScript/Extensions/news.typoscript'
 @import 'EXT:ku_prototype/Configuration/TypoScript/Extensions/calendarize.typoscript'
+@import 'EXT:ku_prototype/Configuration/TypoScript/Extensions/ns_twitter.typoscript'
 
 
 ##############

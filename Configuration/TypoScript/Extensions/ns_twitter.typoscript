@@ -1,0 +1,18 @@
+#############################################################
+#### NS TWITTER - CONFIG                                 ####
+#### Manual inclusion to keep control over loading order ####
+#############################################################
+
+plugin.tx_nstwitter {
+  view {
+    templateRootPaths {
+      10 = EXT:ku_prototype/Resources/Private/Extensions/Twitter/Templates/
+    }
+    partialRootPaths {
+      10 = EXT:ku_prototype/Resources/Private/Extensions/Twitter/Partials/
+    }
+    layoutRootPaths {
+      10 = EXT:ku_prototype/Resources/Private/Extensions/Twitter/Layouts/
+    }
+  }
+}
