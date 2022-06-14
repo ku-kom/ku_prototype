@@ -91,7 +91,6 @@
 .account-group:hover .username,
 .account-group:focus .username,
 .account-summary:focus .username {
-    color: #8899a6;
     text-decoration: none;
 }
 
@@ -104,10 +103,6 @@
 .time,
 .time a {
     font-size: 13px;
-}
-
-s {
-    text-decoration: none;
 }
 
 .tweet .js-tweet-text {

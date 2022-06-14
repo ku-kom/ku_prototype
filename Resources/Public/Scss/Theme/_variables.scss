@@ -1,41 +1,45 @@
-//
 // Variables
 //
-$ku_prototype_public_path:          "/typo3conf/ext/ku_prototype/Resources/Public/";
-
 // When overriding default Bootstrap variables - remove !default
-$body-color:                       #212529;
-$link-color:                       #0d6efd;
-$link-hover-color:                 #0a58ca;
 
-$ku-font:                           "Open Sans";
-$gray-ccc:                         #ccc !default;
-$gray-eee:                         #eee !default;
-$gray-75:                          #757575 !default;
-$ku-red:                           #901a1e !default;
+// Color system
+$gray-ccc: #ccc !default;
+$gray-eee: #eee !default;
+$gray-75: #757575 !default;
+$ku-red: #901a1e !default;
+$gridbox-text-light: #fcfcfc !default;
+$gridbox-text-dark: #262626 !default;
+$red1: $ku-red !default;
+$red2: #c73028 !default;
+$red3: #db3b0a !default;
+$blue1: #122947 !default;
+$blue2: #425570 !default;
+$blue3: #bac7d9 !default;
+$teal1: #0a5963 !default;
+$teal2: #197f8e !default;
+$teal3: #b7d7de !default;
+$green1: #39641c !default;
+$green2: #4b8325 !default;
+$green3: #becaa8 !default;
+$grey1: #3d3d3d !default;
+$grey2: #666 !default;
+$grey3: #e1dfdf !default;
+$white1: #fff !default;
+$white2: #fefaf2 !default;
+$white3: #ffbd38 !default;
 
-// Color families
-$gridbox-text-light:               #fcfcfc !default;
-$gridbox-text-dark:                #262626 !default;
-$red1:                               $ku-red !default;
-$red2:                             #c73028 !default;
-$red3:                             #db3b0a !default;
-$blue1:                            #122947 !default;
-$blue2:                            #425570 !default;
-$blue3:                            #bac7d9 !default;
-$teal1:                            #0a5963 !default;
-$teal2:                            #197f8e !default;
-$teal3:                            #b7d7de !default;
-$green1:                           #39641c !default;
-$green2:                           #4b8325 !default;
-$green3:                           #becaa8 !default;
-$grey1:                            #3d3d3d !default;
-$grey2:                            #666 !default;
-$grey3:                            #e1dfdf !default;
-$white1:                           #fff !default;
-$white2:                           #fefaf2 !default;
-$white3:                           #ffbd38 !default;
+// Typography
+$ku-font: "Open Sans";
+$ku_prototype_public_path: "/typo3conf/ext/ku_prototype/Resources/Public/";
+$body-color: #212529;
 
-$breadcrumb-bg:                      transparent;
+// Breadcrumbs
+$breadcrumb-bg: transparent;
 
-$link-decoration:                    underline;
+// Links.
+$link-color: #0954c3;
+$link-decoration: underline;
+$link-shade-percentage: 30%;
+
+// Components
+$border-radius: .275rem

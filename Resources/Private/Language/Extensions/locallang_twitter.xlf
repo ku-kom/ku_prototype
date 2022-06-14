@@ -1,106 +1,106 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" target-language="da" datatype="plaintext" original="messages" date="2017-01-19T17:12:00Z" product-name="ns_twitter">
+	<file source-language="en" datatype="plaintext" original="messages" date="2017-01-19T17:12:00Z" product-name="ns_twitter">
 		<header/>
 		<body>
 			<trans-unit id="tx_nstwitter_domain_model_tweet">
-				<target>Tweet</target>
+				<source>Tweet</source>
 			</trans-unit>
 			<trans-unit id="recenttweets">
-				<target>Recent Tweets</target>
+				<source>Recent Tweets</source>
 			</trans-unit>
 			<trans-unit id="retweeted_by">
-				<target>Retweeted af</target>
+				<source>Retweeted By</source>
 			</trans-unit>
 			<trans-unit id="tweet.empty" xml:space="preserve">
-				<target>Ingen (ny) tweets fundet for : %s</target>
+				<source>No (recent) tweets found for given : %s</source>
 			</trans-unit>
 			<trans-unit id="errorMessage">
-				<target>The cURL extension is not installed in the server</target>
+				<source>The cURL extension is not installed in the server</source>
 			</trans-unit>
 			<trans-unit id="outhError">
-				<target>Autentication is missing !! Please set OAuth Access from the backend</target>
+				<source>Autentication is missing !! Please set OAuth Access from the backend</source>
 			</trans-unit>
 			<trans-unit id="notweetes">
-				<target>Ingen (nye) tweets fundet</target>
+				<source>No (recent) tweets found</source>
 			</trans-unit>
 			<trans-unit id="tweets.reply">
-				<target>Svar</target>
+				<source>Reply</source>
 			</trans-unit>
 			<trans-unit id="tweets.retweet">
-				<target>Retweet</target>
+				<source>Retweet</source>
 			</trans-unit>
 			<trans-unit id="tweets.like">
-				<target>Like</target>
+				<source>Like</source>
 			</trans-unit>
 			<trans-unit id="replyingto">
-				<target>Svar til </target>
+				<source>Replying to </source>
 			</trans-unit>
 			<trans-unit id="dateFormat">
-				<target>d M</target>
+				<source>d M</source>
 			</trans-unit>
 			<trans-unit id="rightnow">
-				<target>Lige nu</target>
+				<source>Right now</source>
 			</trans-unit>
 			<trans-unit id="seconds">
-				<target> sekunder siden</target>
+				<source> seconds ago</source>
 			</trans-unit>
 			<trans-unit id="oneminute">
-				<target>Ca. 1 minut siden</target>
+				<source>About 1 minute ago</source>
 			</trans-unit>
 			<trans-unit id="minute">
-				<target> minutter siden</target>
+				<source> minutes ago</source>
 			</trans-unit>
 			<trans-unit id="onehour">
-				<target>Ca. 1 time siden</target>
+				<source>About 1 hour ago</source>
 			</trans-unit>
 			<trans-unit id="hours">
-				<target> timer siden</target>
+				<source> hours ago</source>
 			</trans-unit>
 			<trans-unit id="yesterday">
-				<target>I går</target>
+				<source>Yesterday</source>
 			</trans-unit>
 			<trans-unit id="days">
-				<target> dage siden</target>
+				<source> days ago</source>
 			</trans-unit>
 			<trans-unit id="01">
-				<target>jan</target>
+				<source>Jan</source>
 			</trans-unit>
 			<trans-unit id="02">
-				<target>feb</target>
+				<source>Feb</source>
 			</trans-unit>
 			<trans-unit id="03">
-				<target>mar</target>
+				<source>Mar</source>
 			</trans-unit>
 			<trans-unit id="04">
-				<target>apr</target>
+				<source>Apr</source>
 			</trans-unit>
 			<trans-unit id="05">
-				<target>maj</target>
+				<source>May</source>
 			</trans-unit>
 			<trans-unit id="06">
-				<target>jun</target>
+				<source>Jun</source>
 			</trans-unit>
 			<trans-unit id="07">
-				<target>jul</target>
+				<source>Jul</source>
 			</trans-unit>
 			<trans-unit id="08">
-				<target>aug</target>
+				<source>Aug</source>
 			</trans-unit>
 			<trans-unit id="09">
-				<target>sep</target>
+				<source>Sep</source>
 			</trans-unit>
 			<trans-unit id="10">
-				<target>okt</target>
+				<source>Oct</source>
 			</trans-unit>
 			<trans-unit id="11">
-				<target>nov</target>
+				<source>Nov</source>
 			</trans-unit>
 			<trans-unit id="12">
-				<target>dec</target>
+				<source>Dec</source>
 			</trans-unit>
 			<trans-unit id="nstwitter.client.error" xml:space="preserve">
-				<target>Could not authenticate you. Response code: %s</target>
+				<source>Could not authenticate you. Response code: %s</source>
 			</trans-unit>
 		</body>
 	</file>
