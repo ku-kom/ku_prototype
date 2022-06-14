@@ -2,12 +2,6 @@
 // Scaffolding - global elements like sticky footer, etc.
 //
 
-// Include custom font:
-@include font-face("Open Sans", '../../Fonts/open-sans-v27-latin-ext_latin-300', 300, normal, woff2 woff);
-@include font-face("Open Sans", '../../Fonts/open-sans-v27-latin-ext_latin-400', 400, normal, woff2 woff);
-@include font-face("Open Sans", '../../Fonts/open-sans-v27-latin-ext_latin-600', 600, normal, woff2 woff);
-@include font-face("Open Sans", '../../Fonts/open-sans-v27-latin-ext_latin-700', 700, normal, woff2 woff);
-
 :root {
     --box-text-light: #{$gridbox-text-light};
     --box-text-dark: #{$gridbox-text-dark};
@@ -31,6 +25,12 @@
     --white3: #{$white3};
 }
 
+// Include custom font:
+@include font-face($ku-font, '#{$ku_prototype_public_path}Fonts/open-sans-v27-latin-ext_latin-300', 300, normal, woff2 woff);
+@include font-face($ku-font, '#{$ku_prototype_public_path}Fonts/open-sans-v27-latin-ext_latin-400', 400, normal, woff2 woff);
+@include font-face($ku-font, '#{$ku_prototype_public_path}Fonts/open-sans-v27-latin-ext_latin-600', 600, normal, woff2 woff);
+@include font-face($ku-font, '#{$ku_prototype_public_path}Fonts/open-sans-v27-latin-ext_latin-700', 700, normal, woff2 woff);
+
 .extbase-debugger-floating {
     top: 50%;
 }
@@ -42,10 +42,6 @@ body {
 
 body {
     font-family: $ku-font, $font-family-base;
-}
-
-a {
-    text-decoration: underline;
 }
 
 .body-bg {

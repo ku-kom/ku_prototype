@@ -3,9 +3,10 @@
 //
 $ku_prototype_public_path:          "/typo3conf/ext/ku_prototype/Resources/Public/";
 
-$body-color:                        #212529 !default;
-$ku_link-color:                     #0d6efd !default;
-$ku_link-hover-color:               #0a58ca !default;
+// When overriding default Bootstrap variables - remove !default
+$body-color:                       #212529;
+$link-color:                       #0d6efd;
+$link-hover-color:                 #0a58ca;
 
 $ku-font:                           "Open Sans";
 $gray-ccc:                         #ccc !default;
@@ -35,4 +36,6 @@ $white1:                           #fff !default;
 $white2:                           #fefaf2 !default;
 $white3:                           #ffbd38 !default;
 
-$breadcrumb-bg:                      transparent !default;
+$breadcrumb-bg:                      transparent;
+
+$link-decoration:                    underline;
