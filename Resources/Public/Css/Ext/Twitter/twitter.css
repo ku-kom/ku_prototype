@@ -126,7 +126,7 @@ s {
 }
 
 .ReplyingToContextBelowAuthor {
-    color: #657786;
+    color: #757575;
     font-size: 12px;
     line-height: 16px;
     padding-top: 4px;
@@ -146,7 +146,7 @@ s {
 }
 
 .stream-item-footer ul li a {
-    color: #697882;
+    color: #757575;
     text-decoration: none;
     padding: 5px;
 }
@@ -160,7 +160,7 @@ s {
 .stream-item-footer .tweetaction-retweet:hover,
 .stream-item-footer .tweetaction-retweet:focus,
 .stream-item-footer .tweetaction-retweet:active {
-    color: #19CF86;
+    color: #4b8325;
 }
 
 .stream-item-footer .tweetaction-like:hover,
@@ -183,6 +183,10 @@ s {
     width: 1.28472em;
 }
 
+.tweet .bi-reply-all-fill::before {
+    transform: rotateY(180deg);
+}
+
 .stream-item-footer .icon-like {
     width: .9375em;
 }
@@ -197,7 +201,7 @@ s {
 
 /*remove padding and add spacing between tweet*/
 .stream-items {
-    padding: 0;
+    padding-left: 0;
 }
 
 .stream-items .stream-item {

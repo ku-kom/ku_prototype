@@ -23,7 +23,7 @@
 									<div class="js-tweet-text-container">
 										
 										<f:if condition="{orig_tweet.in_reply_to_screen_name}">
-											<div class="ReplyingToContextBelowAuthor"><f:translate key='replyingto' /><a href='https://twitter.com/{orig_tweet.in_reply_to_screen_name}' target="_blank"><s>@</s><b>{orig_tweet.in_reply_to_screen_name} </b></a></div>
+											<div class="ReplyingToContextBelowAuthor"><f:translate key='replyingto' /><a href='https://twitter.com/{orig_tweet.in_reply_to_screen_name}' target="_blank"><s>@</s><span class="screenname">{orig_tweet.in_reply_to_screen_name} </span></a></div>
 										</f:if>
 										<f:format.html>{tweet.text}</f:format.html>
 									</div>
@@ -41,7 +41,7 @@
 									</small>
 									<f:if condition="{tweet.retweeted_status}">
 										<div class="cwtw-Retweet">
-											<i class="fa fa-retweet" aria-hidden="true"></i>
+											<span class="bi bi-reply-all-fill" aria-hidden="true"></span>
 											<f:translate key="retweeted_by" /> <a href="https://twitter.com/{tweet.user.screen_name}" target="_blank" rel="noopener noreferrer">{tweet.user.name}</a>
 										</div>
 									</f:if>
@@ -51,7 +51,7 @@
 											<f:if condition="{settings.reply}">
 												<li class="tweet-action">
 													<a class="tweetaction tweetaction-reply" href="https://twitter.com/intent/tweet?in_reply_to={tweet.id_str}" target="_blank" rel="noopener noreferrer">
-														<div class="icon icon-reply"><i class="fa fa-reply" aria-hidden="true"></i></div>
+														<div class="icon icon-reply"><span class="bi bi-reply-fill" aria-hidden="true"></span></div>
 														<span class="tweetaction-stat"><f:translate key='tweets.reply' /></span>
 													</a>
 												</li>
@@ -59,7 +59,7 @@
 											<f:if condition="{settings.retweet}">
 												<li class="tweetaction">
 													<a class="tweetaction tweetaction-retweet" href="https://twitter.com/intent/retweet?tweet_id={tweet.id_str}" target="_blank" rel="noopener noreferrer">
-														<div class="icon icon-retweet"><i class="fa fa-retweet" aria-hidden="true"></i></div>
+														<div class="icon icon-retweet"><span class="bi bi-reply-all-fill" aria-hidden="true"></span></div>
 														<span class="tweetaction-stat"><f:translate key='tweets.retweet' /><f:if condition="{tweet.retweet_count} > 0"> ({tweet.retweet_count})</f:if></span>
 													</a>
 												</li>
@@ -67,7 +67,7 @@
 											<f:if condition="{settings.like}">
 												<li class="tweetaction">
 													<a class="tweetaction tweetaction-like" href="https://twitter.com/intent/like?tweet_id={tweet.id_str}" target="_blank">
-														<div class="icon icon-like"><i class="fa fa-star" aria-hidden="true"></i></div>
+														<div class="icon icon-like"><span class="bi bi-star-fill" aria-hidden="true"></span></div>
 														<span class="tweetaction-stat"><f:translate key='tweets.like' /><f:if condition="{tweet.favorite_count} > 0"> ({tweet.favorite_count})</f:if></span>
 													</a>
 												</li>

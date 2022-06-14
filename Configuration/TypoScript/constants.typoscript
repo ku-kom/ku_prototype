@@ -232,3 +232,13 @@ plugin.tx_news {
 plugin.tx_infinitescrolling {
     includeJQueryLibrary = 0
 }
+
+###################################
+### NITSAN NS_TWITTER EXTENSION ###
+###################################
+plugin.tx_nstwitter {
+    settings {
+        cssPath = EXT:ku_prototype/Resources/Public/Css/Ext/Twitter/twitter.css
+        cssPathFont =
+    }
+}
