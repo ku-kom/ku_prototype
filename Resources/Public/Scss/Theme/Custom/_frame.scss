@@ -3,7 +3,8 @@
 //
 
 :root {
-    --frame-link-color: #{$link-color};
+    --frame-link-color: #{$ku_link-color};
+    --frame-link-hover-color: #{$ku_link-hover-color};
 }
 
 .frame {

@@ -3,8 +3,9 @@
 //
 $ku_prototype_public_path:          "/typo3conf/ext/ku_prototype/Resources/Public/";
 
-$body-color:                        #252525 !default;
-$link-color:                        --bs-link-color !default;
+$body-color:                        #212529 !default;
+$ku_link-color:                     #0d6efd !default;
+$ku_link-hover-color:               #0a58ca !default;
 
 $ku-font:                           "Open Sans";
 $gray-ccc:                         #ccc !default;
@@ -34,5 +35,4 @@ $white1:                           #fff !default;
 $white2:                           #fefaf2 !default;
 $white3:                           #ffbd38 !default;
 
-$link-color:                       #2c6694 !default;
-$breadcrumb-bg:                      none !default;
+$breadcrumb-bg:                      transparent !default;
