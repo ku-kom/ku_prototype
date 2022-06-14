@@ -8,6 +8,29 @@
 @include font-face("Open Sans", '../../Fonts/open-sans-v27-latin-ext_latin-600', 600, normal, woff2 woff);
 @include font-face("Open Sans", '../../Fonts/open-sans-v27-latin-ext_latin-700', 700, normal, woff2 woff);
 
+:root {
+    --box-text-light: #{$gridbox-text-light};
+    --box-text-dark: #{$gridbox-text-dark};
+    --red1: #{$red1};
+    --red2: #{$red2};
+    --red3: #{$red3};
+    --blue1: #{$blue1};
+    --blue2: #{$blue2};
+    --blue3: #{$blue3};
+    --teal1: #{$teal1};
+    --teal2: #{$teal2};
+    --teal3: #{$teal3};
+    --green1: #{$green1};
+    --green2: #{$green2};
+    --green3: #{$green3};
+    --grey1: #{$grey1};
+    --grey2: #{$grey2};
+    --grey3: #{$grey3};
+    --white1: #{$white1};
+    --white2: #{$white2};
+    --white3: #{$white3};
+}
+
 .extbase-debugger-floating {
     top: 50%;
 }
@@ -23,6 +46,7 @@ body {
 
 a {
     text-decoration: underline;
+
     &:hover {
         text-decoration: none;
     }
