@@ -26,10 +26,12 @@ $family:
 $color,
 $background,
 $hover in $family {
-    .frame-background-box-#{$name} {
+    [class*="box-#{$name}"] { // Class name contains...
         color: $color;
         background: $background;
         position: relative;
+        --overlay-text-color: #{$color};
+        --overlay-background: #{$background};
 
         a {
             @extend .stretched-link;
