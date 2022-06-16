@@ -1,0 +1,44 @@
+//
+// Extension: KU Image with overlay
+//
+
+// Custom styling
+
+.image-with-overlay {
+    position: relative;
+
+    .image-with-overlay-box {
+        padding: 1rem;
+    }
+
+    .image-with-overlay-text {
+        font-weight: 600;
+    }
+
+    @include media-breakpoint-up('lg') {
+        .image-with-overlay-textposition {
+            position: absolute;
+            top: 13%;
+            right: 6%;
+            max-width: 50%;
+            text-align: right;
+        }
+
+        .image-with-overlay-box {
+            display: inline;
+            padding: 0;
+        }
+
+        .image-with-overlay-text>span {
+            font-size: 1.75rem;
+            line-height: 1.6;
+            background-color: var(--overlay-background);
+            color: var(--overlay-text-color);
+            box-shadow: -10px 0px 0 6px var(--overlay-background),
+                10px 0px 0 6px var(--overlay-background),
+                0 0 0 6px var(--overlay-background);
+            -webkit-box-decoration-break: clone;
+            box-decoration-break: clone;
+        }
+    }
+}
