@@ -90,8 +90,6 @@
 
         .btn-overlay {
 
-            &::after {}
-
             &+.btn-overlay {
                 margin-left: 1rem;
             }
