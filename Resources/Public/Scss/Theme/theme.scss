@@ -14,7 +14,7 @@
 
 // KU overrides
 @import "EXT:ku_prototype/Resources/Public/Icons/Bootstrap-icons/bootstrap-icons.scss";
-@import "Custom/frame";
+@import "Custom/kuIcons";
 @import "Custom/global";
 @import "Custom/typography";
 @import "Custom/topmenu";
@@ -24,6 +24,7 @@
 @import "Custom/breadcrumbs";
 @import "Custom/images";
 @import "Custom/colorFamily";
+@import "Custom/frame";
 @import "Custom/Extensions/news";
 @import "Custom/Extensions/container";
 @import "Custom/Extensions/ku_image_with_overlay";

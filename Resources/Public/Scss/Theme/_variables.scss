@@ -6,6 +6,7 @@
 $gray-ccc: #ccc !default;
 $gray-eee: #eee !default;
 $gray-75: #757575 !default;
+
 $ku-red: #901a1e !default;
 $gridbox-text-light: #fcfcfc !default;
 $gridbox-text-dark: #262626 !default;
@@ -28,8 +29,11 @@ $white1: #fff !default;
 $white2: #fefaf2 !default;
 $white3: #ffbd38 !default;
 
+$btn-overlay: #4d4d4f!default;
+
 // Typography
 $ku-font: "Open Sans";
+$ku-symbols: "ku-symbols";
 $ku_prototype_public_path: "/typo3conf/ext/ku_prototype/Resources/Public/";
 $body-color: #212529;
 
@@ -42,4 +46,4 @@ $link-decoration: underline;
 $link-shade-percentage: 30%;
 
 // Components
-$border-radius: .275rem
+$border-radius: .25rem;

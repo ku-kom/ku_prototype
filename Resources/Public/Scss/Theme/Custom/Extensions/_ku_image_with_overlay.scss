@@ -3,6 +3,9 @@
 //
 
 // Custom styling
+:root {
+    --overlay-btn-bg: #{$btn-overlay};
+}
 
 .image-with-overlay {
     position: relative;
@@ -13,6 +16,44 @@
 
     .image-with-overlay-text {
         font-weight: 600;
+    }
+
+    .btn-overlay {
+        @include button-variant($btn-overlay, $btn-overlay, $white, #{shade-color($btn-overlay, 10%)}, #{shade-color($btn-overlay, 10%)}, $white);
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: .7px;
+        margin-top: 1rem;
+
+        &::after {
+            display: inline-block;
+            font-size: 80%;
+            font-weight: 400;
+            vertical-align: text-bottom;
+            margin-left: 1rem;
+            right: 1rem;
+            @extend .ku-icon;
+            content: "\61";
+        }
+
+
+        @include media-breakpoint-down('lg') {
+            display: block;
+            text-align: left;
+            position: relative;
+
+
+            &::after {
+                display: inline-block;
+                font-size: 80%;
+                vertical-align: text-bottom;
+                margin-left: 1rem;
+                right: 1rem;
+                top: 50%;
+                transform: translateY(-50%);
+                position: absolute;
+            }
+        }
     }
 
     @include media-breakpoint-up('lg') {
@@ -39,6 +80,21 @@
                 0 0 0 6px var(--overlay-background);
             -webkit-box-decoration-break: clone;
             box-decoration-break: clone;
+        }
+
+        .overlay-buttons {
+            position: absolute;
+            bottom: 5%;
+            left: 5%;
+        }
+
+        .btn-overlay {
+
+            &::after {}
+
+            &+.btn-overlay {
+                margin-left: 1rem;
+            }
         }
     }
 }
