@@ -5,7 +5,9 @@ defined('TYPO3_MODE') || die();
 /***************
  * PageTS
  */
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:ku_prototype/Configuration/TsConfig/Page/All.tsconfig">');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('
+    @import \'EXT:ku_prototype/Configuration/TsConfig/Page/All.tsconfig\'
+');
 
 /***************
  * Add default RTE configuration
