@@ -24,7 +24,7 @@ $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['ku_news'] = 'EXT:ku_prototype/Con
 $GLOBALS['TYPO3_CONF_VARS']['SYS']['fluid']['namespaces']['ku'] = ['UniversityOfCopenhagen\KuPrototype\ViewHelpers'];
 
 // Add custom database field to rootline - keep the '&'
-$rootlinefields = &$GLOBALS["TYPO3_CONF_VARS"]["FE"]["addRootLineFields"];
+$rootlinefields = &$GLOBALS['TYPO3_CONF_VARS']["FE"]["addRootLineFields"];
 if($rootlinefields != '')
 {
     $rootlinefields .= ' , ';
