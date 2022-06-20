@@ -19,7 +19,7 @@
     }
 
     .btn-overlay {
-        @include button-variant($btn-overlay, $btn-overlay, $white, #{shade-color($btn-overlay, 10%)}, #{shade-color($btn-overlay, 10%)}, $white);
+        @include button-variant($btn-overlay, $btn-overlay, $white, #{shade-color($btn-overlay, 25%)}, #{shade-color($btn-overlay, 10%)}, $white);
         text-transform: uppercase;
         font-weight: 600;
         letter-spacing: .7px;
@@ -63,6 +63,7 @@
             right: 6%;
             max-width: 50%;
             text-align: right;
+
             &.left {
                 right: auto;
                 left: 6%;
