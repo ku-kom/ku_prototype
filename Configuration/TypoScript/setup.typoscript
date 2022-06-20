@@ -7,9 +7,10 @@
 @import 'EXT:ku_prototype/Configuration/TypoScript/Menus/globalFooter-english.typoscript'
 @import 'EXT:ku_prototype/Configuration/TypoScript/Menus/localFooter-danish.typoscript'
 @import 'EXT:ku_prototype/Configuration/TypoScript/Menus/localFooter-english.typoscript'
-@import 'EXT:ku_prototype/Configuration/TypoScript/Extensions/news.typoscript'
-@import 'EXT:ku_prototype/Configuration/TypoScript/Extensions/calendarize.typoscript'
-@import 'EXT:ku_prototype/Configuration/TypoScript/Extensions/ns_twitter.typoscript'
+@import 'EXT:ku_prototype/Configuration/TypoScript/Extensions/Container/setup.typoscript'
+@import 'EXT:ku_prototype/Configuration/TypoScript/Extensions/News/setup.typoscript'
+@import 'EXT:ku_prototype/Configuration/TypoScript/Extensions/Calendarize/setup.typoscript'
+@import 'EXT:ku_prototype/Configuration/TypoScript/Extensions/Twitter/setup.typoscript'
 
 
 ##############
