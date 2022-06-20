@@ -10,6 +10,12 @@
 .image-with-overlay {
     position: relative;
 
+    @include media-breakpoint-down('lg') {
+        figure {
+            margin-bottom: 0;
+        }
+    }
+
     .image-with-overlay-box {
         padding: 1rem;
     }
