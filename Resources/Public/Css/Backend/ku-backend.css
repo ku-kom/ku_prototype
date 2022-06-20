@@ -148,3 +148,112 @@ button[name="_savedok"]:active:hover {
     border: 1px solid #dc3545;
     box-shadow: inset 1px 1px 4px #555;
 }
+
+/* KU Color families */
+select[name*="ku_color_family"] option[value="box-red1"] {
+    color: #fcfcfc;
+    background: #901a1e;
+}
+
+select[name*="ku_color_family"] option[value="box-red2"] {
+    color: #fcfcfc;
+    background: #c73028;
+}
+
+
+
+select[name*="ku_color_family"] option[value="box-red3"] {
+    color: #ffffff;
+    background: #db3b0a;
+}
+
+
+
+select[name*="ku_color_family"] option[value="box-blue1"] {
+    color: #fcfcfc;
+    background: #122947;
+}
+
+
+
+select[name*="ku_color_family"] option[value="box-blue2"] {
+    color: #fcfcfc;
+    background: #425570;
+}
+
+
+
+select[name*="ku_color_family"] option[value="box-blue3"] {
+    color: #262626;
+    background: #bac7d9;
+}
+
+
+
+select[name*="ku_color_family"] option[value="box-teal1"] {
+    color: #fcfcfc;
+    background: #0a5963;
+}
+
+
+select[name*="ku_color_family"] option[value="box-teal2"] {
+    color: #fcfcfc;
+    background: #197f8e;
+}
+
+
+select[name*="ku_color_family"] option[value="box-teal3"] {
+    color: #262626;
+    background: #b7d7de;
+}
+
+
+
+select[name*="ku_color_family"] option[value="box-green1"] {
+    color: #fcfcfc;
+    background: #39641c;
+}
+
+
+select[name*="ku_color_family"] option[value="box-green2"] {
+    color: #ffffff;
+    background: #4b8325;
+}
+
+
+select[name*="ku_color_family"] option[value="box-green3"] {
+    color: #262626;
+    background: #becaa8;
+}
+
+select[name*="ku_color_family"] option[value="box-grey1"] {
+    color: #fcfcfc;
+    background: #3d3d3d;
+}
+
+
+select[name*="ku_color_family"] option[value="box-grey2"] {
+    color: #fcfcfc;
+    background: #666;
+}
+
+select[name*="ku_color_family"] option[value="box-grey3"] {
+    color: #262626;
+    background: #e1dfdf;
+}
+
+
+select[name*="ku_color_family"] option[value="box-light1"] {
+    color: #262626;
+    background: #fff;
+}
+
+select[name*="ku_color_family"] option[value="box-light2"] {
+    color: #262626;
+    background: #fefaf2;
+}
+
+select[name*="ku_color_family"] option[value="box-light3"] {
+    color: #262626;
+    background: #ffbd38;
+}
