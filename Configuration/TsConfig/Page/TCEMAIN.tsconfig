@@ -54,8 +54,7 @@ mod.web_layout.BackendLayouts.example >
 
 # [end]
 
-# Override label of "Container" tab inside content element wizard
-# Also check tt_content.php
+# Override label of "Container" tab inside content element wizard:
 mod.wizards {
     newContentElement {
         wizardItems {

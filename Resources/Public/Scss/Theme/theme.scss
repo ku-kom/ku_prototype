@@ -14,17 +14,18 @@
 
 // KU overrides
 @import "EXT:ku_prototype/Resources/Public/Icons/Bootstrap-icons/bootstrap-icons.scss";
-@import "Custom/kuIcons";
+@import "Custom/components/kuIcons";
 @import "Custom/global";
+@import "Custom/components/scrolltop";
 @import "Custom/typography";
 @import "Custom/topmenu";
 @import "Custom/leftmenu";
 @import "Custom/offcanvas";
-@import "Custom/footer";
-@import "Custom/breadcrumbs";
+@import "Custom/components/footer";
+@import "Custom/components/breadcrumb";
 @import "Custom/images";
 @import "Custom/colorFamily";
-@import "Custom/frame";
-@import "Custom/Extensions/news";
-@import "Custom/Extensions/container";
-@import "Custom/Extensions/ku_image_with_overlay";
+@import "Custom/components/frame";
+@import "Custom/extensions/news";
+@import "Custom/extensions/container";
+@import "Custom/extensions/ku_image_with_overlay";
