@@ -82,14 +82,17 @@
             padding: 0;
         }
 
+        .image-with-overlay-text {
+            font-size: 2rem;
+            line-height: 1.4;
+            margin: 0;
+        }
+
         .image-with-overlay-text>span {
-            font-size: 1.75rem;
-            line-height: 1.6;
+            padding: 0 10px 4px 10px;
             background-color: var(--overlay-background);
             color: var(--overlay-text-color);
-            box-shadow: -10px 0px 0 6px var(--overlay-background),
-                10px 0px 0 6px var(--overlay-background),
-                0 0 0 6px var(--overlay-background);
+            box-shadow: 10px 0 0 0 var(--overlay-background), -10px 0 0 0 var(--overlay-background);
             -webkit-box-decoration-break: clone;
             box-decoration-break: clone;
         }
