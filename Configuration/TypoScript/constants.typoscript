@@ -142,7 +142,7 @@ page {
             globalMenu {
                 enable = 1
             }
-            #cat=ku-page-settings; type=string; label=Folder id for global menu.
+            #cat=ku-page-settings; type=string; label=Page ids for global menu pages (comma separated).
             globalMenu {
                 id =
             }
