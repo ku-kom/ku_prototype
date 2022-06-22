@@ -17,7 +17,12 @@ TCEMAIN {
             }
         }
     }
-
+    table {
+        pages {
+            # Pages will NOT be hidden upon copy:
+            disableHideAtCopy = 1
+        }
+    }
 }
 
 
