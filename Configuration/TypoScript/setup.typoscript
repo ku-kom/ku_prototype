@@ -202,7 +202,6 @@ page {
             20 {
                 entryLevel = 0
                 levels = 4
-                # Exclude folders: 
                 excludeDoktypes = 6
                 expandAll = 0
                 includeSpacer = 0
