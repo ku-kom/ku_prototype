@@ -153,6 +153,9 @@ page {
                 includeSpacer = 0
                 titleField = nav_title // title
                 as = utilitymenu
+                if {
+                    isTrue = {$page.settings.ku.utilityMenu.id}
+                }
             }
         }
     }
@@ -171,6 +174,9 @@ page {
                 includeSpacer = 0
                 titleField = nav_title // title
                 as = globalnavigation
+                if {
+                    isTrue = {$page.settings.ku.globalMenu.id}
+                }
             }
         }
     }
