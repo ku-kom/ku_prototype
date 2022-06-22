@@ -13,9 +13,13 @@ plugin.tx_news {
             paginate_next = Næste
             # dateFormat = d-m-Y H:i or <f:format.date format="d-m-Y H:i">{newsItem.datetime}</f:format.date> in fluid
 		}
-        # en {
-        #     dateFormat = d-m-Y H:i 
-        # }
+        da {
+			more-link = Læs mere
+            author = Af %s
+            paginate_previous = Forrige
+            paginate_next = Næste
+            dateFormat = %d.%m.%Y
+		}
     }
     settings {
         # Fallback image
