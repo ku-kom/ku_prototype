@@ -161,7 +161,7 @@ page {
     }
 }
 
-# Global menu based on pages comma separated by id
+# Global menu based on page ids comma separated
 page {
     10 {
         dataProcessing {
