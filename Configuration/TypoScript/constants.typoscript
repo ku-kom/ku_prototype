@@ -3,6 +3,12 @@
 ######################
 @import 'EXT:bootstrap_package/Configuration/TypoScript/constants.typoscript'
 
+##############
+### CONFIG ###
+##############
+config {
+    headerComment =
+}
 
 ############
 ### PAGE ###
