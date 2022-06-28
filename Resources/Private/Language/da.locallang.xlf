@@ -22,6 +22,18 @@
             <source>Open sub menu item</source>
             <target>Åbn undermenu</target>
         </trans-unit>
+        <trans-unit id="skip-to-nav" resname="skip-to-nav">
+            <source>Jump to navigation</source>
+            <target>Spring til navigation</target>
+        </trans-unit>
+        <trans-unit id="skip-to-content" resname="skip-to-content">
+            <source>Jump to main navigation</source>
+            <target>Sprng til hovedindhold</target>
+        </trans-unit>
+        <trans-unit id="skip-to-footer" resname="skip-to-footer">
+            <source>Jump to footer</source>
+            <target>Spring til footer</target>
+        </trans-unit>
         <trans-unit id="frontend.contact" resname="frontend.contact">
             <source>Contact</source>
             <target>Kontakt</target>

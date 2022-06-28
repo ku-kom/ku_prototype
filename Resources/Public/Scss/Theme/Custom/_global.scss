@@ -51,6 +51,16 @@ body {
     flex-direction: column;
 }
 
+.skippy {
+    // Tab jump menu
+    background-color: $gray-75;
+    width: 100%;
+
+    a {
+        color: color-contrast($gray-75);
+    }
+}
+
 #page-content {
     flex: 1 0 auto;
 }

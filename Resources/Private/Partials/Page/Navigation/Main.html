@@ -6,6 +6,13 @@
     <f:debug title="" inline="">{_all}</f:debug>
 </f:comment>
 <header id="page-header" class="{headerClass}">
+    <div class="skippy visually-hidden-focusable overflow-hidden">
+        <div class="container-xl">
+            <a class="d-inline-flex p-2 m-1" href="#mainnavigation"> <f:translate key="LLL:EXT:ku_prototype/Resources/Private/Language/locallang.xml:skip-to-nav" /></a>
+            <a class="d-inline-flex p-2 m-1" href="#page-content"><f:translate key="LLL:EXT:ku_prototype/Resources/Private/Language/locallang.xml:skip-to-content" /></a>
+            <a class="d-inline-flex p-2 m-1" href="#page-footer"><f:translate key="LLL:EXT:ku_prototype/Resources/Private/Language/locallang.xml:skip-to-footer" /></a>
+        </div>
+    </div>
     <f:render partial="Navigation/Toplogo" arguments="{_all}" />
     <div class="container">
         <f:render partial="Header/Logo" arguments="{_all}" />
@@ -21,16 +28,8 @@
             </f:comment>
         </nav>
     </div>
+    <f:render partial="Header/SiteHeader" arguments="{_all}" />
 </header>
-<f:if condition="{settings.ku.siteName.enable} > 0">
-    <div class="container">
-        <div class="row row-sitename">
-            <div class="col offset-md-3">
-                <div class="sitename">
-                    <f:link.page pageUid="{rootPage}" class="branding-name" tabindex="-1">{siteTitle}</f:link.page>
-                </div>
-            </div>
-        </div>
-    </div>
-</f:if>
+
+
 </html>

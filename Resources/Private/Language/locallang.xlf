@@ -18,6 +18,15 @@
         <trans-unit id="mobile-menu-toggle" resname="mobile-menu-toggle">
             <source>Open sub menu item</source>
         </trans-unit>
+        <trans-unit id="skip-to-nav" resname="skip-to-nav">
+            <source>Jump to navigation</source>
+        </trans-unit>
+        <trans-unit id="skip-to-content" resname="skip-to-content">
+            <source>Jump to main content</source>
+        </trans-unit>
+        <trans-unit id="skip-to-footer" resname="skip-to-footer">
+            <source>Jump to footer</source>
+        </trans-unit>
         <trans-unit id="frontend.contact" resname="frontend.contact">
             <source>Contact</source>
         </trans-unit>

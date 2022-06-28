@@ -2,22 +2,18 @@
 <f:spaceless>
     <div id="top"></div>
     <div class="body-bg{f:if(condition:theme.navigation.type, then:' body-bg-{theme.navigation.type}')}">
-
         <f:render partial="DropIn/Page/PageBefore" arguments="{_all}" />
         <f:render partial="Structure/CookieConsent" arguments="{_all}" />
-        <a class="visually-hidden-focusable" href="#page-content">
-            <span>{f:translate(key: 'skiptomaincontent', extensionName: 'bootstrap_package')}</span>
-        </a>
         <f:render partial="Navigation/Main" arguments="{_all}" />
         <f:render section="Border" optional="true" />
-        <f:comment><!-- <f:render partial="Navigation/Breadcrumb" arguments="{_all}" /> --></f:comment>
-
+        <f:comment>
+            <!-- <f:render partial="Navigation/Breadcrumb" arguments="{_all}" /> -->
+        </f:comment>
         <div id="page-content" class="bp-page-content main-section">
             <!--TYPO3SEARCH_begin-->
             <f:render section="Main" />
             <!--TYPO3SEARCH_end-->
         </div>
-
         <footer id="page-footer" class="bp-page-footer">
             <f:render partial="DropIn/Structure/FooterBefore" arguments="{_all}" />
             <f:render section="Footer" optional="true" />
@@ -28,7 +24,6 @@
         </footer>
         <f:render partial="Structure/ScrollTop" arguments="{_all}" />
         <f:render partial="DropIn/Page/PageAfter" arguments="{_all}" />
-
     </div>
 </f:spaceless>
 
