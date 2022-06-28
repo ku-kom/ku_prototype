@@ -7,6 +7,10 @@
                     <f:if condition="{lib.footerContent.{pageLanguage}_localFooterAddress !== ''}">
                         <f:cObject typoscriptObjectPath="lib.footerContent.{pageLanguage}_localFooterAddress" />
                     </f:if>
+                    <f:if condition="{lib.lastChanged !== ''}">
+                        <f:translate key="LLL:EXT:ku_prototype/Resources/Private/Language/locallang.xlf:frontend.last-modified" />
+                        <f:format.date format="d.m.Y, H:i:s"><f:cObject typoscriptObjectPath="lib.lastChanged" /></f:format.date>
+                    </f:if>
                 </div>
                 <div class="col-md-4 offset-md-4 footer-data">
                     <f:translate key="LLL:EXT:ku_prototype/Resources/Private/Language/locallang.xlf:frontend.contact" />:<br>

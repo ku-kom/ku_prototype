@@ -30,6 +30,9 @@
         <trans-unit id="frontend.contact" resname="frontend.contact">
             <source>Contact</source>
         </trans-unit>
+        <trans-unit id="frontend.last-modified" resname="frontend.last-modified">
+            <source>Modified</source>
+        </trans-unit>
         </body>
     </file>
 </xliff>

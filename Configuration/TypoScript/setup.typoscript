@@ -105,6 +105,16 @@ page {
     }
 }
 
+############################
+#### PAGE LAST MODIFIED ####
+############################
+
+lib.lastChanged = TEXT
+lib.lastChanged {
+	data = page:SYS_LASTCHANGED
+	# strftime = %d.%m.%Y %H:%M:%S
+}
+
 #####################################################################
 #### INHERITS VALUE FROM PARENT PAGE IF UNSET ON PAGE            ####
 #### Use in ts: lib.pageconfig.ku_unit or in fluid as:           ####
@@ -289,3 +299,4 @@ page.10.dataProcessing.30.special.range = 0|-1
 # page.20 {
 #   userFunc = UniversityOfCopenhagen\KuPrototype\UserFunctions\Time->printTime
 # }
+
