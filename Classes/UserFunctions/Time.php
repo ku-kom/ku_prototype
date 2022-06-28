@@ -10,7 +10,7 @@ declare(strict_types=1);
 
 namespace UniversityOfCopenhagen\KuPrototype\UserFunctions;
 
-final class Time
+class Time
 {
     /**
      * Output the current time
