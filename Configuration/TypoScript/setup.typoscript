@@ -283,3 +283,9 @@ page.10.dataProcessing.10.levels = 5
 # Start level: 0 is rootline. 1 is the page one level below the root page.
 # End level: -1 = The current page.
 page.10.dataProcessing.30.special.range = 0|-1
+
+# Testing userfunc
+# page.20 = USER_INT
+# page.20 {
+#   userFunc = UniversityOfCopenhagen\KuPrototype\UserFunctions\Time->printTime
+# }
