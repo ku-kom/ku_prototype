@@ -1,7 +1,7 @@
 /* eslint-disable no-redeclare */
 /* ========================================================================
  * Copyright 2022
- * University of Copenhagen, FA Communications, NEL.
+ * University of Copenhagen, FA Communications, Nanna Ellegaard.
  * ========================================================================*/
 
 /**

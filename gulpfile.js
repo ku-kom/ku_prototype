@@ -52,6 +52,6 @@ gulp.task('scripts', () => {
 });
 
 gulp.task('watch', () => {
-  gulp.watch('./Resources/Public/Scss/Theme/**/*.scss', gulp.series(['cleanCss', 'sass']));
+  // gulp.watch('./Resources/Public/Scss/Theme/**/*.scss', gulp.series(['cleanCss', 'sass']));
   gulp.watch('./Resources/Public/JavaScript/Src/**/*.js', gulp.series(['cleanJs', 'scripts']));
 });
