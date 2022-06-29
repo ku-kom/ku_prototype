@@ -42,6 +42,10 @@
             <source>Modified</source>
             <target>Sidst rettet</target>
         </trans-unit>
+        <trans-unit id="dateformat" resname="dateformat">
+            <source>%m %d %Y</source>
+            <target>%d.%m.%Y</target>
+        </trans-unit>
         </body>
     </file>
 </xliff>

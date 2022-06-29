@@ -33,6 +33,9 @@
         <trans-unit id="frontend.last-modified" resname="frontend.last-modified">
             <source>Modified</source>
         </trans-unit>
+        <trans-unit id="dateformat" resname="dateformat">
+            <source>%m %d %Y</source>
+        </trans-unit>
         </body>
     </file>
 </xliff>

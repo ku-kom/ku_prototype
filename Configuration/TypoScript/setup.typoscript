@@ -105,14 +105,6 @@ page {
     }
 }
 
-######################################
-#### PAGE LAST MODIFIED TIMESTAMP ####
-######################################
-lib.lastChanged = TEXT
-lib.lastChanged {
-	data = page:SYS_LASTCHANGED
-}
-
 #####################################################################
 #### INHERITS VALUE FROM PARENT PAGE IF UNSET ON PAGE            ####
 #### Use in ts: lib.pageconfig.ku_unit or in fluid as:           ####
