@@ -11,7 +11,7 @@
                         <f:if condition="{data.SYS_LASTCHANGED}">
                             <f:translate key="LLL:EXT:ku_prototype/Resources/Private/Language/locallang.xlf:frontend.last-modified" />
                             <time datetime="{f:format.date(format: '%Y-%m-%d', date: '{{data.SYS_LASTCHANGED}->f:format.date(format: \'%Y-%m-%d\')}')}">
-                                <f:format.date format="{f:translate(key: 'dateformat', extensionName: 'ku_prototype')}">{data.SYS_LASTCHANGED}</f:format.date>
+                                <f:format.date format="%d.%m.%Y">{data.SYS_LASTCHANGED}</f:format.date>
                             </time>
                         </f:if>
                     </f:if>
