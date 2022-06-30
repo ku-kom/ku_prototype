@@ -172,6 +172,10 @@ page {
             globalFooter {    
                 enable = 1
             }
+            #cat=ku-page-settings; type=boolean; label=Display last modified date on page. Set to '0' to disable.
+            lastModified {    
+                enable = 1
+            }
         }
     }
 }

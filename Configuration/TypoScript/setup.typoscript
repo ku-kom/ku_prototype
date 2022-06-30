@@ -82,6 +82,10 @@ page {
                 globalFooter {    
                     enable = {$page.settings.ku.globalFooter.enable}
                 }
+                # Enable/disable last modified date
+                lastModified {    
+                    enable = {$page.settings.ku.lastModified.enable}
+                }
             }
             
         }
