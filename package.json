@@ -11,7 +11,7 @@
 		"lint:js": "eslint --cache --cache-location .cache/.eslintcache",
 		"minify:js": "terser --compress passes=2 --toplevel --comments \"/^!/\" --source-map \"root='Resources/Public/JavaScript/Dist',url='Resources/Public/JavaScript/Dist/ku-scripts.min.js.map'\" --output \"Resources/Public/JavaScript/Dist/ku-scripts.min.js\" \"Resources/Public/JavaScript/Dist/ku-scripts.js\"",
 		"build:js": "npm-run-all lint && npm-run-all concat:js && npm-run-all minify:js",
-		"build": "npm-run-all build:js",
+		"build": "npm-run-all --aggregate-output --parallel build:js",
 		"watch:js": "onchange \"Resources/Public/JavaScript/Src/*.js\" -- npm-run-all build:js",
 		"watch": "npm-run-all --parallel watch:*"
 	},
