@@ -92,8 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setAriaAttr();
   }, 150));
 
-});
-/* eslint-disable no-redeclare */
+});/* eslint-disable no-redeclare */
 /* ========================================================================
  * Copyright 2022
  * University of Copenhagen, FA Communications, Nanna Ellegaard.
@@ -171,7 +170,6 @@ document.addEventListener('DOMContentLoaded', () => {
     hasScrollbar();
   }, 250));
 });
-
 /* ========================================================================
  * Copyright 2022
  * University of Copenhagen, FA Communications
@@ -250,7 +248,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 })()
-
 /* ========================================================================
  * Copyright 2022
  * University of Copenhagen, FA Communications
