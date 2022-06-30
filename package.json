@@ -15,7 +15,8 @@
 		"watch": "npm-run-all --parallel watch:*"
 	},
 	"keywords": [
-		"TYPO3"
+		"TYPO3",
+		"Bootstrap"
 	],
 	"author": "Nanna Ellegaard",
 	"license": "ISC",
