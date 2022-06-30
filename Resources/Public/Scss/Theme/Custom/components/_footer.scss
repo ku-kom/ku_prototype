@@ -31,6 +31,7 @@
     }
 
     ul {
+        @include list-unstyled();
 
         li {
             color: var(--frame-color);
