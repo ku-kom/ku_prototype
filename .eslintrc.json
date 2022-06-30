@@ -1,0 +1,15 @@
+{
+  "root": true,
+  "parserOptions": {
+      "ecmaVersion": 2017
+  },
+  "env": {
+      "es6": true
+  },
+  "rules": {
+    "arrow-body-style": "off",
+    "capitalized-comments": "off",
+    "no-console": "error",
+    "no-negated-condition": "off"
+  }
+}
