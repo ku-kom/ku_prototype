@@ -5,7 +5,7 @@
 	"main": "Resources/Public/JavaScript/Dist/ku-scripts.min.js",
 	"scripts": {
 		"build:icons": "icon-gen --favicon --input \"Resources/Public/Icons/Extension.svg\" --output \"Resources/Public/Icons\"",
-		"css-compile": "sass \"Resources/Public/Scss/\":\"Resources/Public/Css/Src/\"",
+		"css-compile": "sass --style expanded --source-map --embed-sources --no-error-css \"Resources/Public/Scss/\":\"Resources/Public/Css/Src/\"",
 		"concat:js": "globcat \"Resources/Public/JavaScript/Src/**/*.js\" --output \"Resources/Public/JavaScript/Dist/ku-scripts.js\"",
 		"concat": "npm-run-all concat:js",
 		"lint": "npm-run-all lint:**",
