@@ -44,13 +44,13 @@ call_user_func(function () {
             ],
             'select_author' => [
                 // List of backend users
-                'label' => 'Select author',
+                'label' => 'LLL:EXT:ku_prototype/Resources/Private/Language/locallang_tca.xlf:select_author',
                 'exclude' => 1,
                 'config' => [
                     'type' => 'select',
                     'renderType' => 'selectSingle',
                     'items' => [
-                        ['-- Select author --', ''],
+                        ['LLL:EXT:ku_prototype/Resources/Private/Language/locallang_tca.xlf:select_author', ''],
                     ],
                     'itemsProcFunc' => 'UniversityOfCopenhagen\KuPrototype\UserFunctions\BackendUsers->getBackendUsers',
                     // 'foreign_table' => 'be_users',
