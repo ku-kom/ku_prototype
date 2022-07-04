@@ -42,6 +42,21 @@ call_user_func(function () {
                     ],
                 ],
             ],
+            'select_author' => [
+                // List of backend users
+                'label' => 'Select author',
+                'exclude' => 1,
+                'config' => [
+                    'type' => 'select',
+                    'renderType' => 'selectSingle',
+                    'items' => [
+                        ['-- Select author --', ''],
+                    ],
+                    'itemsProcFunc' => 'UniversityOfCopenhagen\KuPrototype\UserFunctions\BackendUsers->getBackendUsers',
+                    // 'foreign_table' => 'be_users',
+                    // 'foreign_table_where' => 'AND be_users.realName IN (0,-1) ORDER BY be_users.realName ASC',
+                ],
+            ],
         ]
     );
 
@@ -49,7 +64,7 @@ call_user_func(function () {
     // Make fields visible in the TCEforms in a new KU tab:
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
         'pages', 
-        '--div--;LLL:EXT:ku_prototype/Resources/Private/Language/locallang.xlf:frontend.ku-short,ku_faculty', 
+        '--div--;LLL:EXT:ku_prototype/Resources/Private/Language/locallang.xlf:frontend.ku-short,ku_faculty,select_author', 
         '',
         ''
     );
