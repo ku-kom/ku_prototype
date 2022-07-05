@@ -17,7 +17,7 @@
     }
 
     .image-with-overlay-box {
-        padding: 1rem;
+        @include padding(1rem);
     }
 
     .image-with-overlay-text {
@@ -29,14 +29,14 @@
         text-transform: uppercase;
         font-weight: 600;
         letter-spacing: .7px;
-        margin-top: 1rem;
+        @include margin-top(1rem);
 
         &::after {
             display: inline-block;
             font-size: 80%;
             font-weight: 400;
             vertical-align: text-bottom;
-            margin-left: 1rem;
+            @include margin-left(1rem);
             right: 1rem;
             @extend .ku-icon;
             content: "\61";
@@ -53,7 +53,7 @@
                 display: inline-block;
                 font-size: 80%;
                 vertical-align: text-bottom;
-                margin-left: 1rem;
+                @include margin-left(1rem);
                 right: 1rem;
                 top: 50%;
                 transform: translateY(-50%);
@@ -83,7 +83,7 @@
         }
 
         .image-with-overlay-text {
-            font-size: 2rem;
+            @include font-size(2rem);
             line-height: 1.4;
             margin: 0;
         }
@@ -106,7 +106,7 @@
         .btn-overlay {
 
             &+.btn-overlay {
-                margin-left: 1rem;
+                @include margin-left(1rem);
             }
         }
     }

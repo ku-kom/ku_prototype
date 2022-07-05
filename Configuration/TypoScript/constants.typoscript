@@ -209,7 +209,7 @@ plugin.bootstrap_package_contentelements {
 ### BOOTSTRAP SCSS CONSTANTS ###
 ################################
 plugin.bootstrap_package.settings.scss {
-    enable-gradients = true
+    # enable-gradients = true
     primary = #2c6694
     secondary = #013859
 
