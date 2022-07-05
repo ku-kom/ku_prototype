@@ -16,7 +16,7 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
 class BackendUsers
 {
     /**
-     * Gets the listing of users and groups.
+     * Gets list of backend users.
      *
      * @param array	The current config array.
      * @return array
