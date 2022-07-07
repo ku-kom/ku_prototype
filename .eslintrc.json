@@ -7,7 +7,7 @@
   "rules": {
     "arrow-body-style": "off",
     "capitalized-comments": "off",
-    "no-console": "error",
-    "no-negated-condition": "off"
+    "no-negated-condition": "off",
+    "quotes": ["error", "single", "avoid-escape"]
   }
 }
