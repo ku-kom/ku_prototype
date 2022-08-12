@@ -7,11 +7,8 @@
 
 .bootstrap-icons {
     position: relative;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
@@ -29,7 +26,6 @@
     display: inline-block;
     padding: 10px 5px !important;
     border: 1px solid #eee;
-    flex: 1;
 }
 
 .iconlist>* {
