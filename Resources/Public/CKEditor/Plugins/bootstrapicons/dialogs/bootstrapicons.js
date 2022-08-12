@@ -79,29 +79,6 @@ const clear = () => {
     document.querySelector('.selected-icon').value = '';
 }
 
-// const bi_icons_json = '/typo3conf/ext/ku_prototype/Resources/Public/Icons/Bootstrap-icons/bootstrap-icons.json';
-// async function getData() {
-//     let url = bi_icons_json;
-//     try {
-//         let res = await fetch(url);
-//         return await res.json();
-//     } catch (error) {
-//         console.log(error);
-//     }
-// }
-
-// async function renderData() {
-//     let bi = await getData();
-//     let icons = '';
-//     for (const [key, value] of Object.entries(bi)) {
-//         let htmlSegment = `<a href="#" onclick="active(this);select(this);return false;" class="iconlist" aria-label="${key}"><span class="bi-${key}" aria-hidden="true"></span><div class="icon-label">${key}</div></a>'`;
-
-//         icons += htmlSegment;
-//     }
-//     return icons;
-// }
-
-
 CKEDITOR.dialog.add('bootstrapiconsDialog', function (editor) {
     const lang = editor.lang.bootstrapicons;
     const bi_icons = {
