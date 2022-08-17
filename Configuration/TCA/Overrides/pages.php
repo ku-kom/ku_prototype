@@ -20,8 +20,9 @@ call_user_func(function () {
     // Add faculty fields to pages table to show TCA fields definitions
     $GLOBALS['TCA']['pages']['columns'] = array_replace_recursive(
         $GLOBALS['TCA']['pages']['columns'],
-        [   // Faculty select box on every site root page
+        [
             'ku_faculty' => [
+                // Faculty select box on every site root page
                 'displayCond' => 'FIELD:is_siteroot:REQ:true', // Site root only
                 'exclude' => 1,
                 'label' => 'LLL:EXT:ku_prototype/Resources/Private/Language/locallang_tca.xlf:select_faculty',
@@ -42,6 +43,21 @@ call_user_func(function () {
                     ],
                 ],
             ],
+            'ku_select_author' => [
+                // List of backend users
+                'label' => 'LLL:EXT:ku_prototype/Resources/Private/Language/locallang_tca.xlf:select_author',
+                'exclude' => 1,
+                'config' => [
+                    'type' => 'select',
+                    'renderType' => 'selectSingle',
+                    'items' => [
+                        ['LLL:EXT:ku_prototype/Resources/Private/Language/locallang_tca.xlf:select_author', ''],
+                    ],
+                    'itemsProcFunc' => 'UniversityOfCopenhagen\KuPrototype\UserFunctions\BackendUsers->getBackendUsers',
+                    // 'foreign_table' => 'be_users',
+                    // 'foreign_table_where' => 'AND be_users.realName IN (0,-1) ORDER BY be_users.realName ASC',
+                ],
+            ],
         ]
     );
 
@@ -49,7 +65,7 @@ call_user_func(function () {
     // Make fields visible in the TCEforms in a new KU tab:
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
         'pages', 
-        '--div--;LLL:EXT:ku_prototype/Resources/Private/Language/locallang.xlf:frontend.ku-short,ku_faculty', 
+        '--div--;LLL:EXT:ku_prototype/Resources/Private/Language/locallang.xlf:frontend.ku-short,ku_faculty,ku_select_author', 
         '',
         ''
     );

@@ -54,6 +54,9 @@
             <trans-unit id="select_assets_js.jQuery" resname="select_assets_js.jQuery">
                 <source>jQuery</source>
             </trans-unit>
+            <trans-unit id="select_author" resname="select_author">
+                <source>Select author</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>

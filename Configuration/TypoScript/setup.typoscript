@@ -30,7 +30,7 @@ page {
     includeCSSLibs {
         # Diasble libraries
         googlewebfont >
-        # bootstrappackageicon >
+        bootstrappackageicon >
     }
 
     includeJSLibs {

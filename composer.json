@@ -2,6 +2,10 @@
     "name": "university-of-copenhagen/ku-prototype",
     "type": "typo3-cms-extension",
     "description": "KU demo design.",
+    "authors": [{
+        "name": "Nanna Ellegaard",
+        "role": "Developer"
+    }],
     "homepage": "https://www.ku.dk",
     "license": ["GPL-2.0-or-later"],
     "keywords": ["TYPO3 CMS"],

@@ -1,0 +1,12 @@
+//
+// Extension Container overrides
+//
+
+:root {
+    --contentcontainer-gap: 60px;
+}
+
+// Keep columns width
+.contentcontainer-column {
+    overflow: hidden;
+}

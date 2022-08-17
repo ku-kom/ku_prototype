@@ -1,0 +1,74 @@
+//
+// News system extension
+//
+
+// Custom styling
+
+.news {
+
+    .lead {
+        font-weight: 600;
+    }
+
+    .list-group-item {
+        .news-title {
+            a {
+                color: #000;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .news-tile-view {
+        .list-group {
+            list-style: none;
+            width: 100%;
+            /*kills the irritating intial padding on uls in webkit*/
+            -webkit-padding-start: 0;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: stretch;
+            gap: 30px;
+        }
+
+        .list-group-item {
+            flex: 1 0 100%;
+            border-radius: 0;
+            display: inline-block;
+            position: relative;
+            // transition: all .2s ease-out;
+
+            @include media-breakpoint-up(md) {
+                flex: 0 0 calc(33% - 30px);
+
+                .frame & {
+                    flex: 1;
+                }
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                width: 100%;
+                height: 100%;
+                box-shadow: 0 0 0 1px #ddd;
+                transition: box-shadow .2s ease-out;
+            }
+
+            &:hover {
+                &:after {
+                    box-shadow: 0 8px 10px 0 rgb(60 60 60 / 10%), 0 2px 6px 0 rgb(64 64 64 / 19%);
+                }
+            }
+        }
+
+    }
+
+    .news-single-tile-view {
+        border: 1px solid #ccc;
+        padding: 30px;
+    }
+}

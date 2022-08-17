@@ -70,6 +70,10 @@
                 <source>jQuery</source>
                 <target>jQuery</target>
             </trans-unit>
+            <trans-unit id="select_author" resname="select_author">
+                <source>Select author</source>
+                <target>Vælg afsender</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

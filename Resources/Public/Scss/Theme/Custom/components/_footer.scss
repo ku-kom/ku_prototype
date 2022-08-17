@@ -31,13 +31,10 @@
     }
 
     ul {
-
         @include list-unstyled();
-        gap: 1rem;
 
         li {
             color: var(--frame-color);
-            width: auto;
 
             a {
                 color: inherit;
@@ -49,12 +46,6 @@
         font-weight: 600;
         font-size: 1.2rem;
         letter-spacing: .06rem;
-    }
-}
-
-.footer-sociallinks {
-    .sociallinks-link {
-        border-radius: 50%;
     }
 }
 
@@ -81,7 +72,7 @@
             padding: ($spacer * 1) ($spacer * 1.25);
         }
 
-        & > ul {
+        &>ul {
             margin: 0;
             transition: height .4s cubic-bezier(.02, .01, .47, 1);
             overflow: hidden;
@@ -129,6 +120,7 @@
         .element-header {
             font-size: 1.4rem;
         }
+
         .frame-header {
             pointer-events: none;
             margin-bottom: .5rem;

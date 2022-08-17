@@ -33,7 +33,8 @@
 @include font-face($ku-symbols, '#{$ku_prototype_public_path}Fonts/KU', 400, normal, woff2 woff ttf svg);
 
 .extbase-debugger-floating {
-    top: 50%;
+    bottom: 0;
+    position: fixed;
 }
 
 html,
@@ -66,7 +67,7 @@ body {
 }
 
 .lead {
-    font-size: 1rem;
+    @include font-size(1rem);
     font-weight: 400;
 }
 

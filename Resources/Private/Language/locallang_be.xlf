@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-    <file source-language="en" datatype="plaintext" original="EXT:ku_prototype/Resources/Private/Language/locallang_be.xlf" date="2021-10-29UTC08:09:160" product-name="ku_prototype">
+    <file source-language="en" datatype="plaintext" original="EXT:ku_prototype/Resources/Private/Language/locallang_be.xlf" date="2022-08-14UTC08:09:160" product-name="ku_prototype">
         <header>
             <authorName>Nanna Ellegaard</authorName>
             <authorEmail>nel@adm.ku.dk</authorEmail>
@@ -64,7 +64,7 @@
                 <source>KU Global layout elements</source>
             </trans-unit>
             <trans-unit id="container-grid" resname="container-grid">
-                <source>Grid</source>
+                <source>Grids</source>
             </trans-unit>
         </body>
     </file>

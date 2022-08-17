@@ -1,0 +1,13 @@
+// Social links - footer and content element
+
+.sociallinks-list {
+    @include list-unstyled();
+    gap: 1rem;
+
+    .sociallinks-item {
+        width: auto;
+    }
+    .sociallinks-link {
+        color: inherit;
+    } 
+}
