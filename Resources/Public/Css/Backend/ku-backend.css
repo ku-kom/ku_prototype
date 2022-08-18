@@ -239,3 +239,13 @@ select[name*="ku_color_family"] option[value="box-light3"], [class*="box-light3"
     color: #262626;
     background: #ffbd38;
 }
+
+/* Backend custom elements */
+.content-element-preview-ctype {
+    font-weight: 700;
+}
+
+.content-element-text {
+    display: inline-block;
+    padding: .15rem .3rem;
+}
