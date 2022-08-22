@@ -23,7 +23,7 @@ $GLOBALS['SiteConfiguration']['site']['columns']['ku_user_faculty'] = [
     ],
 ];
 
-// add a new palette for custom fields for t3kit specific options
+// add a new palette for custom field of backend users
 $GLOBALS['SiteConfiguration']['site']['palettes']['ku_user_faculty'] = [
     'showitem' => 'ku_user_faculty'
 ];
