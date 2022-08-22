@@ -6,10 +6,10 @@
  * LICENSE file that was distributed with this source code.
  */
 
-defined('TYPO3') or die();
+defined('TYPO3') or die('Access denied.');
 
 call_user_func(static function () {
-    // Add some fields to be_users table to show TCA fields definitions
+    // Add fields to be_users table to show TCA fields definitions
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns(
         'be_users',
         [

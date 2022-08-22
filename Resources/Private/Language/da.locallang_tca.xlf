@@ -74,6 +74,10 @@
                 <source>Select author</source>
                 <target>Vælg afsender</target>
             </trans-unit>
+            <trans-unit id="select_content_responsible" resname="select_content_responsible">
+                <source>Select content responsible</source>
+                <target>Vælg webstedsansvarlig</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

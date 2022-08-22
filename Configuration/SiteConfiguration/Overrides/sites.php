@@ -1,29 +1,35 @@
 <?php
 
-defined('TYPO3_MODE') || die();
+/*
+ * This file is part of the package ku_prototype.
+ * For the full copyright and license information, please read the
+ * LICENSE file that was distributed with this source code.
+ */
+
+defined('TYPO3') or die('Access denied.');
 
 // Docs: https://t3terminal.com/blog/typo3-site-configuration/
 
-// call_user_func(function () {
-// // Adding new field to the site configuration
+$GLOBALS['SiteConfiguration']['site']['columns']['ku_user_faculty'] = [
+    'label' => 'LLL:EXT:ku_prototype/Resources/Private/Language/locallang_tca.xlf:select_content_responsible',
+    'config' => [
+        'type' => 'select',
+        'renderType' => 'selectSingle',
+        // List of backend users
+        'items' => [
+            ['LLL:EXT:ku_prototype/Resources/Private/Language/locallang_tca.xlf:select_content_responsible', ''],
+        ],
+        'itemsProcFunc' => 'UniversityOfCopenhagen\KuPrototype\UserFunctions\BackendUsers->getBackendUsers',
+    ],
+];
 
-//     // Configure a new simple input field to site
-//     $GLOBALS['SiteConfiguration']['site']['columns']['footerColOne'] = [
-//         'label' => 'LLL:EXT:ku_prototype/Resources/Private/Language/locallang_be.xlf:backend_layout.column.footer_col1',
-//         'config' => [
-//             'type' => 'text',
-//             'cols' => 50,
-//             'rows' => 15,
-//             //'placeholder' => '',
-//             //'eval' => 'required',
-//         ],
-//     ];
+// add a new palette for custom fields for t3kit specific options
+$GLOBALS['SiteConfiguration']['site']['palettes']['ku_user_faculty'] = [
+    'showitem' => 'ku_user_faculty'
+];
 
-//     // And add it to showitem
-//     $GLOBALS['SiteConfiguration']['site']['types']['0']['showitem'] = str_replace(
-//         'base,',
-//         'base, footerColOne, ',
-//         $GLOBALS['SiteConfiguration']['site']['types']['0']['showitem']
-//     );
-
-// });
+$GLOBALS['SiteConfiguration']['site']['types']['0']['showitem'] = str_replace(
+    'base,',
+    'base,--palette--;;ku_user_faculty,',
+    $GLOBALS['SiteConfiguration']['site']['types']['0']['showitem']
+);

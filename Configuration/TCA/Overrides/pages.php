@@ -6,7 +6,7 @@
  * LICENSE file that was distributed with this source code.
  */
 
-defined('TYPO3_MODE') || die();
+defined('TYPO3') or die('Access denied.');
 
 call_user_func(function () {
     /**
@@ -60,8 +60,6 @@ call_user_func(function () {
                         ['LLL:EXT:ku_prototype/Resources/Private/Language/locallang_tca.xlf:select_author', ''],
                     ],
                     'itemsProcFunc' => 'UniversityOfCopenhagen\KuPrototype\UserFunctions\BackendUsers->getBackendUsers',
-                    // 'foreign_table' => 'be_users',
-                    // 'foreign_table_where' => 'AND be_users.realName IN (0,-1) ORDER BY be_users.realName ASC',
                 ],
             ],
         ]

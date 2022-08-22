@@ -57,6 +57,9 @@
             <trans-unit id="select_author" resname="select_author">
                 <source>Select author</source>
             </trans-unit>
+            <trans-unit id="select_content_responsible" resname="select_content_responsible">
+                <source>Select content responsible</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>
