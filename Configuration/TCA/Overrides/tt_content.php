@@ -8,7 +8,5 @@
 
 defined('TYPO3') or die('Access denied.');
 
-
 // Container extension - rename Content Element Wizard label - also check TCEMAIN
 $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['itemGroups']['container'] = 'LLL:EXT:ku_prototype/Resources/Private/Language/locallang_be.xlf:container-grid';
-

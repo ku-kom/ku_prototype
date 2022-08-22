@@ -30,8 +30,7 @@ class AuthorNameViewHelper extends AbstractViewHelper
         $this->registerArgument('authorUid', 'integer', 'uid of the author', true);
     }
 
-    public static function renderStatic
-    (
+    public static function renderStatic(
         array $arguments,
         \Closure $renderChildrenClosure,
         RenderingContextInterface $renderingContext
@@ -62,7 +61,7 @@ class AuthorNameViewHelper extends AbstractViewHelper
 
         $name = $result['realName'];
         $email = $result['email'];
-        
+
         if ($result !== false ? $result : null) {
             if ($name && $email) {
                 return $name . '<br><a href="mailto:' . $email . '">' . $email . '</a>';

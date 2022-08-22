@@ -1,5 +1,11 @@
 <?php
 
+/*
+ * This file is part of the package ku_prototype.
+ * For the full copyright and license information, please read the
+ * LICENSE file that was distributed with this source code.
+ */
+
 defined('TYPO3_MODE') || die();
 
 call_user_func(function () {
@@ -61,11 +67,10 @@ call_user_func(function () {
         ]
     );
 
-
     // Make fields visible in the TCEforms in a new KU tab:
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
-        'pages', 
-        '--div--;LLL:EXT:ku_prototype/Resources/Private/Language/locallang.xlf:frontend.ku-short,ku_faculty,ku_select_author', 
+        'pages',
+        '--div--;LLL:EXT:ku_prototype/Resources/Private/Language/locallang.xlf:frontend.ku-short,ku_faculty,ku_select_author',
         '',
         ''
     );
