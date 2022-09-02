@@ -3,10 +3,8 @@
  * University of Copenhagen, FA Communications
  * ========================================================================*/
 
-(function () {
-  'use strict'
-
-  window.addEventListener('DOMContentLoaded', function () {
+window.addEventListener('DOMContentLoaded', () => {
+    'use strict'
 
     /**
      * Solution to set appropiate aria-axpanded states in menus.
@@ -14,17 +12,17 @@
      */
 
     function navbarPointerOver(element) {
-      let toggle = document.querySelector('.navbar-toggler');
-      if (window.getComputedStyle(toggle).display === 'none' && element.classList.contains('open') === false) {
-        element.querySelector('.menu_arrow').setAttribute('aria-expanded', 'true');
-      }
+        let toggle = document.querySelector('.navbar-toggler');
+        if (window.getComputedStyle(toggle).display === 'none' && element.classList.contains('open') === false) {
+            element.querySelector('.menu_arrow').setAttribute('aria-expanded', 'true');
+        }
     }
 
     function navbarPointerLeave(element) {
-      let toggle = document.querySelector('.navbar-toggler');
-      if (window.getComputedStyle(toggle).display === 'none') {
-        element.querySelector('.menu_arrow').setAttribute('aria-expanded', 'false');
-      }
+        let toggle = document.querySelector('.navbar-toggler');
+        if (window.getComputedStyle(toggle).display === 'none') {
+            element.querySelector('.menu_arrow').setAttribute('aria-expanded', 'false');
+        }
     }
 
     // Array.from(document.querySelectorAll('li.has-children')).forEach(function (element) {
@@ -69,10 +67,8 @@
 
     // Toggle aria states for hamburger icon
     document.getElementById('navbarSideCollapse').addEventListener('click', (e) => {
-      const btn = e.currentTarget;
-      btn.setAttribute('aria-expanded', btn.getAttribute('aria-expanded') === 'true' ? 'false' : 'true');
+        const btn = e.currentTarget;
+        btn.setAttribute('aria-expanded', btn.getAttribute('aria-expanded') === 'true' ? 'false' : 'true');
     });
 
-  });
-
-})()
+});

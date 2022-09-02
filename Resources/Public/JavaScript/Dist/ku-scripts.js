@@ -176,10 +176,8 @@ document.addEventListener('DOMContentLoaded', () => {
  * University of Copenhagen, FA Communications
  * ========================================================================*/
 
-(function () {
-  'use strict'
-
-  window.addEventListener('DOMContentLoaded', function () {
+window.addEventListener('DOMContentLoaded', () => {
+    'use strict'
 
     /**
      * Solution to set appropiate aria-axpanded states in menus.
@@ -187,17 +185,17 @@ document.addEventListener('DOMContentLoaded', () => {
      */
 
     function navbarPointerOver(element) {
-      let toggle = document.querySelector('.navbar-toggler');
-      if (window.getComputedStyle(toggle).display === 'none' && element.classList.contains('open') === false) {
-        element.querySelector('.menu_arrow').setAttribute('aria-expanded', 'true');
-      }
+        let toggle = document.querySelector('.navbar-toggler');
+        if (window.getComputedStyle(toggle).display === 'none' && element.classList.contains('open') === false) {
+            element.querySelector('.menu_arrow').setAttribute('aria-expanded', 'true');
+        }
     }
 
     function navbarPointerLeave(element) {
-      let toggle = document.querySelector('.navbar-toggler');
-      if (window.getComputedStyle(toggle).display === 'none') {
-        element.querySelector('.menu_arrow').setAttribute('aria-expanded', 'false');
-      }
+        let toggle = document.querySelector('.navbar-toggler');
+        if (window.getComputedStyle(toggle).display === 'none') {
+            element.querySelector('.menu_arrow').setAttribute('aria-expanded', 'false');
+        }
     }
 
     // Array.from(document.querySelectorAll('li.has-children')).forEach(function (element) {
@@ -242,23 +240,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Toggle aria states for hamburger icon
     document.getElementById('navbarSideCollapse').addEventListener('click', (e) => {
-      const btn = e.currentTarget;
-      btn.setAttribute('aria-expanded', btn.getAttribute('aria-expanded') === 'true' ? 'false' : 'true');
+        const btn = e.currentTarget;
+        btn.setAttribute('aria-expanded', btn.getAttribute('aria-expanded') === 'true' ? 'false' : 'true');
     });
 
-  });
-
-})()
+});
 /* ========================================================================
  * Copyright 2022
  * University of Copenhagen, FA Communications
  * ========================================================================*/
 
-(function () {
-  'use strict'
+document.addEventListener('DOMContentLoaded', () => {
+    'use strict'
 
-  document.querySelector('#navbarSideCollapse').addEventListener('click', function () {
-    document.querySelector('.navbar-toggler').classList.toggle('open');
-    document.querySelector('.offcanvas-collapse').classList.toggle('open');
-  })
-})()
+    document.querySelector('#navbarSideCollapse').addEventListener('click', function () {
+        document.querySelector('.navbar-toggler').classList.toggle('open');
+        document.querySelector('.offcanvas-collapse').classList.toggle('open');
+    })
+});
