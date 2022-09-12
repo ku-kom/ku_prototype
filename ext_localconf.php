@@ -37,12 +37,12 @@ $rootlinefields .= 'ku_faculty';
 /** @var \TYPO3\CMS\Extbase\SignalSlot\Dispatcher $signalSlotDispatcher */
 $signalSlotDispatcher = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Extbase\SignalSlot\Dispatcher::class);
 
-// Hook into \TYPO3\CMS\Core\Resource\ResourceStorage
-$signalSlotDispatcher->connect(
-    'TYPO3\\CMS\\Core\\Resource\\ResourceStorage',
-    \TYPO3\CMS\Core\Resource\ResourceStorageInterface::SIGNAL_PostFileAdd,
-    \UniversityOfCopenhagen\KuPrototype\Slots\FileUpload::class
-);
+// // Hook into \TYPO3\CMS\Core\Resource\ResourceStorage
+// $signalSlotDispatcher->connect(
+//     'TYPO3\\CMS\\Core\\Resource\\ResourceStorage',
+//     \TYPO3\CMS\Core\Resource\ResourceStorageInterface::SIGNAL_PostFileAdd,
+//     \UniversityOfCopenhagen\KuPrototype\Slots\FileUpload::class
+// );
 
-// Uploads in uploads/ of good old non-FAL files
+// // Uploads in uploads/ of good old non-FAL files
 $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_tcemain.php']['processUpload'][] = \UniversityOfCopenhagen\KuPrototype\Hooks\FileUploadHook::class;

@@ -23,6 +23,8 @@ class FileUploadHook implements DataHandlerProcessUploadHookInterface
     * @param string $filename The uploaded file
     * @param DataHandler $parentObject
     */
+
+    
     public function processUpload_postProcessAction(&$filename, DataHandler $pObj)
     {
         $filename = $this->processFile(
@@ -62,6 +64,7 @@ class FileUploadHook implements DataHandlerProcessUploadHookInterface
         /** @var \TYPO3\CMS\Core\Messaging\FlashMessageQueue $defaultFlashMessageQueue */
         $defaultFlashMessageQueue = $flashMessageService->getMessageQueueByIdentifier();
         $defaultFlashMessageQueue->enqueue($flashMessage);
+        debug('Test');
     }
 
     /**
