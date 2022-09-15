@@ -1,0 +1,13 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  UniversityOfCopenhagen\KuPrototype\EventListener\FileUploadEvent:
+    public: true
+    tags:
+      - name: event.listener
+        identifier: 'ku-fileupload-listener'
+        event: TYPO3\CMS\Core\Resource\Event\AfterFileAddedEvent
+        before: 'redirects'
