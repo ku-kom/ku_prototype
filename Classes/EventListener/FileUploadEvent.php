@@ -24,32 +24,37 @@ class FileUploadEvent
         $this->logger = $logger;
     }
 
+    /**
+     * https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ApiOverview/Events/Events/Core/Resource/Index.html
+     * @param \TYPO3\CMS\Core\Resource\Event\AfterFileAddedEvent
+     * Return void
+     */
     public function __invoke(AfterFileAddedEvent $event): void
-    {   
+    {
         // Generic message from locallang.xlf
         $msg = (string)\TYPO3\CMS\Extbase\Utility\LocalizationUtility::translate('upload-message', 'ku_prototype');
 
         $filename = $event->getFile();
-
+        // Display flash message only when uploading pdf or doc
         // $file_parts = pathinfo($filename);
         // switch($file_parts['extension']) {
         //     case 'pdf':
         //     case 'doc':
         //     case 'docx':
-                 $this->notify($msg, \TYPO3\CMS\Core\Messaging\FlashMessage::WARNING);
+        $this->notify($msg, \TYPO3\CMS\Core\Messaging\FlashMessage::WARNING);
         //         break;
         // }
 
         // Debug
-        $this->logger->debug($filename);
-        DebugUtility::debug($filename);
+        //$this->logger->debug($filename);
+        //DebugUtility::debug($filename);
     }
 
      /**
      * Notifies the user using a Flash message.
      *
      * @param string $message The message
-     * @param int $severity Optional severity, must be either of 
+     * @param int $severity Optional severity, must be either of
      * ::INFO, ::OK, ::WARNING, ::ERROR or ::OK.
      * @internal This method is public only to be callable from a callback
      */
