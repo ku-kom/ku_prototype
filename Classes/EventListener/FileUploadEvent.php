@@ -11,6 +11,7 @@ declare(strict_types=1);
 namespace UniversityOfCopenhagen\KuPrototype\EventListener;
 
 use Psr\Log\LoggerInterface;
+use TYPO3\CMS\Core\Messaging\FlashMessageService;
 use TYPO3\CMS\Core\Resource\Event\AfterFileAddedEvent;
 use TYPO3\CMS\Core\Utility\DebugUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
@@ -32,22 +33,24 @@ class FileUploadEvent
     public function __invoke(AfterFileAddedEvent $event): void
     {
         // Generic message from locallang.xlf
+        $title = (string)\TYPO3\CMS\Extbase\Utility\LocalizationUtility::translate('upload-header', 'ku_prototype');
         $msg = (string)\TYPO3\CMS\Extbase\Utility\LocalizationUtility::translate('upload-message', 'ku_prototype');
 
-        $filename = $event->getFile();
+        $file = $event->getFile();
+
         // Display flash message only when uploading pdf or doc
-        // $file_parts = pathinfo($filename);
+        // $file_parts = pathinfo($file);
         // switch($file_parts['extension']) {
         //     case 'pdf':
         //     case 'doc':
         //     case 'docx':
-        $this->notify($msg, \TYPO3\CMS\Core\Messaging\FlashMessage::WARNING);
+        $this->notify($msg, $title, \TYPO3\CMS\Core\Messaging\FlashMessage::WARNING, true);
         //         break;
         // }
 
         // Debug
-        //$this->logger->debug($filename);
-        //DebugUtility::debug($filename);
+        // $this->logger->debug($file);
+        // DebugUtility::debug($file);
     }
 
      /**
@@ -58,7 +61,7 @@ class FileUploadEvent
      * ::INFO, ::OK, ::WARNING, ::ERROR or ::OK.
      * @internal This method is public only to be callable from a callback
      */
-    public function notify($message, $severity = \TYPO3\CMS\Core\Messaging\FlashMessage::OK)
+    public function notify($message, $title = '', $severity = \TYPO3\CMS\Core\Messaging\FlashMessage::OK, bool $storeInSession = false)
     {
         if (TYPO3_MODE !== 'BE' || PHP_SAPI === 'cli') {
             return;
@@ -66,13 +69,12 @@ class FileUploadEvent
         $flashMessage = GeneralUtility::makeInstance(
             \TYPO3\CMS\Core\Messaging\FlashMessage::class,
             $message,
-            '',
+            $title,
             $severity,
-            true
+            $storeInSession
         );
-        /** @var \TYPO3\CMS\Core\Messaging\FlashMessageService $flashMessageService */
-        $flashMessageService = GeneralUtility::makeInstance(\TYPO3\CMS\Core\Messaging\FlashMessageService::class);
-        /** @var \TYPO3\CMS\Core\Messaging\FlashMessageQueue $defaultFlashMessageQueue */
+
+        $flashMessageService = GeneralUtility::makeInstance(FlashMessageService::class);
         $defaultFlashMessageQueue = $flashMessageService->getMessageQueueByIdentifier();
         $defaultFlashMessageQueue->enqueue($flashMessage);
     }
