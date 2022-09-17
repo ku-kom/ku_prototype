@@ -10,55 +10,47 @@ declare(strict_types=1);
 
 namespace UniversityOfCopenhagen\KuPrototype\EventListener;
 
-use Psr\Log\LoggerInterface;
 use TYPO3\CMS\Core\Messaging\FlashMessageService;
 use TYPO3\CMS\Core\Resource\Event\AfterFileAddedEvent;
-use TYPO3\CMS\Core\Utility\DebugUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
-class FileUploadEvent
+final class FileUploadEvent
 {
-    private LoggerInterface $logger;
-
-    public function __construct(LoggerInterface $logger)
+    /**
+    * https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ApiOverview/Events/Events/Core/Resource/Index.html
+    * @param \TYPO3\CMS\Core\Resource\Event\AfterFileAddedEvent
+    * Return void
+    */
+    public function __invoke(AfterFileAddedEvent $event)//: void
     {
-        $this->logger = $logger;
+        // Filename
+        $file = $event->getFile()->getName();
+        // File extension
+        $extension = $event->getFile()->getExtension();
+
+        // Generic message from locallang.xlf
+        $header = (string)\TYPO3\CMS\Extbase\Utility\LocalizationUtility::translate('upload-header', 'ku_prototype');
+        $msg = (string)\TYPO3\CMS\Extbase\Utility\LocalizationUtility::translate('upload-message', 'ku_prototype');
+        $msg = $msg . ' ' . $file;
+
+        // Display flash message only when uploading pdf or doc
+        switch($extension) {
+            case 'pdf':
+            case 'doc':
+            case 'docx':
+                $this->notify($msg, $header, \TYPO3\CMS\Core\Messaging\FlashMessage::WARNING, true);
+                break;
+        }
     }
 
     /**
-     * https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ApiOverview/Events/Events/Core/Resource/Index.html
-     * @param \TYPO3\CMS\Core\Resource\Event\AfterFileAddedEvent
-     * Return void
-     */
-    public function __invoke(AfterFileAddedEvent $event): void
-    {
-        // Generic message from locallang.xlf
-        $title = (string)\TYPO3\CMS\Extbase\Utility\LocalizationUtility::translate('upload-header', 'ku_prototype');
-        $msg = (string)\TYPO3\CMS\Extbase\Utility\LocalizationUtility::translate('upload-message', 'ku_prototype');
-
-        $file = $event->getFile();
-
-        // Display flash message only when uploading pdf or doc
-        // $file_parts = pathinfo($file);
-        // switch($file_parts['extension']) {
-        //     case 'pdf':
-        //     case 'doc':
-        //     case 'docx':
-        $this->notify($msg, $title, \TYPO3\CMS\Core\Messaging\FlashMessage::WARNING, true);
-        //         break;
-        // }
-
-        // Debug
-        // $this->logger->debug($file);
-        // DebugUtility::debug($file);
-    }
-
-     /**
      * Notifies the user using a Flash message.
      *
      * @param string $message The message
+     * @param string $title The title
      * @param int $severity Optional severity, must be either of
      * ::INFO, ::OK, ::WARNING, ::ERROR or ::OK.
+     * @param bool $storeInSession
      * @internal This method is public only to be callable from a callback
      */
     public function notify($message, $title = '', $severity = \TYPO3\CMS\Core\Messaging\FlashMessage::OK, bool $storeInSession = false)

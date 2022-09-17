@@ -37,10 +37,10 @@
             <source>%m %d %Y</source>
         </trans-unit>
         <trans-unit id="upload-message" resname="upload-message">
-            <source>Did you check your file for accessibility issues?</source>
+            <source>Did you check this file for accessibility issues?</source>
         </trans-unit>
         <trans-unit id="upload-header" resname="upload-header">
-            <source>Notice</source>
+            <source>Attention</source>
         </trans-unit>
         </body>
     </file>
