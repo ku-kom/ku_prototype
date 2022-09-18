@@ -9,6 +9,10 @@ declare(strict_types=1);
  * Sep 2022 Nanna Ellegaard, University of Copenhagen.
  */
 
+/**
+ * Listens for fileuploads and displays flash message if the file is
+ * a pdf or doc.
+ */
 namespace UniversityOfCopenhagen\KuPrototype\EventListener;
 
 use TYPO3\CMS\Core\Messaging\FlashMessageService;
