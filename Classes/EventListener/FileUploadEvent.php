@@ -26,7 +26,7 @@ final class FileUploadEvent
     * @param \TYPO3\CMS\Core\Resource\Event\AfterFileAddedEvent
     * Return void
     */
-    public function __invoke(AfterFileAddedEvent $event)//: void
+    public function __invoke(AfterFileAddedEvent $event): void
     {
         // Filename
         $file = $event->getFile()->getName();

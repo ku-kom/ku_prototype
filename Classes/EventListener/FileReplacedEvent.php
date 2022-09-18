@@ -26,7 +26,7 @@ final class FileReplacedEvent
     * @param \TYPO3\CMS\Core\Resource\Event\AfterFileReplacedEvent
     * Return void
     */
-    public function __invoke(AfterFileReplacedEvent $event)//: void
+    public function __invoke(AfterFileReplacedEvent $event): void
     {
         // Filename
         $file = $event->getFile()->getName();
