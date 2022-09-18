@@ -4,6 +4,7 @@
  * This file is part of the package ku_prototype.
  * For the full copyright and license information, please read the
  * LICENSE file that was distributed with this source code.
+ * Sep 2022 Nanna Ellegaard, University of Copenhagen.
  */
 
 defined('TYPO3_MODE') || die();
@@ -31,18 +32,3 @@ if ($rootlinefields != '') {
     $rootlinefields .= ' , ';
 }
 $rootlinefields .= 'ku_faculty';
-
-// KU Hook for file upload:
-
-/** @var \TYPO3\CMS\Extbase\SignalSlot\Dispatcher $signalSlotDispatcher */
-$signalSlotDispatcher = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Extbase\SignalSlot\Dispatcher::class);
-
-// // Hook into \TYPO3\CMS\Core\Resource\ResourceStorage
-// $signalSlotDispatcher->connect(
-//     'TYPO3\\CMS\\Core\\Resource\\ResourceStorage',
-//     \TYPO3\CMS\Core\Resource\ResourceStorageInterface::SIGNAL_PostFileAdd,
-//     \UniversityOfCopenhagen\KuPrototype\Slots\FileUpload::class
-// );
-
-// // Uploads in uploads/ of good old non-FAL files
-$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_tcemain.php']['processUpload'][] = \UniversityOfCopenhagen\KuPrototype\Hooks\FileUploadHook::class;
