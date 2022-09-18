@@ -11,3 +11,11 @@ services:
         identifier: 'ku-fileupload-listener'
         event: TYPO3\CMS\Core\Resource\Event\AfterFileAddedEvent
         before: 'redirects'
+
+  UniversityOfCopenhagen\KuPrototype\EventListener\FileReplacedEvent:
+    public: true
+    tags:
+      - name: event.listener
+        identifier: 'ku-filereplace-listener'
+        event: TYPO3\CMS\Core\Resource\Event\AfterFileReplacedEvent
+        before: 'redirects'
