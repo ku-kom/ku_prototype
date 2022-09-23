@@ -15,10 +15,7 @@ declare(strict_types=1);
  */
 namespace UniversityOfCopenhagen\KuPrototype\EventListener;
 
-use Psr\Log\LoggerInterface;
-use TYPO3\CMS\Core\Messaging\FlashMessageService;
 use TYPO3\CMS\Core\Resource\Event\AfterFileAddedEvent;
-use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 final class FileUploadEvent
 {

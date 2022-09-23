@@ -15,9 +15,7 @@ declare(strict_types=1);
  */
 namespace UniversityOfCopenhagen\KuPrototype\EventListener;
 
-use TYPO3\CMS\Core\Messaging\FlashMessageService;
 use TYPO3\CMS\Core\Resource\Event\AfterFileReplacedEvent;
-use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 final class FileReplacedEvent
 {
