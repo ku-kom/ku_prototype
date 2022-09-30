@@ -70,11 +70,28 @@ button[name="_savedok"] {
     padding-right: 10px;
 }
 
+/* KU added Save and close button */
+button[name="_saveandclosedok"] {
+    color: #fff;
+    background-color: #13854f !important;
+    border-color: #128750;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 button[name="_savedok"]:hover,
+button[name="_saveandclosedok"]:hover,
 button[name="_savedok"]:focus,
-button[name="_savedok"]:active:hover {
+button[name="_saveandclosedok"]:focus,
+button[name="_savedok"]:active,
+button[name="_saveandclosedok"]:active {
     background-color: #065e35;
     color: #fff;
+}
+
+/* KU added save/close button */
+button[name="_saveandclosedok"] {
+    margin-left: 0.4rem!important;
 }
 
 /* Delete button */
