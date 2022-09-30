@@ -1,6 +1,6 @@
 {
 	"name": "ku_prototype",
-	"version": "1.0.0",
+	"version": "2.0.28",
 	"description": "Sitepackage for the project \"KU prototype\" ",
 	"main": "Resources/Public/JavaScript/Dist/ku-scripts.min.js",
 	"scripts": {
