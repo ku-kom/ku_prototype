@@ -15,7 +15,7 @@ use TYPO3Fluid\Fluid\Core\Rendering\RenderingContextInterface;
 use TYPO3Fluid\Fluid\Core\ViewHelper\AbstractViewHelper;
 use TYPO3Fluid\Fluid\Core\ViewHelper\Traits\CompileWithRenderStatic;
 
-class AtomImageViewHelper extends AbstractViewHelper
+class FeedImageViewHelper extends AbstractViewHelper
 {
     use CompileWithRenderStatic;
 
