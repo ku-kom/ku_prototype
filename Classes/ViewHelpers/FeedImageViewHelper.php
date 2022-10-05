@@ -26,7 +26,7 @@ class FeedImageViewHelper extends AbstractViewHelper
      */
     public function initializeArguments()
     {
-        $this->registerArgument('contentNode', 'string', 'The node item.content', true);
+        $this->registerArgument('contentNode', 'string', 'String in which to search', true);
     }
 
     public static function renderStatic(

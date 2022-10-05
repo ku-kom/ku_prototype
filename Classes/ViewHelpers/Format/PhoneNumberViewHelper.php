@@ -9,7 +9,7 @@ declare(strict_types=1);
  * Sep 2022 Nanna Ellegaard, University of Copenhagen.
  */
 
-namespace UniversityOfCopenhagen\KuPrototype\ViewHelpers;
+namespace UniversityOfCopenhagen\KuPrototype\ViewHelpers\Format;
 
 use TYPO3Fluid\Fluid\Core\Rendering\RenderingContextInterface;
 use TYPO3Fluid\Fluid\Core\ViewHelper\AbstractViewHelper;
