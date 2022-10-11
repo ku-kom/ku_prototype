@@ -36,6 +36,14 @@
     max-height: 350px;
 }
 
+.autocomplete-suggestion-link {
+    padding-left: 13px;
+}
+
+.autocomplete-suggestion-link .icon {
+    margin-right: 5px;
+}
+
 /* Close button */
 .t3js-editform-close {
     color: #fff;
