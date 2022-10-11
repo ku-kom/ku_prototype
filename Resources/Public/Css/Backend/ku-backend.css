@@ -32,7 +32,7 @@
 
 /* Adds scroll to autocomplete dropdowns */
 .autocomplete-results {
-    overflow-y: scroll;
+    overflow-y: auto;
     max-height: 350px;
 }
 
