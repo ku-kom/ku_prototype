@@ -35,13 +35,18 @@
     overflow-y: auto;
     max-height: 350px;
 }
-
 .autocomplete-suggestion-link {
-    padding-left: 13px;
+    padding-left: 10px;
 }
-
-.autocomplete-suggestion-link .icon {
-    margin-right: 5px;
+.autocomplete-results .table-items {
+    width: 100%;
+}
+.autocomplete-results .img-employee {
+    width: 50px;
+}
+.autocomplete-results .list-item-img {
+    max-width: 40px;
+    border-radius: 50%;
 }
 
 /* Close button */
