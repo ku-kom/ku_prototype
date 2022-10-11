@@ -30,6 +30,12 @@
     src: url("../../Fonts/open-sans-v27-latin-ext_latin-700.woff2") format("woff2"), url("../../Fonts/open-sans-v27-latin-ext_latin-700.woff") format("woff")
 }
 
+/* Adds scroll to autocomplete dropdowns */
+.autocomplete-results {
+    overflow-y: scroll;
+    max-height: 350px;
+}
+
 /* Close button */
 .t3js-editform-close {
     color: #fff;
