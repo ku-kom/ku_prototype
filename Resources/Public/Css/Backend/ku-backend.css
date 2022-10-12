@@ -41,6 +41,9 @@
 .autocomplete-results .table-items {
     width: 100%;
 }
+.autocomplete-results .employee-name {
+    font-weight: 700;
+}
 .autocomplete-results .img-employee {
     width: 50px;
 }
