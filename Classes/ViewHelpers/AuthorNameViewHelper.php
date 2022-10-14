@@ -57,7 +57,7 @@ class AuthorNameViewHelper extends AbstractViewHelper
             'uid',
             $queryBuilder->createNamedParameter($authorUid, \PDO::PARAM_STR)
         ))
-        ->execute()
+        ->execute() // Change to executeQuery() in TYPO3 v.12
         ->fetch();
 
         $name = $result['realName'];
