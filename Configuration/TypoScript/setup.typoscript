@@ -105,6 +105,9 @@ page {
             # Get current language uid:
             pageLanguage = TEXT
             pageLanguage.data = siteLanguage:iso-639-1
+            # Set faculty value inherited from subsite
+            ku_faculty = TEXT
+            ku_faculty.data = levelfield: -1, ku_faculty, slide
         }
     }
 }
