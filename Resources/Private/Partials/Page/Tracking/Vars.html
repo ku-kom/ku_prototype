@@ -1,5 +1,7 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
-<f:debug>{_all}</f:debug>
+<f:comment>
+    <f:debug>{_all}</f:debug>
+</f:comment>
 <script>
     let trackingVars = {
         subsitesite: '<f:format.raw>{siteTitle}</f:format.raw>',
@@ -10,6 +12,7 @@
         lastModified: '<f:format.date>{data.SYS_LASTCHANGED}</f:format.date>',
         pagelayout: '<f:format.raw>{pagelayout}</f:format.raw>',
     };
+
 </script>
 
 </html>
