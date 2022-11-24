@@ -8,6 +8,7 @@ CREATE TABLE pages (
     ku_faculty varchar(255) DEFAULT '' NOT NULL,
     # Table for author in page properties:
     ku_select_author varchar(255) DEFAULT '' NOT NULL,
+    ku_lastpageupdates_timestamp int(11) default '0' NOT NULL
 );
 
 

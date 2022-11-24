@@ -32,3 +32,6 @@ if ($rootlinefields != '') {
     $rootlinefields .= ' , ';
 }
 $rootlinefields .= 'ku_faculty';
+
+// Hook to add timestamp when page content is edited
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_tcemain.php']['processDatamapClass'][] = 'UniversityOfCopenhagen\\KuPrototype\\Hooks\\LatestPageUpdates';
