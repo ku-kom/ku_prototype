@@ -2,6 +2,11 @@
 
 namespace UniversityOfCopenhagen\KuPrototype\Hooks;
 
+/**
+ * Hook to save timestamt on parent page
+ * whenever a content element is added or modified.
+ */
+
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Core\Utility\MathUtility;
 use TYPO3\CMS\Core\Database\ConnectionPool;
@@ -27,7 +32,7 @@ class LatestPageUpdates
         }
 
         if ($table === 'tt_content') {
-            $id = $dataHandler->recordInfo('tt_content', $id, 'pid')['pid'];
+            $id = $dataHandler->recordInfo('tt_content', $id, 'pid')['pid'] ?? null;
         }
 
         GeneralUtility::makeInstance(ConnectionPool::class)
