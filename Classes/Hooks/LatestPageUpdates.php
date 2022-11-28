@@ -32,7 +32,7 @@ class LatestPageUpdates
         }
 
         if ($table === 'tt_content') {
-            $id = $dataHandler->recordInfo('tt_content', $id, 'pid')['pid'] ?? null;
+            $id = isset($fieldArray['pid']) ? $fieldArray['pid'] : $dataHandler->recordInfo('tt_content', $id, 'pid')['pid'];
         }
 
         GeneralUtility::makeInstance(ConnectionPool::class)
