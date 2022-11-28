@@ -8,10 +8,10 @@
                         <f:cObject typoscriptObjectPath="lib.footerContent.{pageLanguage}_localFooterAddress" />
                     </f:if>
                     <f:if condition="{settings.ku.lastModified.enable} > 0">
-                        <f:if condition="{data.SYS_LASTCHANGED}">
+                        <f:if condition="{data.ku_lastpageupdates_timestamp}">
                             <f:translate key="LLL:EXT:ku_prototype/Resources/Private/Language/locallang.xlf:frontend.last-modified" />
-                            <time datetime="{f:format.date(format: '%Y-%m-%d', date: '{data.SYS_LASTCHANGED}')}">
-                                <f:format.date format="{f:translate(key: 'LLL:EXT:ku_prototype/Resources/Private/Language/locallang.xlf:dateformat')}">{data.SYS_LASTCHANGED}</f:format.date>
+                            <time datetime="{f:format.date(format: '%Y-%m-%d', date: '{data.ku_lastpageupdates_timestamp}')}">
+                                <f:format.date format="{f:translate(key: 'LLL:EXT:ku_prototype/Resources/Private/Language/locallang.xlf:dateformat')}">{data.ku_lastpageupdates_timestamp}</f:format.date>
                             </time>
                         </f:if>
                     </f:if>
