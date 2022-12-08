@@ -3,7 +3,7 @@
 namespace UniversityOfCopenhagen\KuPrototype\Hooks;
 
 /**
- * Hook to save timestamt on parent page
+ * Hook to save timestamp on parent page
  * whenever a content element is added or modified.
  */
 
@@ -15,12 +15,12 @@ use TYPO3\CMS\Core\Database\Connection;
 class LatestPageUpdates
 {
     /**
-         * @param string $status
-         * @param string $table
-         * @param string $id
-         * @param array $fieldArray
-         * @param \TYPO3\CMS\Core\DataHandling\DataHandler $dataHandler
-         */
+     * @param string $status
+     * @param string $table
+     * @param string $id
+     * @param array $fieldArray
+     * @param \TYPO3\CMS\Core\DataHandling\DataHandler $dataHandler
+     */
     public function processDatamap_afterDatabaseOperations($status, $table, $id, $fieldArray, $dataHandler)
     {
         if (!($table === 'tt_content' || $table === 'pages')) {
