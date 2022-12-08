@@ -26,6 +26,8 @@
                             <f:format.raw>
                                 <ku:AuthorName authorUid="{data.cruser_id}" />
                             </f:format.raw>
+                            <br>
+                            <f:link.email email="{ku:AuthorEmail(authorUid: data.cruser_id)}">{ku:AuthorEmail(authorUid: data.cruser_id)}</f:link.email>
                         </f:else>
                     </f:if>
                 </div>

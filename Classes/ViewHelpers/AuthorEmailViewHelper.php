@@ -17,7 +17,7 @@ use TYPO3Fluid\Fluid\Core\Rendering\RenderingContextInterface;
 use TYPO3Fluid\Fluid\Core\ViewHelper\AbstractViewHelper;
 use TYPO3Fluid\Fluid\Core\ViewHelper\Traits\CompileWithRenderStatic;
 
-class AuthorNameViewHelper extends AbstractViewHelper
+class AuthorEmailViewHelper extends AbstractViewHelper
 {
     use CompileWithRenderStatic;
 
@@ -36,7 +36,7 @@ class AuthorNameViewHelper extends AbstractViewHelper
         \Closure $renderChildrenClosure,
         RenderingContextInterface $renderingContext
     ): string {
-        return self::getAuthorRealName($arguments['authorUid']);
+        return self::getAuthorEmail($arguments['authorUid']);
     }
 
     /**
@@ -46,12 +46,12 @@ class AuthorNameViewHelper extends AbstractViewHelper
      * @param int $authorUid
      * @return string
      */
-    protected static function getAuthorRealName(int $authorUid): string
+    protected static function getAuthorEmail(int $authorUid): string
     {
         $queryBuilder = GeneralUtility::makeInstance(ConnectionPool::class)->getQueryBuilderForTable('be_users');
 
         $result = $queryBuilder
-        ->select('realName', 'email')
+        ->select('email')
         ->from('be_users')
         ->where($queryBuilder->expr()->eq(
             'uid',
@@ -60,10 +60,10 @@ class AuthorNameViewHelper extends AbstractViewHelper
         ->execute() // Change to executeQuery() in TYPO3 v.12
         ->fetch();
 
-        $name = $result['realName'];
+        $email = $result['email'];
 
         if ($result !== false ? $result : null) {
-            return $name;
+            return $email;
         }
     }
 }
