@@ -193,18 +193,6 @@ plugin.bootstrap_package {
 }
 
 
-########################
-### CONTENT ELEMENTS ###
-########################
-plugin.bootstrap_package_contentelements {
-    view {
-        layoutRootPath = EXT:ku_prototype/Resources/Private/Layouts/ContentElements/
-        partialRootPath = EXT:ku_prototype/Resources/Private/Partials/ContentElements/
-        templateRootPath = EXT:ku_prototype/Resources/Private/Templates/ContentElements/
-    }
-}
-
-
 ################################
 ### BOOTSTRAP SCSS CONSTANTS ###
 ################################
