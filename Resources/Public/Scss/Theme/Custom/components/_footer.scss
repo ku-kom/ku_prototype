@@ -26,7 +26,7 @@
     width: 100%;
 
     @include media-breakpoint-up('md') {
-        width: calc(100% / 4);
+        width: calc(100% / 4 - var(--section-gap));
         color: $white;
     }
 
@@ -50,6 +50,11 @@
 }
 
 @include media-breakpoint-down('md') {
+    .footer-section-content .section-row:first-child {
+        --section-gap: 0;
+
+    }
+
     .footer-section-content-column {
         padding-left: 0;
         padding-right: 0;
