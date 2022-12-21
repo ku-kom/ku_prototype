@@ -64,15 +64,15 @@ const hasScrollbar = () => {
   }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+// document.addEventListener('DOMContentLoaded', () => {
 
-  hasScrollbar();
+//   hasScrollbar();
 
-  window.addEventListener('orientationchange', debounce(function () {
-    hasScrollbar();
-  }, 250));
+//   window.addEventListener('orientationchange', debounce(function () {
+//     hasScrollbar();
+//   }, 250));
 
-  window.addEventListener('resize', debounce(function () {
-    hasScrollbar();
-  }, 250));
-});
+//   window.addEventListener('resize', debounce(function () {
+//     hasScrollbar();
+//   }, 250));
+// });
