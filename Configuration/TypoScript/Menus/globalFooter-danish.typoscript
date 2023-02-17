@@ -10,20 +10,20 @@ lib.footerContent {
     da_colOne = TEXT
     da_colOne {
         value (
-            <header class="frame-header">
-                <h2 class="element-header">Københavns Universitet</h2>
-            </header>
-            <ul class="footerlinks">
-                <li><a aria-label="KU's Ledelse" href="https://om.ku.dk/ledelse-strategi/">Ledelse</a></li>
-                <li><a aria-label="KU's Administration" href="https://om.ku.dk/organisation/administration/">Administration</a></li>
-                <li><a aria-label="KU's Fakulteter" href="https://om.ku.dk/organisation/fakulteter/">Fakulteter</a></li>
-                <li><a aria-label="KU's Institutter" href="https://om.ku.dk/organisation/institutter/">Institutter</a></li>
-                <li><a aria-label="KU's Forskningscentre" href="https://forskning.ku.dk/omraader/centre/">Forskningscentre</a></li>
-                <li><a aria-label="KU's Dyrehospitaler" href="https://vetschool.ku.dk/om/VetOmDyrehospitaler/">Dyrehospitaler</a></li>
-                <li><a aria-label="KU Tandlægeskolen" href="https://xn--tandlgeskolen-7fb.ku.dk/">Tandlægeskolen</a></li>
-                <li><a aria-label="KU's Biblioteker" href="https://kub.ku.dk/">Biblioteker</a></li>
-                <li><a aria-label="KU's Museer" href="https://om.ku.dk/besoeg/museer/">Museer</a></li>
-            </ul>
+            <button type="button" class="frame-header" data-bs-toggle="collapse" data-bs-target="#column_1" aria-expanded="false" aria-controls="column_1"><h2 class="element-header">Københavns Universitet</h2></button>
+            <div class="column-links collapse" id="column_1">
+                <ul class="footerlinks">
+                    <li><a aria-label="KU's Ledelse" href="https://om.ku.dk/ledelse-strategi/">Ledelse</a></li>
+                    <li><a aria-label="KU's Administration" href="https://om.ku.dk/organisation/administration/">Administration</a></li>
+                    <li><a aria-label="KU's Fakulteter" href="https://om.ku.dk/organisation/fakulteter/">Fakulteter</a></li>
+                    <li><a aria-label="KU's Institutter" href="https://om.ku.dk/organisation/institutter/">Institutter</a></li>
+                    <li><a aria-label="KU's Forskningscentre" href="https://forskning.ku.dk/omraader/centre/">Forskningscentre</a></li>
+                    <li><a aria-label="KU's Dyrehospitaler" href="https://vetschool.ku.dk/om/VetOmDyrehospitaler/">Dyrehospitaler</a></li>
+                    <li><a aria-label="KU Tandlægeskolen" href="https://xn--tandlgeskolen-7fb.ku.dk/">Tandlægeskolen</a></li>
+                    <li><a aria-label="KU's Biblioteker" href="https://kub.ku.dk/">Biblioteker</a></li>
+                    <li><a aria-label="KU's Museer" href="https://om.ku.dk/besoeg/museer/">Museer</a></li>
+                </ul>
+            </div>
         )
         override {
             required = 1
@@ -34,25 +34,25 @@ lib.footerContent {
     da_colTwo = TEXT
     da_colTwo {
         value (
-            <header class="frame-header">
-                <h2 class="element-header">Kontakt</h2>
-            </header>
-            <ul class="footerlinks">
-                <li><a aria-label="Find vej på KU" href="https://findvej.ku.dk/">Find vej</a></li>
-                <li><a aria-label="Find en medarbejder på KU" href="https://om.ku.dk/kontakt/telefonbog/">Find en medarbejder</a></li>
-                <li><a aria-label="Kontakt KU, Københavns Universitet" href="https://om.ku.dk/kontakt/">Kontakt KU</a></li>
-            </ul>
-            <header class="frame-header">
-                <h2 class="element-header">Services</h2>
-            </header>
-            <ul class="footerlinks">
-                <li><a aria-label="KU Presseservice" href="https://nyheder.ku.dk/presseservice/">Presseservice</a></li>
-                <li><a aria-label="KU's Designguide" href="https://designguide.ku.dk">Designguide</a></li>
-                <li><a aria-label="KU's Merchandise" href="http://ku-shop.dk">Merchandise</a></li>
-                <li><a aria-label="KU's IT-support" href="https://om.ku.dk/organisation/administration/it/">IT-support</a></li>
-                <li><a aria-label="Info til leverandører" href="https://om.ku.dk/kontakt/til-leverandoerer/">Til leverandører</a>
-                </li>
-            </ul>
+            <button type="button" class="frame-header" data-bs-toggle="collapse" data-bs-target="#column_2" aria-expanded="false" aria-controls="column_2"><h2 class="element-header">Kontakt</h2></button>
+            <div class="column-links collapse" id="column_2">
+                <ul class="footerlinks">
+                    <li><a aria-label="Find vej på KU" href="https://findvej.ku.dk/">Find vej</a></li>
+                    <li><a aria-label="Find en medarbejder på KU" href="https://om.ku.dk/kontakt/telefonbog/">Find en medarbejder</a></li>
+                    <li><a aria-label="Kontakt KU, Københavns Universitet" href="https://om.ku.dk/kontakt/">Kontakt KU</a></li>
+                </ul>
+            </div>
+            <button type="button" class="frame-header" data-bs-toggle="collapse" data-bs-target="#column_3" aria-expanded="false" aria-controls="column_3"><h2 class="element-header">Services</h2></button>
+            <div class="column-links collapse" id="column_3">
+                <ul class="footerlinks">
+                    <li><a aria-label="KU Presseservice" href="https://nyheder.ku.dk/presseservice/">Presseservice</a></li>
+                    <li><a aria-label="KU's Designguide" href="https://designguide.ku.dk">Designguide</a></li>
+                    <li><a aria-label="KU's Merchandise" href="http://ku-shop.dk">Merchandise</a></li>
+                    <li><a aria-label="KU's IT-support" href="https://om.ku.dk/organisation/administration/it/">IT-support</a></li>
+                    <li><a aria-label="Info til leverandører" href="https://om.ku.dk/kontakt/til-leverandoerer/">Til leverandører</a>
+                    </li>
+                </ul>
+            </div>
         )
         override {
             required = 1
@@ -63,26 +63,26 @@ lib.footerContent {
     da_colThree = TEXT
     da_colThree {
         value (
-            <header class="frame-header">
-                <h2 class="element-header">For studerende og ansatte</h2>
-            </header>
-            <ul class="footerlinks">
-                <li><a aria-label="KUnet - intranet for studerende og medarbejdere" class="padlock" href="https://kunet.ku.dk">KUnet</a></li>
-            </ul>
-            <header class="frame-header">
-                <h2 class="element-header">Job og karierre</h2>
-            </header>
-            <ul class="footerlinks">
-                <li><a aria-label="Ledige stillinger på KU" href="https://jobportal.ku.dk">Ledige stillinger</a></li>
-                <li><a aria-label="KU Jobbank for studerende" href="https://karriere.ku.dk/da/">Jobbank for studerende</a></li>
-                <li><a aria-label="KU Alumne" href="https://alumni.ku.dk">Alumne</a></li>
-            </ul>
-            <header class="frame-header">
-                <h2 class="element-header">Nødsituationer</h2>
-            </header>
-            <ul class="footerlinks">
-                <li><a aria-label="Ledige stillinger på KU" href="https://jobportal.ku.dk">Ledige stillinger</a></li>
-            </ul>
+            <button type="button" class="frame-header" data-bs-toggle="collapse" data-bs-target="#column_4" aria-expanded="false" aria-controls="column_4"><h2 class="element-header">For studerende og ansatte</h2></button>
+            <div class="column-links collapse" id="column_4">
+                <ul class="footerlinks">
+                    <li><a aria-label="KUnet - intranet for studerende og medarbejdere" class="padlock" href="https://kunet.ku.dk">KUnet</a></li>
+                </ul>
+            </div>
+            <button type="button" class="frame-header" data-bs-toggle="collapse" data-bs-target="#column_5" aria-expanded="false" aria-controls="column_5"><h2 class="element-header">Job og karriere</h2></button>
+            <div class="column-links collapse" id="column_5">
+                <ul class="footerlinks">
+                    <li><a aria-label="Ledige stillinger på KU" href="https://jobportal.ku.dk">Ledige stillinger</a></li>
+                    <li><a aria-label="KU Jobbank for studerende" href="https://karriere.ku.dk/da/">Jobbank for studerende</a></li>
+                    <li><a aria-label="KU Alumne" href="https://alumni.ku.dk">Alumne</a></li>
+                </ul>
+            </div>
+            <button type="button" class="frame-header" data-bs-toggle="collapse" data-bs-target="#column_6" aria-expanded="false" aria-controls="column_6"><h2 class="element-header">Nødsituationer</h2></button>
+            <div class="column-links collapse" id="column_6">
+                <ul class="footerlinks">
+                    <li><a aria-label="Akutberedskab" href="https://akut.ku.dk/">KU's sikkerhedsberedskab</a></li>
+                </ul>
+            </div>
         )
         override {
             required = 1
@@ -93,25 +93,25 @@ lib.footerContent {
     da_colFour = TEXT
     da_colFour {
         value (
-            <header class="frame-header">
-                <h2 class="element-header">Web</h2>
-            </header>
-            <ul class="footerlinks">
-                <li><a aria-label="Info om websitet" href="https://om.ku.dk/om-webstedet/">Om websitet</a></li>
-                <li><a aria-label="KU cookies og privatlivspolitik" href="https://om.ku.dk/om-webstedet/cookie-og-privatlivspolitik/">Cookies og privatlivspolitik</a></li>
-                <li><a aria-label="KU's Tilgængelighedserklæring" href="https://www.ku.dk/was">Tilgængelighedserklæring</a></li>
-                <li><a aria-label="KU Informationssikkerhed" href="https://informationssikkerhed.ku.dk">Informationssikkerhed</a></li>
-            </ul>
-            <header class="frame-header">
-                <h2 class="element-header">Mød KU på</h2>
-            </header>
-            <ul class="sociallinks-list">
-                <li class="sociallinks-item"><a class="sociallinks-link sociallinks-link-facebook" href="https://www.facebook.com/universitet" rel="noopener" target="_blank"><span aria-hidden="true" class="sociallinks-link-icon bi-facebook"></span><span class="visually-hidden">Facebook</span></a></li>
-                <li class="sociallinks-item"><a class="sociallinks-link sociallinks-link-twitter" href="https://twitter.com/koebenhavns_uni" rel="noopener" target="_blank"><span aria-hidden="true" class="sociallinks-link-icon bi-twitter"></span><span class="visually-hidden">Twitter</span></a></li>
-                <li class="sociallinks-item"><a class="sociallinks-link sociallinks-link-instagram" href="https://www.instagram.com/university_of_copenhagen/" rel="noopener" target="_blank"><span aria-hidden="true" class="sociallinks-link-icon bi-instagram"></span><span class="visually-hidden">Instagram</span></a></li>
-                <li class="sociallinks-item"><a class="sociallinks-link sociallinks-link-linkedin" href="https://www.linkedin.com/school/university-of-copenhagen/" rel="noopener" target="_blank"><span aria-hidden="true" class="sociallinks-link-icon bi-linkedin"></span><span class="visually-hidden">LinkedIn</span></a></li>
-                <li class="sociallinks-item"><a class="sociallinks-link sociallinks-link-youtube" href="https://www.youtube.com/user/CopenhagenUniversity/" rel="noopener" target="_blank"><span aria-hidden="true" class="sociallinks-link-icon bi-youtube"></span><span class="visually-hidden">Youtube</span></a></li>
-            </ul>
+            <button type="button" class="frame-header" data-bs-toggle="collapse" data-bs-target="#column_7" aria-expanded="false" aria-controls="column_7"><h2 class="element-header">Web</h2></button>
+            <div class="column-links collapse" id="column_7">
+                <ul class="footerlinks">
+                    <li><a aria-label="Info om websitet" href="https://om.ku.dk/om-webstedet/">Om websitet</a></li>
+                    <li><a aria-label="KU cookies og privatlivspolitik" href="https://om.ku.dk/om-webstedet/cookie-og-privatlivspolitik/">Cookies og privatlivspolitik</a></li>
+                    <li><a aria-label="KU's Tilgængelighedserklæring" href="https://www.ku.dk/was">Tilgængelighedserklæring</a></li>
+                    <li><a aria-label="KU Informationssikkerhed" href="https://informationssikkerhed.ku.dk">Informationssikkerhed</a></li>
+                </ul>
+            </div>
+            <button type="button" class="frame-header" data-bs-toggle="collapse" data-bs-target="#column_8" aria-expanded="false" aria-controls="column_8"><h2 class="element-header">Mød KU på</h2></button>
+            <div class="column-links collapse" id="column_8">
+                <ul class="sociallinks-list">
+                    <li class="sociallinks-item"><a class="sociallinks-link sociallinks-link-facebook" href="https://www.facebook.com/universitet" rel="noopener" target="_blank"><span aria-hidden="true" class="sociallinks-link-icon bi-facebook"></span><span class="visually-hidden">Facebook</span></a></li>
+                    <li class="sociallinks-item"><a class="sociallinks-link sociallinks-link-twitter" href="https://twitter.com/koebenhavns_uni" rel="noopener" target="_blank"><span aria-hidden="true" class="sociallinks-link-icon bi-twitter"></span><span class="visually-hidden">Twitter</span></a></li>
+                    <li class="sociallinks-item"><a class="sociallinks-link sociallinks-link-instagram" href="https://www.instagram.com/university_of_copenhagen/" rel="noopener" target="_blank"><span aria-hidden="true" class="sociallinks-link-icon bi-instagram"></span><span class="visually-hidden">Instagram</span></a></li>
+                    <li class="sociallinks-item"><a class="sociallinks-link sociallinks-link-linkedin" href="https://www.linkedin.com/school/university-of-copenhagen/" rel="noopener" target="_blank"><span aria-hidden="true" class="sociallinks-link-icon bi-linkedin"></span><span class="visually-hidden">LinkedIn</span></a></li>
+                    <li class="sociallinks-item"><a class="sociallinks-link sociallinks-link-youtube" href="https://www.youtube.com/user/CopenhagenUniversity/" rel="noopener" target="_blank"><span aria-hidden="true" class="sociallinks-link-icon bi-youtube"></span><span class="visually-hidden">Youtube</span></a></li>
+                </ul>
+            </div>
         )
         override {
             required = 1
