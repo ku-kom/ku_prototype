@@ -37,9 +37,19 @@
     position: fixed;
 }
 
-html,
-body {
-    height: 100%;
+
+@include media-breakpoint-up('sm') {
+    body {
+        height: 100%;
+    }
+}
+
+
+@include media-breakpoint-down('sm') {
+    
+    html {
+        overflow-x: unset!important;
+    }
 }
 
 body {
