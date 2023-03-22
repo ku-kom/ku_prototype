@@ -9,7 +9,7 @@
 		"concat:js": "globcat \"Resources/Public/JavaScript/Src/**/*.js\" --output \"Resources/Public/JavaScript/Dist/ku-scripts.js\"",
 		"concat": "npm-run-all concat:js",
 		"lint:js": "eslint --cache --cache-location .cache/.eslintcache",
-		"minify:js": "terser --compress passes=2 --mangle-props --comments \"/^!/\" --output \"Resources/Public/JavaScript/Dist/ku-scripts.min.js\" \"Resources/Public/JavaScript/Dist/ku-scripts.js\" --source-map \"url='ku-scripts.min.js.map'\"",
+		"minify:js": "terser --compress passes=2 --mangle-props --format quote_style=1 --comments \"/^!/\" --output \"Resources/Public/JavaScript/Dist/ku-scripts.min.js\" \"Resources/Public/JavaScript/Dist/ku-scripts.js\" --source-map",
 		"build:js": "npm-run-all lint:js && npm-run-all concat:js && npm-run-all minify:js",
 		"watch:js": "onchange \"Resources/Public/JavaScript/Src/*.js\" -- npm-run-all build:js",
 		"do-not-watch:css": "onchange \"Resources/Public/Scss/**/*.scss\" -- npm-run-all css-compile",
