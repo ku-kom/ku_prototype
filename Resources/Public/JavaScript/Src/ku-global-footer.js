@@ -1,10 +1,5 @@
 /* ========================================================================
- * Copyright 2022 Nanna Ellegaard
- * University of Copenhagen, FA Communications
- * ========================================================================*/
-
-/* ========================================================================
- * Copyright 2022 Nanna Ellegaard
+ * Copyright 2023 Nanna Ellegaard
  * University of Copenhagen, FA Communications
  * ========================================================================*/
 
