@@ -30,14 +30,14 @@ document.addEventListener('DOMContentLoaded', () => {
     class Footer {
         constructor(footer) {
             this.footer = footer;
-            this.list = this.footer.nextElementSibling;
+            this.list = this.footer.nextElementSibling; //this.footer.parentNode.querySelector('.footerlinks');
             this.setAriaAttr();
             this.addEventListeners();
         }
 
         /**
          * Detect screen size.
-         * @returns bool.
+         * @returns boolean.
          */
         isMobile() {
             return window.matchMedia('(max-width: 767px)').matches;
@@ -47,6 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
          * Add attributes.
          */
         setAriaAttr() {
+            //console.log(this.isMobile());
             this.footer.setAttribute('aria-expanded', this.isMobile() ? 'false' : 'true');
         }
 
@@ -54,6 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
          * Clear footer.
          */
         resetFooter() {
+            console.log('resize');
             this.list.style.removeProperty('height');
             this.list.classList.remove('active');
         }
@@ -75,7 +77,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     this.list.style.height = height;
                 }, 0);
                 this.footer.setAttribute('aria-expanded', 'true');
-
             } else {
                 /**
                  * Slide up
@@ -98,12 +99,15 @@ document.addEventListener('DOMContentLoaded', () => {
             this.footer.addEventListener('click', () => {
                 this.toggleFooter();
             });
-            ['orientationchange', 'resize'].forEach(debounce((e) => {
-                /**
-                 * Debounce functions.
-                 */
-                window.addEventListener(e, this.resetFooter());
-                window.addEventListener(e, this.setAriaAttr());
+
+            window.addEventListener('resize', debounce(() => {
+                this.resetFooter();
+                this.setAriaAttr();
+            }, 150));
+
+            window.addEventListener('orientationchange', debounce(() => {
+                this.resetFooter();
+                this.setAriaAttr();
             }, 150));
         }
     }
@@ -116,7 +120,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
-
 /* eslint-disable no-redeclare */
 /* ========================================================================
  * Copyright 2022

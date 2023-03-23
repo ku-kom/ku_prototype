@@ -99,7 +99,7 @@ lib.footerContent {
                 <li><a aria-label="UCPH Accessibility statement" href="https://www.ku.dk/was">Accessibility statement</a></li>
                 <li><a aria-label="UCPH information security" href="https://informationssikkerhed.ku.dk/english/">Information security</a></li>
             </ul>
-            <header class="frame-header">
+            <header class="frame-header sociallinks">
                 <h2 class="element-header">Connect with UCPH</h2>
             </header>
             <ul class="sociallinks-list">

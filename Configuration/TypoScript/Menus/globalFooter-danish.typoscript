@@ -102,7 +102,7 @@ lib.footerContent {
                 <li><a aria-label="KU's Tilgængelighedserklæring" href="https://www.ku.dk/was">Tilgængelighedserklæring</a></li>
                 <li><a aria-label="KU Informationssikkerhed" href="https://informationssikkerhed.ku.dk">Informationssikkerhed</a></li>
             </ul>
-            <header class="frame-header">
+            <header class="frame-header sociallinks">
                 <h2 class="element-header">Mød KU på</h2>
             </header>
             <ul class="sociallinks-list">

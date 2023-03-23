@@ -78,28 +78,34 @@
         }
 
         &>ul {
-            margin: 0;
-            transition: height .4s cubic-bezier(.02, .01, .47, 1);
-            overflow: hidden;
-            background-color: $gray-400;
+            &.footerlinks {
+                margin: 0;
+                transition: height .4s cubic-bezier(.02, .01, .47, 1);
+                overflow: hidden;
+                background-color: $gray-400;
 
-            &:not(.active) {
-                display: none;
-            }
-
-            li {
-                padding: 10px 1rem;
-
-                &+li {
-                    border-top: 1px solid $gray-500;
-                    padding-top: 10px;
+                &:not(.active) {
+                    display: none;
                 }
 
-                a {
-                    color: $black;
+                li {
+                    padding: 10px 1rem;
+
+                    &+li {
+                        border-top: 1px solid $gray-500;
+                        padding-top: 10px;
+                    }
+
+                    a {
+                        color: $black;
+                    }
                 }
             }
         }
+    }
+
+    .sociallinks {
+        pointer-events: none;
     }
 
     .footer-sociallinks {
