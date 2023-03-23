@@ -50,7 +50,6 @@ document.addEventListener('DOMContentLoaded', () => {
          * Clear footer.
          */
         resetFooter() {
-            console.log('resize');
             this.list.style.removeProperty('height');
             this.list.classList.remove('active');
         }
