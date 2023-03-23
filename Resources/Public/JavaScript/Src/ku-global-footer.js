@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     class Footer {
         constructor(footer) {
             this.footer = footer;
-            this.list = this.footer.nextElementSibling; //this.footer.parentNode.querySelector('.footerlinks');
+            this.list = this.footer.nextElementSibling;
             this.setAriaAttr();
             this.addEventListeners();
         }
