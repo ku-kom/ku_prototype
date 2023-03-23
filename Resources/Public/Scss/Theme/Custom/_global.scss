@@ -40,15 +40,14 @@
 
 @include media-breakpoint-up('sm') {
     body {
-        height: 100%;
+        height: 100vh;
     }
 }
 
 
 @include media-breakpoint-down('sm') {
-    
     html {
-        overflow-x: unset!important;
+        overflow-x: unset !important;
     }
 }
 
