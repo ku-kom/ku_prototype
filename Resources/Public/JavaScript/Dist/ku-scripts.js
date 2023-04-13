@@ -121,6 +121,11 @@ document.addEventListener('DOMContentLoaded', () => {
  * ========================================================================*/
 
 /**
+ * Check OS reduced motion setting
+ */
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+/**
  * Delay function init, e.g. on resizing or orientation change. Returns a function, that, as long as it continues to be invoked, will not be triggered. The function will be called after it stops being called for N milliseconds.
  * Usage: debounce(myFunction, 250)
  * @param {function to be passed in} func 
@@ -214,7 +219,6 @@ window.addEventListener('DOMContentLoaded', () => {
         /**
          * Check for accessibility settings
          */
-        const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
         if (reduceMotion.matches) {
             return;
         }
@@ -223,13 +227,15 @@ window.addEventListener('DOMContentLoaded', () => {
             let accordionExists = window.location.hash.indexOf('accordion-') >= 0 || window.location.hash.indexOf('collapse-') >= 0;
             if (accordionExists) {
                 const accordionID = window.location.hash; // Variable includes hash (#).
-                // Open accordion
+                // Open accordion if it exists
                 const collapsibleElement = document.querySelector(accordionID);
-                new bootstrap.Collapse(collapsibleElement).show();
-                // Scroll to accordion
-                document.querySelector(accordionID).scrollIntoView({
-                    behavior: 'smooth'
-                });
+                if (collapsibleElement) {
+                    new bootstrap.Collapse(collapsibleElement).show();
+                    // Scroll to accordion
+                    document.querySelector(accordionID).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
             }
         }
     }
