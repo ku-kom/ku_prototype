@@ -13,21 +13,21 @@
  * @returns a function
  */
 const debounce = (func, wait, immediate) => {
-  let timeout;
-  return function () {
-    let context = this,
-      args = arguments;
-    let later = () => {
-      timeout = null;
-      if (!immediate)
-        func.apply(context, args);
+    let timeout;
+    return function () {
+        let context = this,
+            args = arguments;
+        let later = () => {
+            timeout = null;
+            if (!immediate)
+                func.apply(context, args);
+        };
+        let callNow = immediate && !timeout;
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+        if (callNow)
+            func.apply(context, args);
     };
-    let callNow = immediate && !timeout;
-    clearTimeout(timeout);
-    timeout = setTimeout(later, wait);
-    if (callNow)
-      func.apply(context, args);
-  };
 }
 
 /**
@@ -37,31 +37,31 @@ const debounce = (func, wait, immediate) => {
  * @returns a function
  */
 const throttle = (func, wait) => {
-  let waiting = false;
-  return function () {
-    if (!waiting) {
-      func.apply(this, arguments);
-      waiting = true;
-      setTimeout(function () {
-        waiting = false;
-      }, wait);
-    }
-  };
+    let waiting = false;
+    return function () {
+        if (!waiting) {
+            func.apply(this, arguments);
+            waiting = true;
+            setTimeout(function () {
+                waiting = false;
+            }, wait);
+        }
+    };
 }
 
 /**
  * Check if page has scrollbar and if so add css variable. Used for full width styling.
  */
 const hasScrollbar = () => {
-  let body = document.body;
-  if (body) {
-    if (window.innerWidth > body.clientWidth) {
-      body.classList.add('has-scrollbar');
-      body.setAttribute('style', '--scroll-bar: ' + (window.innerWidth - body.clientWidth) + 'px');
-    } else {
-      body.classList.remove('has-scrollbar');
+    let body = document.body;
+    if (body) {
+        if (window.innerWidth > body.clientWidth) {
+            body.classList.add('has-scrollbar');
+            body.setAttribute('style', '--scroll-bar: ' + (window.innerWidth - body.clientWidth) + 'px');
+        } else {
+            body.classList.remove('has-scrollbar');
+        }
     }
-  }
 }
 
 // document.addEventListener('DOMContentLoaded', () => {
@@ -76,3 +76,47 @@ const hasScrollbar = () => {
 //     hasScrollbar();
 //   }, 250));
 // });
+
+/**
+ * Link to open acoordion
+ */
+
+window.addEventListener('DOMContentLoaded', () => {
+    'use strict';
+
+    /**
+     * Link to open accordion
+     */
+    const slideToOpenAccordion = () => {
+        /**
+         * Return if Bootstrap collapse is not present
+         */
+        if (typeof bootstrap.Collapse !== 'function') {
+            return;
+        }
+
+        /**
+         * Check for accessibility settings
+         */
+        const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+        if (reduceMotion.matches) {
+            return;
+        }
+        if (window.location.hash !== '') {
+            // Open accordions or collapsible elements based on the hash in the url
+            let accordionExists = window.location.hash.indexOf('accordion-') >= 0 || window.location.hash.indexOf('collapse-') >= 0;
+            if (accordionExists) {
+                const accordionID = window.location.hash; // Variable includes hash (#).
+                // Open accordion
+                const collapsibleElement = document.querySelector(accordionID);
+                new bootstrap.Collapse(collapsibleElement).show();
+                // Scroll to accordion
+                document.querySelector(accordionID).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        }
+    }
+
+    slideToOpenAccordion();
+});
