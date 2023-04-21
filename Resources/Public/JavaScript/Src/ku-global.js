@@ -125,4 +125,12 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     slideToOpenAccordion();
+
+    window.addEventListener('orientationchange', debounce(function () {
+        slideToOpenAccordion();
+    }, 150));
+
+    window.addEventListener('resize', debounce(function () {
+        slideToOpenAccordion();
+    }, 150));
 });
