@@ -240,15 +240,15 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    slideToOpenAccordion();
+    // slideToOpenAccordion();
 
-    window.addEventListener('orientationchange', debounce(function () {
-        slideToOpenAccordion();
-    }, 150));
+    // window.addEventListener('orientationchange', debounce(function () {
+    //     slideToOpenAccordion();
+    // }, 150));
 
-    window.addEventListener('resize', debounce(function () {
-        slideToOpenAccordion();
-    }, 150));
+    // window.addEventListener('resize', debounce(function () {
+    //     slideToOpenAccordion();
+    // }, 150));
 });
 /* ========================================================================
  * Copyright 2022
