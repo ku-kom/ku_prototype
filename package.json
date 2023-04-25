@@ -12,7 +12,7 @@
 		"minify:js": "terser --compress passes=2 --mangle-props --format quote_style=1 --comments \"/^!/\" --output \"Resources/Public/JavaScript/Dist/ku-scripts.min.js\" \"Resources/Public/JavaScript/Dist/ku-scripts.js\" --source-map",
 		"build:js": "npm-run-all lint:js && npm-run-all concat:js && npm-run-all minify:js",
 		"watch:js": "onchange \"Resources/Public/JavaScript/Src/*.js\" -- npm-run-all build:js",
-		"do-not-watch:css": "onchange \"Resources/Public/Scss/**/*.scss\" -- npm-run-all css-compile",
+		"watch:css": "onchange \"Resources/Public/Scss/**/*.scss\" -- npm-run-all css-compile",
 		"watch": "npm-run-all --parallel watch:*"
 	},
 	"keywords": [
@@ -30,7 +30,7 @@
 		"terser": "^5.17.1",
 		"uglify-js": "^3.17.4",
 		"icon-gen": "^3.0.1",
-		"sass": "^1.62.0"
+		"sass": "~1.32.6"
 	},
 	"dependencies": {
 	}

@@ -7,11 +7,11 @@
 //
 // Import needed Bootstrap Package Files
 //
-@import "../../../../../bootstrap_package/Resources/Public/Scss/bootstrap5/theme";
-//@import "C:/KU projekter/ku-typo3/KU-extensions/bootstrap_package/Resources/Public/Scss/bootstrap5/theme.scss";
+//@import "C:/KU projekter/KU Docker/typo3test/public/typo3conf/ext/bootstrap_package/Resources/Public/Scss/bootstrap5/theme.scss";
+@import "../../../../../../../public/typo3conf/ext/bootstrap_package/Resources/Public/Scss/bootstrap5/theme.scss";
 
 // KU overrides
-@import "EXT:ku_prototype/Resources/Public/Icons/Bootstrap-icons/bootstrap-icons.scss";
+@import "../../Icons/Bootstrap-icons//bootstrap-icons.scss";
 @import "Custom/components/kuIcons";
 @import "Custom/global";
 @import "Custom/components/scrolltop";
