@@ -7,7 +7,7 @@
  * Sep 2022 Nanna Ellegaard, University of Copenhagen.
  */
 
-defined('TYPO3_MODE') || die();
+defined('TYPO3') || die();
 
 // PageTS
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('

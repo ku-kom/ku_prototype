@@ -7,7 +7,7 @@
  * Sep 2022 Nanna Ellegaard, University of Copenhagen.
  */
 
-defined('TYPO3_MODE') || die();
+defined('TYPO3') || die();
 
 // KU: Add input fields to site_language in "Language" tab in site configuration:
 $GLOBALS['SiteConfiguration']['site_language']['columns']['local_footer_address'] = [
